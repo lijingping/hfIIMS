@@ -1,0 +1,24 @@
+hfMainTitle  {
+    background: #08092c;
+}
+
+hfMainTitle > QLabel{
+    font-size: 30px;
+    color:white;
+    font-weight: bold;
+}
+
+
+
+hfMainTitle > QLabel#pan{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\pan.svg");
+}
+hfMainTitle > QLabel#sensor{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\sensor.svg");
+}
+
+hfMainTitle > QLabel#logo{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+}
+
+
