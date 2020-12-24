@@ -35,13 +35,6 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
-    QFrame *frame_10;
-    QHBoxLayout *horizontalLayout_9;
-    QHBoxLayout *horizontalLayout_8;
-    hfTemperature *temperature;
-    hfWetDisplay *wet;
-    hfNoiseDisplay *noise;
-    QSpacerItem *verticalSpacer;
     QFrame *control_panel;
     QHBoxLayout *horizontalLayout_7;
     QFrame *frame;
@@ -75,6 +68,13 @@ public:
     QLabel *label_2;
     QLabel *label_9;
     hfMainTitle *main_title;
+    QFrame *frame_10;
+    QHBoxLayout *horizontalLayout_9;
+    QHBoxLayout *horizontalLayout_8;
+    hfTemperature *temperature;
+    hfWetDisplay *wet;
+    hfNoiseDisplay *noise;
+    QSpacerItem *verticalSpacer;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_4;
     QWidget *heartrate;
@@ -97,45 +97,6 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(0);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        frame_10 = new QFrame(centralWidget);
-        frame_10->setObjectName(QStringLiteral("frame_10"));
-        frame_10->setFrameShape(QFrame::StyledPanel);
-        frame_10->setFrameShadow(QFrame::Raised);
-        horizontalLayout_9 = new QHBoxLayout(frame_10);
-        horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setSpacing(6);
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        temperature = new hfTemperature(frame_10);
-        temperature->setObjectName(QStringLiteral("temperature"));
-
-        horizontalLayout_8->addWidget(temperature);
-
-        wet = new hfWetDisplay(frame_10);
-        wet->setObjectName(QStringLiteral("wet"));
-
-        horizontalLayout_8->addWidget(wet);
-
-        noise = new hfNoiseDisplay(frame_10);
-        noise->setObjectName(QStringLiteral("noise"));
-
-        horizontalLayout_8->addWidget(noise);
-
-        horizontalLayout_8->setStretch(0, 3);
-        horizontalLayout_8->setStretch(1, 3);
-        horizontalLayout_8->setStretch(2, 5);
-
-        horizontalLayout_9->addLayout(horizontalLayout_8);
-
-
-        gridLayout->addWidget(frame_10, 2, 0, 1, 1);
-
-        verticalSpacer = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 4, 0, 1, 1);
-
         control_panel = new QFrame(centralWidget);
         control_panel->setObjectName(QStringLiteral("control_panel"));
         control_panel->setFrameShape(QFrame::StyledPanel);
@@ -331,8 +292,50 @@ public:
 
         main_title = new hfMainTitle(centralWidget);
         main_title->setObjectName(QStringLiteral("main_title"));
+        main_title->setEnabled(true);
+        main_title->setMaximumSize(QSize(16777215, 108));
 
         gridLayout->addWidget(main_title, 0, 0, 1, 1);
+
+        frame_10 = new QFrame(centralWidget);
+        frame_10->setObjectName(QStringLiteral("frame_10"));
+        frame_10->setEnabled(true);
+        frame_10->setFrameShape(QFrame::StyledPanel);
+        frame_10->setFrameShadow(QFrame::Raised);
+        horizontalLayout_9 = new QHBoxLayout(frame_10);
+        horizontalLayout_9->setSpacing(6);
+        horizontalLayout_9->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setSpacing(6);
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        temperature = new hfTemperature(frame_10);
+        temperature->setObjectName(QStringLiteral("temperature"));
+
+        horizontalLayout_8->addWidget(temperature);
+
+        wet = new hfWetDisplay(frame_10);
+        wet->setObjectName(QStringLiteral("wet"));
+
+        horizontalLayout_8->addWidget(wet);
+
+        noise = new hfNoiseDisplay(frame_10);
+        noise->setObjectName(QStringLiteral("noise"));
+
+        horizontalLayout_8->addWidget(noise);
+
+        horizontalLayout_8->setStretch(0, 3);
+        horizontalLayout_8->setStretch(1, 3);
+        horizontalLayout_8->setStretch(2, 5);
+
+        horizontalLayout_9->addLayout(horizontalLayout_8);
+
+
+        gridLayout->addWidget(frame_10, 2, 0, 1, 1);
+
+        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        gridLayout->addItem(verticalSpacer, 4, 0, 1, 1);
 
         frame_2 = new QFrame(centralWidget);
         frame_2->setObjectName(QStringLiteral("frame_2"));
@@ -358,9 +361,6 @@ public:
         gridLayout->addWidget(frame_2, 3, 0, 1, 1);
 
         gridLayout->setRowStretch(0, 1);
-        gridLayout->setRowStretch(1, 12);
-        gridLayout->setRowStretch(2, 32);
-        gridLayout->setRowStretch(3, 32);
 
         gridLayout_2->addLayout(gridLayout, 0, 0, 1, 1);
 

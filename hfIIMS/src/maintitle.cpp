@@ -23,7 +23,7 @@ hfMainTitle::hfMainTitle(QWidget *parent) :
     this->m_timer.start(1000);
 
     QDateTime time = QDateTime::currentDateTime();
-    QString str = time.toString("yyyy/MM/dd hh:mm:ss");
+    QString str = time.toString("yyyy/MM/dd hh:mm");
     ui->time_label->setText(str);
 }
 
@@ -47,7 +47,7 @@ void hfMainTitle::paintEvent(QPaintEvent *)
       style()->drawPrimitive(QStyle::PE_Widget, &opt, &p, this);
 }
 
-void hfMainTitle::on_pushButton_3_clicked()
+void hfMainTitle::on_close_clicked()
 {
     emit this->OnCloseWindow();
 }

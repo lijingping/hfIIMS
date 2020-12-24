@@ -10,15 +10,32 @@ hfMainTitle > QLabel{
 
 
 
-hfMainTitle > QLabel#pan{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\pan.svg");
+hfMainTitle > QLabel#time{
+    border-image: url("./res/img/time.png");
 }
 hfMainTitle > QLabel#sensor{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\sensor.svg");
+    border-image: url("./res/img/sensor.png");
 }
 
 hfMainTitle > QLabel#logo{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+    border-image: url("./res/img/logo.png");
 }
+
+hfMainTitle > QPushButton#user_icon{
+    border-image: url("./res/img/user_icon.png");
+}
+
+hfMainTitle > QPushButton#user_name{
+    border-image: url("./res/img/user_name.png");
+}
+
+hfMainTitle > QLabel#title{
+    border-image: url("./res/img/title.png");
+}
+
+hfMainTitle > QPushButton#close{
+    border-image: url("./res/img/close.png");
+}
+
 
 

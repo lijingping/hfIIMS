@@ -218,7 +218,6 @@ Makefile: ..\hfIIMS\hfIIMS.pro C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc\q
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\qt_config.prf \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc\qmake.conf \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\spec_post.prf \
-		.qmake.stash \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\exclusive_builds.prf \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\common\msvc-version.conf \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\toolchain.prf \
@@ -392,7 +391,6 @@ C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\qt_functions.prf:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\qt_config.prf:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc\qmake.conf:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\spec_post.prf:
-.qmake.stash:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\exclusive_builds.prf:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\common\msvc-version.conf:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\toolchain.prf:

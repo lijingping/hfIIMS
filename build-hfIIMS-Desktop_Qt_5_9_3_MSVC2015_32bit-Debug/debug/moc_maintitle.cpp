@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_hfMainTitle_t {
     QByteArrayData data[5];
-    char stringdata0[62];
+    char stringdata0[55];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -35,11 +35,11 @@ QT_MOC_LITERAL(0, 0, 11), // "hfMainTitle"
 QT_MOC_LITERAL(1, 12, 13), // "OnCloseWindow"
 QT_MOC_LITERAL(2, 26, 0), // ""
 QT_MOC_LITERAL(3, 27, 10), // "UpdateTime"
-QT_MOC_LITERAL(4, 38, 23) // "on_pushButton_3_clicked"
+QT_MOC_LITERAL(4, 38, 16) // "on_close_clicked"
 
     },
     "hfMainTitle\0OnCloseWindow\0\0UpdateTime\0"
-    "on_pushButton_3_clicked"
+    "on_close_clicked"
 };
 #undef QT_MOC_LITERAL
 
@@ -81,7 +81,7 @@ void hfMainTitle::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id,
         switch (_id) {
         case 0: _t->OnCloseWindow(); break;
         case 1: _t->UpdateTime(); break;
-        case 2: _t->on_pushButton_3_clicked(); break;
+        case 2: _t->on_close_clicked(); break;
         default: ;
         }
     } else if (_c == QMetaObject::IndexOfMethod) {
