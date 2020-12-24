@@ -1,0 +1,74 @@
+hfMainWindow{
+    background: #10103e;
+}
+
+QFrame#control_panel{
+    margin-top: 10px;
+}
+QFrame#frame{
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #1C1C48;
+}
+QFrame#frame_7{
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #1C1C48;
+}
+QFrame#frame_9{
+    margin-left: 5px;
+    margin-right: 5px;
+    background: #1C1C48;
+}
+QFrame#frame_10{
+    margin-top: 10px;
+}
+QFrame#frame_2{
+    margin-top: 10px;
+}
+
+QLabel#label{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+}
+QLabel#label_2{
+    font: 35px;
+    color:white;
+}
+QLabel#label_3{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+}
+
+QLabel#label_4{
+    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+}
+
+QLabel#label_5{
+    font: 35px;
+    color:white;
+}
+QLabel#label_6{
+    font: 20px;
+    color:white;
+}
+QLabel#label_7{
+    font: 35px;
+    color:white;
+
+}
+QLabel#label_8{
+    font: 20px;
+    color:white;
+}
+QLabel#label_9{
+    font: 80px;
+    color:white;
+}
+QLabel#label_10{
+    font: 80px;
+    color:white;
+}
+QLabel#label_11{
+    font: 80px;
+    color:white;
+}
+
