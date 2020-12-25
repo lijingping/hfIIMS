@@ -8,18 +8,10 @@ QFrame#control_panel{
 QFrame#frame{
     margin-left: 5px;
     margin-right: 5px;
-    background: #1C1C48;
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
-QFrame#frame_7{
-    margin-left: 5px;
-    margin-right: 5px;
-    background: #1C1C48;
-}
-QFrame#frame_9{
-    margin-left: 5px;
-    margin-right: 5px;
-    background: #1C1C48;
-}
+
 QFrame#frame_10{
     margin-top: 10px;
 }
@@ -34,22 +26,24 @@ QLabel#label_2{
     font: 35px;
     color:white;
 }
-QLabel#label_3{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
+QLabel#people_icon{
+    border-image: url("./res/img/people.png");
+}
+QLabel#heart_icon{
+    border-image: url("./res/img/heart.png");
+}
+QLabel#waves_icon{
+    border-image: url("./res/img/waves.png");
+}
+
+QLabel#waves_arrow{
+    border-image: url("./res/img/waves_arrow.png");
 }
 
 QLabel#label_4{
     border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
 }
 
-QLabel#label_5{
-    font: 35px;
-    color:white;
-}
-QLabel#label_6{
-    font: 20px;
-    color:white;
-}
 QLabel#label_7{
     font: 35px;
     color:white;

@@ -40,7 +40,7 @@
      <number>0</number>
     </property>
     <item row="0" column="0">
-     <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0,0,0" columnstretch="0">
+     <layout class="QGridLayout" name="gridLayout" rowstretch="1,0,0,0" columnstretch="0">
       <property name="spacing">
        <number>0</number>
       </property>
@@ -52,9 +52,15 @@
         <property name="frameShadow">
          <enum>QFrame::Raised</enum>
         </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="4,4,4">
+        <layout class="QHBoxLayout" name="horizontalLayout_7" stretch="0">
          <item>
           <widget class="QFrame" name="frame">
+           <property name="maximumSize">
+            <size>
+             <width>16777215</width>
+             <height>160</height>
+            </size>
+           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -63,237 +69,339 @@
            </property>
            <layout class="QGridLayout" name="gridLayout_4">
             <item row="0" column="0">
-             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="1,2,1">
-              <item>
-               <widget class="QLabel" name="label_3">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QFrame" name="frame_6">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_2">
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout" stretch="1,2,2,1">
-                   <item>
-                    <spacer name="verticalSpacer_3">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_5">
-                     <property name="font">
-                      <font>
-                       <family>黑体</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>本次训练人数:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_6">
-                     <property name="font">
-                      <font>
-                       <family>黑体</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>上次训练人数: 100</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <spacer name="verticalSpacer_2">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_10">
-                <property name="font">
-                 <font>
-                  <family>黑体</family>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>100</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
-            </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QFrame" name="frame_7">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QGridLayout" name="gridLayout_5">
-            <item row="0" column="0">
-             <layout class="QHBoxLayout" name="horizontalLayout_6" stretch="1,2,1">
-              <property name="spacing">
-               <number>0</number>
+             <widget class="QFrame" name="frame_3">
+              <property name="frameShape">
+               <enum>QFrame::StyledPanel</enum>
               </property>
-              <item>
-               <widget class="QLabel" name="label_4">
-                <property name="text">
-                 <string/>
-                </property>
-               </widget>
-              </item>
-              <item>
-               <widget class="QFrame" name="frame_8">
-                <property name="frameShape">
-                 <enum>QFrame::StyledPanel</enum>
-                </property>
-                <property name="frameShadow">
-                 <enum>QFrame::Raised</enum>
-                </property>
-                <layout class="QVBoxLayout" name="verticalLayout_3">
-                 <item>
-                  <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,2,2,1">
-                   <item>
-                    <spacer name="verticalSpacer_4">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_7">
-                     <property name="font">
-                      <font>
-                       <family>黑体</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>本次训练心率异常人数:</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <widget class="QLabel" name="label_8">
-                     <property name="font">
-                      <font>
-                       <family>黑体</family>
-                      </font>
-                     </property>
-                     <property name="text">
-                      <string>上次训练心率异常人数: 100</string>
-                     </property>
-                    </widget>
-                   </item>
-                   <item>
-                    <spacer name="verticalSpacer_5">
-                     <property name="orientation">
-                      <enum>Qt::Vertical</enum>
-                     </property>
-                     <property name="sizeHint" stdset="0">
-                      <size>
-                       <width>20</width>
-                       <height>40</height>
-                      </size>
-                     </property>
-                    </spacer>
-                   </item>
-                  </layout>
-                 </item>
-                </layout>
-               </widget>
-              </item>
-              <item>
-               <widget class="QLabel" name="label_11">
-                <property name="text">
-                 <string>100</string>
-                </property>
-               </widget>
-              </item>
-             </layout>
+              <property name="frameShadow">
+               <enum>QFrame::Raised</enum>
+              </property>
+             </widget>
             </item>
-           </layout>
-          </widget>
-         </item>
-         <item>
-          <widget class="QFrame" name="frame_9">
-           <property name="frameShape">
-            <enum>QFrame::StyledPanel</enum>
-           </property>
-           <property name="frameShadow">
-            <enum>QFrame::Raised</enum>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_2">
-            <item>
-             <layout class="QHBoxLayout" name="horizontalLayout">
+            <item row="1" column="0">
+             <layout class="QHBoxLayout" name="horizontalLayout_5" stretch="0,0,0">
               <item>
-               <widget class="QLabel" name="label">
-                <property name="text">
-                 <string/>
+               <layout class="QHBoxLayout" name="horizontalLayout">
+                <property name="spacing">
+                 <number>0</number>
                 </property>
-               </widget>
+                <item>
+                 <widget class="QLabel" name="people_icon">
+                  <property name="minimumSize">
+                   <size>
+                    <width>112</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>112</width>
+                    <height>112</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout" stretch="0,2,2,1">
+                  <item>
+                   <spacer name="verticalSpacer_3">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>20</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="current_people">
+                    <property name="font">
+                     <font>
+                      <family>方正黑体简体</family>
+                      <pointsize>20</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;方正黑体简体&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>本次训练人数:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="last_people">
+                    <property name="font">
+                     <font>
+                      <family>方正黑体简体</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>上次训练人数: 100</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_2">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="people_label">
+                  <property name="font">
+                   <font>
+                    <family>方正品尚细黑简体</family>
+                    <pointsize>70</pointsize>
+                    <weight>50</weight>
+                    <italic>false</italic>
+                    <bold>false</bold>
+                   </font>
+                  </property>
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 70pt &quot;方正品尚细黑简体&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>100</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </item>
               <item>
-               <widget class="QLabel" name="label_2">
-                <property name="font">
-                 <font>
-                  <family>黑体</family>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>风浪等级：</string>
-                </property>
-               </widget>
+               <layout class="QHBoxLayout" name="horizontalLayout_2">
+                <item>
+                 <widget class="QLabel" name="heart_icon">
+                  <property name="minimumSize">
+                   <size>
+                    <width>112</width>
+                    <height>0</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>112</width>
+                    <height>112</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_4" stretch="1,2,2,1">
+                  <item>
+                   <spacer name="verticalSpacer_4">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_7">
+                    <property name="font">
+                     <font>
+                      <family>方正黑体简体</family>
+                      <pointsize>20</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;方正黑体简体&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>本次训练心率异常人数:</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="label_8">
+                    <property name="font">
+                     <font>
+                      <family>方正黑体简体</family>
+                      <pointsize>12</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>上次训练心率异常人数: 100</string>
+                    </property>
+                   </widget>
+                  </item>
+                  <item>
+                   <spacer name="verticalSpacer_5">
+                    <property name="orientation">
+                     <enum>Qt::Vertical</enum>
+                    </property>
+                    <property name="sizeHint" stdset="0">
+                     <size>
+                      <width>20</width>
+                      <height>40</height>
+                     </size>
+                    </property>
+                   </spacer>
+                  </item>
+                 </layout>
+                </item>
+                <item>
+                 <widget class="QLabel" name="heart_label">
+                  <property name="styleSheet">
+                   <string notr="true">color: rgb(255, 255, 255);
+font: 70pt &quot;方正品尚细黑简体&quot;;</string>
+                  </property>
+                  <property name="text">
+                   <string>1</string>
+                  </property>
+                 </widget>
+                </item>
+               </layout>
               </item>
               <item>
-               <widget class="QLabel" name="label_9">
-                <property name="font">
-                 <font>
-                  <family>黑体</family>
-                 </font>
-                </property>
-                <property name="text">
-                 <string>1</string>
-                </property>
-               </widget>
+               <layout class="QHBoxLayout" name="horizontalLayout_3">
+                <item>
+                 <widget class="QLabel" name="waves_icon">
+                  <property name="minimumSize">
+                   <size>
+                    <width>112</width>
+                    <height>112</height>
+                   </size>
+                  </property>
+                  <property name="maximumSize">
+                   <size>
+                    <width>112</width>
+                    <height>16777215</height>
+                   </size>
+                  </property>
+                  <property name="text">
+                   <string/>
+                  </property>
+                 </widget>
+                </item>
+                <item>
+                 <layout class="QVBoxLayout" name="verticalLayout_2">
+                  <item>
+                   <layout class="QHBoxLayout" name="horizontalLayout_6">
+                    <item>
+                     <widget class="QLabel" name="waves_title">
+                      <property name="font">
+                       <font>
+                        <family>方正黑体简体</family>
+                        <pointsize>12</pointsize>
+                        <weight>50</weight>
+                        <italic>false</italic>
+                        <bold>false</bold>
+                       </font>
+                      </property>
+                      <property name="styleSheet">
+                       <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+                      </property>
+                      <property name="text">
+                       <string>风浪等级：</string>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <widget class="QLabel" name="waves_arrow">
+                      <property name="minimumSize">
+                       <size>
+                        <width>17</width>
+                        <height>11</height>
+                       </size>
+                      </property>
+                      <property name="maximumSize">
+                       <size>
+                        <width>17</width>
+                        <height>11</height>
+                       </size>
+                      </property>
+                      <property name="text">
+                       <string/>
+                      </property>
+                     </widget>
+                    </item>
+                    <item>
+                     <spacer name="horizontalSpacer">
+                      <property name="orientation">
+                       <enum>Qt::Horizontal</enum>
+                      </property>
+                      <property name="sizeHint" stdset="0">
+                       <size>
+                        <width>40</width>
+                        <height>20</height>
+                       </size>
+                      </property>
+                     </spacer>
+                    </item>
+                   </layout>
+                  </item>
+                  <item>
+                   <widget class="QLabel" name="waves_label">
+                    <property name="font">
+                     <font>
+                      <family>方正品尚细黑简体</family>
+                      <pointsize>70</pointsize>
+                      <weight>50</weight>
+                      <italic>false</italic>
+                      <bold>false</bold>
+                     </font>
+                    </property>
+                    <property name="styleSheet">
+                     <string notr="true">color: rgb(255, 255, 255);
+font: 70pt &quot;方正品尚细黑简体&quot;;</string>
+                    </property>
+                    <property name="text">
+                     <string>1 2 3 4 5 6</string>
+                    </property>
+                   </widget>
+                  </item>
+                 </layout>
+                </item>
+               </layout>
               </item>
              </layout>
             </item>
@@ -314,6 +422,31 @@
           <height>108</height>
          </size>
         </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QFrame" name="frame_2">
+        <property name="frameShape">
+         <enum>QFrame::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="6,5">
+         <item>
+          <widget class="QWidget" name="heartrate" native="true"/>
+         </item>
+         <item>
+          <widget class="QWidget" name="oxygen" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>860</width>
+             <height>0</height>
+            </size>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </widget>
       </item>
       <item row="2" column="0">
@@ -340,37 +473,6 @@
             <widget class="hfNoiseDisplay" name="noise"/>
            </item>
           </layout>
-         </item>
-        </layout>
-       </widget>
-      </item>
-      <item row="4" column="0">
-       <spacer name="verticalSpacer">
-        <property name="orientation">
-         <enum>Qt::Vertical</enum>
-        </property>
-        <property name="sizeHint" stdset="0">
-         <size>
-          <width>20</width>
-          <height>20</height>
-         </size>
-        </property>
-       </spacer>
-      </item>
-      <item row="3" column="0">
-       <widget class="QFrame" name="frame_2">
-        <property name="frameShape">
-         <enum>QFrame::StyledPanel</enum>
-        </property>
-        <property name="frameShadow">
-         <enum>QFrame::Raised</enum>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_4" stretch="6,5">
-         <item>
-          <widget class="QWidget" name="heartrate" native="true"/>
-         </item>
-         <item>
-          <widget class="QWidget" name="oxygen" native="true"/>
          </item>
         </layout>
        </widget>

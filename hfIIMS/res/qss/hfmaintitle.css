@@ -27,7 +27,7 @@ hfMainTitle > QPushButton#user_name{
 }
 
 hfMainTitle > QLabel#title{
-    border-image: url("./res/img/title.png");
+    border-image: url("./res/img/frame.png");
 }
 
 hfMainTitle > QPushButton#close{

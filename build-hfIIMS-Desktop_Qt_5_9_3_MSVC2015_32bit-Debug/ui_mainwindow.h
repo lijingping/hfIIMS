@@ -35,38 +35,6 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
-    QFrame *control_panel;
-    QHBoxLayout *horizontalLayout_7;
-    QFrame *frame;
-    QGridLayout *gridLayout_4;
-    QHBoxLayout *horizontalLayout_5;
-    QLabel *label_3;
-    QFrame *frame_6;
-    QVBoxLayout *verticalLayout_2;
-    QVBoxLayout *verticalLayout;
-    QSpacerItem *verticalSpacer_3;
-    QLabel *label_5;
-    QLabel *label_6;
-    QSpacerItem *verticalSpacer_2;
-    QLabel *label_10;
-    QFrame *frame_7;
-    QGridLayout *gridLayout_5;
-    QHBoxLayout *horizontalLayout_6;
-    QLabel *label_4;
-    QFrame *frame_8;
-    QVBoxLayout *verticalLayout_3;
-    QVBoxLayout *verticalLayout_4;
-    QSpacerItem *verticalSpacer_4;
-    QLabel *label_7;
-    QLabel *label_8;
-    QSpacerItem *verticalSpacer_5;
-    QLabel *label_11;
-    QFrame *frame_9;
-    QHBoxLayout *horizontalLayout_2;
-    QHBoxLayout *horizontalLayout;
-    QLabel *label;
-    QLabel *label_2;
-    QLabel *label_9;
     hfMainTitle *main_title;
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_9;
@@ -74,11 +42,39 @@ public:
     hfTemperature *temperature;
     hfWetDisplay *wet;
     hfNoiseDisplay *noise;
-    QSpacerItem *verticalSpacer;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_4;
     QWidget *heartrate;
     QWidget *oxygen;
+    QFrame *control_panel;
+    QHBoxLayout *horizontalLayout_7;
+    QFrame *frame;
+    QGridLayout *gridLayout_4;
+    QHBoxLayout *horizontalLayout_5;
+    QHBoxLayout *horizontalLayout;
+    QLabel *people_icon;
+    QVBoxLayout *verticalLayout;
+    QSpacerItem *verticalSpacer_3;
+    QLabel *current_people;
+    QLabel *last_people;
+    QSpacerItem *verticalSpacer_2;
+    QLabel *people_label;
+    QHBoxLayout *horizontalLayout_2;
+    QLabel *heart_icon;
+    QVBoxLayout *verticalLayout_4;
+    QSpacerItem *verticalSpacer_4;
+    QLabel *label_7;
+    QLabel *label_8;
+    QSpacerItem *verticalSpacer_5;
+    QLabel *heart_label;
+    QHBoxLayout *horizontalLayout_3;
+    QLabel *waves_icon;
+    QVBoxLayout *verticalLayout_2;
+    QHBoxLayout *horizontalLayout_6;
+    QLabel *waves_title;
+    QLabel *waves_arrow;
+    QSpacerItem *horizontalSpacer;
+    QLabel *waves_label;
 
     void setupUi(QMainWindow *hfMainWindow)
     {
@@ -97,199 +93,6 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(0);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        control_panel = new QFrame(centralWidget);
-        control_panel->setObjectName(QStringLiteral("control_panel"));
-        control_panel->setFrameShape(QFrame::StyledPanel);
-        control_panel->setFrameShadow(QFrame::Raised);
-        horizontalLayout_7 = new QHBoxLayout(control_panel);
-        horizontalLayout_7->setSpacing(6);
-        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        frame = new QFrame(control_panel);
-        frame->setObjectName(QStringLiteral("frame"));
-        frame->setFrameShape(QFrame::StyledPanel);
-        frame->setFrameShadow(QFrame::Raised);
-        gridLayout_4 = new QGridLayout(frame);
-        gridLayout_4->setSpacing(6);
-        gridLayout_4->setContentsMargins(11, 11, 11, 11);
-        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
-        horizontalLayout_5 = new QHBoxLayout();
-        horizontalLayout_5->setSpacing(6);
-        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
-        label_3 = new QLabel(frame);
-        label_3->setObjectName(QStringLiteral("label_3"));
-
-        horizontalLayout_5->addWidget(label_3);
-
-        frame_6 = new QFrame(frame);
-        frame_6->setObjectName(QStringLiteral("frame_6"));
-        frame_6->setFrameShape(QFrame::StyledPanel);
-        frame_6->setFrameShadow(QFrame::Raised);
-        verticalLayout_2 = new QVBoxLayout(frame_6);
-        verticalLayout_2->setSpacing(6);
-        verticalLayout_2->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
-        verticalLayout = new QVBoxLayout();
-        verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
-        verticalSpacer_3 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout->addItem(verticalSpacer_3);
-
-        label_5 = new QLabel(frame_6);
-        label_5->setObjectName(QStringLiteral("label_5"));
-        QFont font;
-        font.setFamily(QString::fromUtf8("\351\273\221\344\275\223"));
-        label_5->setFont(font);
-
-        verticalLayout->addWidget(label_5);
-
-        label_6 = new QLabel(frame_6);
-        label_6->setObjectName(QStringLiteral("label_6"));
-        label_6->setFont(font);
-
-        verticalLayout->addWidget(label_6);
-
-        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout->addItem(verticalSpacer_2);
-
-        verticalLayout->setStretch(0, 1);
-        verticalLayout->setStretch(1, 2);
-        verticalLayout->setStretch(2, 2);
-        verticalLayout->setStretch(3, 1);
-
-        verticalLayout_2->addLayout(verticalLayout);
-
-
-        horizontalLayout_5->addWidget(frame_6);
-
-        label_10 = new QLabel(frame);
-        label_10->setObjectName(QStringLiteral("label_10"));
-        label_10->setFont(font);
-
-        horizontalLayout_5->addWidget(label_10);
-
-        horizontalLayout_5->setStretch(0, 1);
-        horizontalLayout_5->setStretch(1, 2);
-        horizontalLayout_5->setStretch(2, 1);
-
-        gridLayout_4->addLayout(horizontalLayout_5, 0, 0, 1, 1);
-
-
-        horizontalLayout_7->addWidget(frame);
-
-        frame_7 = new QFrame(control_panel);
-        frame_7->setObjectName(QStringLiteral("frame_7"));
-        frame_7->setFrameShape(QFrame::StyledPanel);
-        frame_7->setFrameShadow(QFrame::Raised);
-        gridLayout_5 = new QGridLayout(frame_7);
-        gridLayout_5->setSpacing(6);
-        gridLayout_5->setContentsMargins(11, 11, 11, 11);
-        gridLayout_5->setObjectName(QStringLiteral("gridLayout_5"));
-        horizontalLayout_6 = new QHBoxLayout();
-        horizontalLayout_6->setSpacing(0);
-        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
-        label_4 = new QLabel(frame_7);
-        label_4->setObjectName(QStringLiteral("label_4"));
-
-        horizontalLayout_6->addWidget(label_4);
-
-        frame_8 = new QFrame(frame_7);
-        frame_8->setObjectName(QStringLiteral("frame_8"));
-        frame_8->setFrameShape(QFrame::StyledPanel);
-        frame_8->setFrameShadow(QFrame::Raised);
-        verticalLayout_3 = new QVBoxLayout(frame_8);
-        verticalLayout_3->setSpacing(6);
-        verticalLayout_3->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
-        verticalLayout_4 = new QVBoxLayout();
-        verticalLayout_4->setSpacing(6);
-        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
-        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_4->addItem(verticalSpacer_4);
-
-        label_7 = new QLabel(frame_8);
-        label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setFont(font);
-
-        verticalLayout_4->addWidget(label_7);
-
-        label_8 = new QLabel(frame_8);
-        label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setFont(font);
-
-        verticalLayout_4->addWidget(label_8);
-
-        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        verticalLayout_4->addItem(verticalSpacer_5);
-
-        verticalLayout_4->setStretch(0, 1);
-        verticalLayout_4->setStretch(1, 2);
-        verticalLayout_4->setStretch(2, 2);
-        verticalLayout_4->setStretch(3, 1);
-
-        verticalLayout_3->addLayout(verticalLayout_4);
-
-
-        horizontalLayout_6->addWidget(frame_8);
-
-        label_11 = new QLabel(frame_7);
-        label_11->setObjectName(QStringLiteral("label_11"));
-
-        horizontalLayout_6->addWidget(label_11);
-
-        horizontalLayout_6->setStretch(0, 1);
-        horizontalLayout_6->setStretch(1, 2);
-        horizontalLayout_6->setStretch(2, 1);
-
-        gridLayout_5->addLayout(horizontalLayout_6, 0, 0, 1, 1);
-
-
-        horizontalLayout_7->addWidget(frame_7);
-
-        frame_9 = new QFrame(control_panel);
-        frame_9->setObjectName(QStringLiteral("frame_9"));
-        frame_9->setFrameShape(QFrame::StyledPanel);
-        frame_9->setFrameShadow(QFrame::Raised);
-        horizontalLayout_2 = new QHBoxLayout(frame_9);
-        horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
-        horizontalLayout = new QHBoxLayout();
-        horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
-        label = new QLabel(frame_9);
-        label->setObjectName(QStringLiteral("label"));
-
-        horizontalLayout->addWidget(label);
-
-        label_2 = new QLabel(frame_9);
-        label_2->setObjectName(QStringLiteral("label_2"));
-        label_2->setFont(font);
-
-        horizontalLayout->addWidget(label_2);
-
-        label_9 = new QLabel(frame_9);
-        label_9->setObjectName(QStringLiteral("label_9"));
-        label_9->setFont(font);
-
-        horizontalLayout->addWidget(label_9);
-
-
-        horizontalLayout_2->addLayout(horizontalLayout);
-
-
-        horizontalLayout_7->addWidget(frame_9);
-
-        horizontalLayout_7->setStretch(0, 4);
-        horizontalLayout_7->setStretch(1, 4);
-        horizontalLayout_7->setStretch(2, 4);
-
-        gridLayout->addWidget(control_panel, 1, 0, 1, 1);
-
         main_title = new hfMainTitle(centralWidget);
         main_title->setObjectName(QStringLiteral("main_title"));
         main_title->setEnabled(true);
@@ -333,10 +136,6 @@ public:
 
         gridLayout->addWidget(frame_10, 2, 0, 1, 1);
 
-        verticalSpacer = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        gridLayout->addItem(verticalSpacer, 4, 0, 1, 1);
-
         frame_2 = new QFrame(centralWidget);
         frame_2->setObjectName(QStringLiteral("frame_2"));
         frame_2->setFrameShape(QFrame::StyledPanel);
@@ -360,6 +159,213 @@ public:
 
         gridLayout->addWidget(frame_2, 3, 0, 1, 1);
 
+        control_panel = new QFrame(centralWidget);
+        control_panel->setObjectName(QStringLiteral("control_panel"));
+        control_panel->setFrameShape(QFrame::StyledPanel);
+        control_panel->setFrameShadow(QFrame::Raised);
+        horizontalLayout_7 = new QHBoxLayout(control_panel);
+        horizontalLayout_7->setSpacing(6);
+        horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
+        frame = new QFrame(control_panel);
+        frame->setObjectName(QStringLiteral("frame"));
+        frame->setMaximumSize(QSize(16777215, 160));
+        frame->setFrameShape(QFrame::StyledPanel);
+        frame->setFrameShadow(QFrame::Raised);
+        gridLayout_4 = new QGridLayout(frame);
+        gridLayout_4->setSpacing(6);
+        gridLayout_4->setContentsMargins(11, 11, 11, 11);
+        gridLayout_4->setObjectName(QStringLiteral("gridLayout_4"));
+        horizontalLayout_5 = new QHBoxLayout();
+        horizontalLayout_5->setSpacing(6);
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
+        horizontalLayout = new QHBoxLayout();
+        horizontalLayout->setSpacing(0);
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
+        people_icon = new QLabel(frame);
+        people_icon->setObjectName(QStringLiteral("people_icon"));
+        people_icon->setMinimumSize(QSize(112, 0));
+        people_icon->setMaximumSize(QSize(112, 112));
+
+        horizontalLayout->addWidget(people_icon);
+
+        verticalLayout = new QVBoxLayout();
+        verticalLayout->setSpacing(6);
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
+        verticalSpacer_3 = new QSpacerItem(20, 20, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_3);
+
+        current_people = new QLabel(frame);
+        current_people->setObjectName(QStringLiteral("current_people"));
+        QFont font;
+        font.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
+        font.setPointSize(20);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
+        current_people->setFont(font);
+        current_people->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+
+        verticalLayout->addWidget(current_people);
+
+        last_people = new QLabel(frame);
+        last_people->setObjectName(QStringLiteral("last_people"));
+        QFont font1;
+        font1.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
+        font1.setPointSize(12);
+        font1.setBold(false);
+        font1.setItalic(false);
+        font1.setWeight(50);
+        last_people->setFont(font1);
+        last_people->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+
+        verticalLayout->addWidget(last_people);
+
+        verticalSpacer_2 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout->addItem(verticalSpacer_2);
+
+        verticalLayout->setStretch(1, 2);
+        verticalLayout->setStretch(2, 2);
+        verticalLayout->setStretch(3, 1);
+
+        horizontalLayout->addLayout(verticalLayout);
+
+        people_label = new QLabel(frame);
+        people_label->setObjectName(QStringLiteral("people_label"));
+        QFont font2;
+        font2.setFamily(QString::fromUtf8("\346\226\271\346\255\243\345\223\201\345\260\232\347\273\206\351\273\221\347\256\200\344\275\223"));
+        font2.setPointSize(70);
+        font2.setBold(false);
+        font2.setItalic(false);
+        font2.setWeight(50);
+        people_label->setFont(font2);
+        people_label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 70pt \"\346\226\271\346\255\243\345\223\201\345\260\232\347\273\206\351\273\221\347\256\200\344\275\223\";"));
+
+        horizontalLayout->addWidget(people_label);
+
+
+        horizontalLayout_5->addLayout(horizontalLayout);
+
+        horizontalLayout_2 = new QHBoxLayout();
+        horizontalLayout_2->setSpacing(6);
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
+        heart_icon = new QLabel(frame);
+        heart_icon->setObjectName(QStringLiteral("heart_icon"));
+        heart_icon->setMinimumSize(QSize(112, 0));
+        heart_icon->setMaximumSize(QSize(112, 112));
+
+        horizontalLayout_2->addWidget(heart_icon);
+
+        verticalLayout_4 = new QVBoxLayout();
+        verticalLayout_4->setSpacing(6);
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
+        verticalSpacer_4 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_4);
+
+        label_7 = new QLabel(frame);
+        label_7->setObjectName(QStringLiteral("label_7"));
+        label_7->setFont(font);
+        label_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+
+        verticalLayout_4->addWidget(label_7);
+
+        label_8 = new QLabel(frame);
+        label_8->setObjectName(QStringLiteral("label_8"));
+        label_8->setFont(font1);
+        label_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+
+        verticalLayout_4->addWidget(label_8);
+
+        verticalSpacer_5 = new QSpacerItem(20, 40, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        verticalLayout_4->addItem(verticalSpacer_5);
+
+        verticalLayout_4->setStretch(0, 1);
+        verticalLayout_4->setStretch(1, 2);
+        verticalLayout_4->setStretch(2, 2);
+        verticalLayout_4->setStretch(3, 1);
+
+        horizontalLayout_2->addLayout(verticalLayout_4);
+
+        heart_label = new QLabel(frame);
+        heart_label->setObjectName(QStringLiteral("heart_label"));
+        heart_label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 70pt \"\346\226\271\346\255\243\345\223\201\345\260\232\347\273\206\351\273\221\347\256\200\344\275\223\";"));
+
+        horizontalLayout_2->addWidget(heart_label);
+
+
+        horizontalLayout_5->addLayout(horizontalLayout_2);
+
+        horizontalLayout_3 = new QHBoxLayout();
+        horizontalLayout_3->setSpacing(6);
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
+        waves_icon = new QLabel(frame);
+        waves_icon->setObjectName(QStringLiteral("waves_icon"));
+        waves_icon->setMinimumSize(QSize(112, 112));
+        waves_icon->setMaximumSize(QSize(112, 16777215));
+
+        horizontalLayout_3->addWidget(waves_icon);
+
+        verticalLayout_2 = new QVBoxLayout();
+        verticalLayout_2->setSpacing(6);
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
+        horizontalLayout_6 = new QHBoxLayout();
+        horizontalLayout_6->setSpacing(6);
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
+        waves_title = new QLabel(frame);
+        waves_title->setObjectName(QStringLiteral("waves_title"));
+        waves_title->setFont(font1);
+        waves_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+
+        horizontalLayout_6->addWidget(waves_title);
+
+        waves_arrow = new QLabel(frame);
+        waves_arrow->setObjectName(QStringLiteral("waves_arrow"));
+        waves_arrow->setMinimumSize(QSize(17, 11));
+        waves_arrow->setMaximumSize(QSize(17, 11));
+
+        horizontalLayout_6->addWidget(waves_arrow);
+
+        horizontalSpacer = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_6->addItem(horizontalSpacer);
+
+
+        verticalLayout_2->addLayout(horizontalLayout_6);
+
+        waves_label = new QLabel(frame);
+        waves_label->setObjectName(QStringLiteral("waves_label"));
+        waves_label->setFont(font2);
+        waves_label->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 70pt \"\346\226\271\346\255\243\345\223\201\345\260\232\347\273\206\351\273\221\347\256\200\344\275\223\";"));
+
+        verticalLayout_2->addWidget(waves_label);
+
+
+        horizontalLayout_3->addLayout(verticalLayout_2);
+
+
+        horizontalLayout_5->addLayout(horizontalLayout_3);
+
+
+        gridLayout_4->addLayout(horizontalLayout_5, 1, 0, 1, 1);
+
+
+        horizontalLayout_7->addWidget(frame);
+
+
+        gridLayout->addWidget(control_panel, 1, 0, 1, 1);
+
         gridLayout->setRowStretch(0, 1);
 
         gridLayout_2->addLayout(gridLayout, 0, 0, 1, 1);
@@ -374,17 +380,18 @@ public:
     void retranslateUi(QMainWindow *hfMainWindow)
     {
         hfMainWindow->setWindowTitle(QApplication::translate("hfMainWindow", "MainWindow", Q_NULLPTR));
-        label_3->setText(QString());
-        label_5->setText(QApplication::translate("hfMainWindow", "\346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
-        label_6->setText(QApplication::translate("hfMainWindow", "\344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));
-        label_10->setText(QApplication::translate("hfMainWindow", "100", Q_NULLPTR));
-        label_4->setText(QString());
+        people_icon->setText(QString());
+        current_people->setText(QApplication::translate("hfMainWindow", "\346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
+        last_people->setText(QApplication::translate("hfMainWindow", "\344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));
+        people_label->setText(QApplication::translate("hfMainWindow", "100", Q_NULLPTR));
+        heart_icon->setText(QString());
         label_7->setText(QApplication::translate("hfMainWindow", "\346\234\254\346\254\241\350\256\255\347\273\203\345\277\203\347\216\207\345\274\202\345\270\270\344\272\272\346\225\260:", Q_NULLPTR));
         label_8->setText(QApplication::translate("hfMainWindow", "\344\270\212\346\254\241\350\256\255\347\273\203\345\277\203\347\216\207\345\274\202\345\270\270\344\272\272\346\225\260: 100", Q_NULLPTR));
-        label_11->setText(QApplication::translate("hfMainWindow", "100", Q_NULLPTR));
-        label->setText(QString());
-        label_2->setText(QApplication::translate("hfMainWindow", "\351\243\216\346\265\252\347\255\211\347\272\247\357\274\232", Q_NULLPTR));
-        label_9->setText(QApplication::translate("hfMainWindow", "1", Q_NULLPTR));
+        heart_label->setText(QApplication::translate("hfMainWindow", "1", Q_NULLPTR));
+        waves_icon->setText(QString());
+        waves_title->setText(QApplication::translate("hfMainWindow", "\351\243\216\346\265\252\347\255\211\347\272\247\357\274\232", Q_NULLPTR));
+        waves_arrow->setText(QString());
+        waves_label->setText(QApplication::translate("hfMainWindow", "1 2 3 4 5 6", Q_NULLPTR));
     } // retranslateUi
 
 };
