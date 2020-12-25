@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>918</width>
+    <width>1356</width>
     <height>108</height>
    </rect>
   </property>
@@ -30,7 +30,7 @@
     <number>0</number>
    </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0,3,3,0,1,1,0">
+    <layout class="QHBoxLayout" name="horizontalLayout" stretch="0,0,0,0,0,0,0,0,3,3,0,0,1,0,1,0">
      <property name="spacing">
       <number>0</number>
      </property>
@@ -121,20 +121,46 @@
       <widget class="QPushButton" name="user_name">
        <property name="minimumSize">
         <size>
-         <width>192</width>
+         <width>194</width>
          <height>42</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <family>黑体</family>
-         <pointsize>18</pointsize>
+         <family>方正黑体简体</family>
+         <pointsize>20</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 20pt &quot;方正黑体简体&quot;;
+color:rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>User Name  </string>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_5">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>91</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <widget class="QLabel" name="title">
@@ -146,15 +172,22 @@
        </property>
        <property name="maximumSize">
         <size>
-         <width>511</width>
+         <width>16777215</width>
          <height>39</height>
         </size>
        </property>
        <property name="font">
         <font>
-         <family>黑体</family>
-         <pointsize>9</pointsize>
+         <family>Arial</family>
+         <pointsize>24</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
         </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 24pt &quot;Arial&quot;;
+color: rgb(255, 255, 255);</string>
        </property>
        <property name="text">
         <string>综合信息监控系统</string>
@@ -174,8 +207,14 @@
       <widget class="QLabel" name="sensor">
        <property name="minimumSize">
         <size>
-         <width>0</width>
+         <width>102</width>
          <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>102</width>
+         <height>57</height>
         </size>
        </property>
        <property name="text">
@@ -185,6 +224,19 @@
         <number>18</number>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_6">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>35</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <widget class="QLabel" name="time">
@@ -210,13 +262,51 @@
      </item>
      <item>
       <widget class="QLabel" name="time_label">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Arial</family>
+         <pointsize>22</pointsize>
+         <weight>50</weight>
+         <italic>false</italic>
+         <bold>false</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 22pt &quot;Arial&quot;;</string>
+       </property>
        <property name="text">
-        <string>2020/12/14 14:43:00 </string>
+        <string>2020/12/14  周一   14:43</string>
        </property>
        <property name="margin">
         <number>18</number>
        </property>
       </widget>
+     </item>
+     <item>
+      <spacer name="horizontalSpacer_7">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>20</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
      </item>
      <item>
       <widget class="QPushButton" name="close">

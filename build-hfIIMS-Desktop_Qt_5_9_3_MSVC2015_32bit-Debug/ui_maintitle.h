@@ -33,11 +33,14 @@ public:
     QPushButton *user_icon;
     QSpacerItem *horizontalSpacer_4;
     QPushButton *user_name;
+    QSpacerItem *horizontalSpacer_5;
     QLabel *title;
     QWidget *widget;
     QLabel *sensor;
+    QSpacerItem *horizontalSpacer_6;
     QLabel *time;
     QLabel *time_label;
+    QSpacerItem *horizontalSpacer_7;
     QPushButton *close;
     QSpacerItem *horizontalSpacer_3;
 
@@ -45,7 +48,7 @@ public:
     {
         if (hfMainTitle->objectName().isEmpty())
             hfMainTitle->setObjectName(QStringLiteral("hfMainTitle"));
-        hfMainTitle->resize(918, 108);
+        hfMainTitle->resize(1356, 108);
         horizontalLayout_2 = new QHBoxLayout(hfMainTitle);
         horizontalLayout_2->setSpacing(0);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
@@ -84,22 +87,37 @@ public:
 
         user_name = new QPushButton(hfMainTitle);
         user_name->setObjectName(QStringLiteral("user_name"));
-        user_name->setMinimumSize(QSize(192, 42));
+        user_name->setMinimumSize(QSize(194, 42));
+        user_name->setMaximumSize(QSize(16777215, 16777215));
         QFont font;
-        font.setFamily(QString::fromUtf8("\351\273\221\344\275\223"));
-        font.setPointSize(18);
+        font.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
+        font.setPointSize(20);
+        font.setBold(false);
+        font.setItalic(false);
+        font.setWeight(50);
         user_name->setFont(font);
+        user_name->setStyleSheet(QString::fromUtf8("font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
+"color:rgb(255, 255, 255);"));
 
         horizontalLayout->addWidget(user_name);
+
+        horizontalSpacer_5 = new QSpacerItem(91, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_5);
 
         title = new QLabel(hfMainTitle);
         title->setObjectName(QStringLiteral("title"));
         title->setMinimumSize(QSize(511, 39));
-        title->setMaximumSize(QSize(511, 39));
+        title->setMaximumSize(QSize(16777215, 39));
         QFont font1;
-        font1.setFamily(QString::fromUtf8("\351\273\221\344\275\223"));
-        font1.setPointSize(9);
+        font1.setFamily(QStringLiteral("Arial"));
+        font1.setPointSize(24);
+        font1.setBold(false);
+        font1.setItalic(false);
+        font1.setWeight(50);
         title->setFont(font1);
+        title->setStyleSheet(QLatin1String("font: 24pt \"Arial\";\n"
+"color: rgb(255, 255, 255);"));
         title->setAlignment(Qt::AlignCenter);
         title->setWordWrap(false);
 
@@ -112,10 +130,15 @@ public:
 
         sensor = new QLabel(hfMainTitle);
         sensor->setObjectName(QStringLiteral("sensor"));
-        sensor->setMinimumSize(QSize(0, 0));
+        sensor->setMinimumSize(QSize(102, 0));
+        sensor->setMaximumSize(QSize(102, 57));
         sensor->setMargin(18);
 
         horizontalLayout->addWidget(sensor);
+
+        horizontalSpacer_6 = new QSpacerItem(35, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_6);
 
         time = new QLabel(hfMainTitle);
         time->setObjectName(QStringLiteral("time"));
@@ -127,9 +150,24 @@ public:
 
         time_label = new QLabel(hfMainTitle);
         time_label->setObjectName(QStringLiteral("time_label"));
+        time_label->setMinimumSize(QSize(0, 0));
+        time_label->setMaximumSize(QSize(16777215, 16777215));
+        QFont font2;
+        font2.setFamily(QStringLiteral("Arial"));
+        font2.setPointSize(22);
+        font2.setBold(false);
+        font2.setItalic(false);
+        font2.setWeight(50);
+        time_label->setFont(font2);
+        time_label->setStyleSheet(QLatin1String("color: rgb(255, 255, 255);\n"
+"font: 22pt \"Arial\";"));
         time_label->setMargin(18);
 
         horizontalLayout->addWidget(time_label);
+
+        horizontalSpacer_7 = new QSpacerItem(20, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout->addItem(horizontalSpacer_7);
 
         close = new QPushButton(hfMainTitle);
         close->setObjectName(QStringLiteral("close"));
@@ -148,10 +186,10 @@ public:
 
         horizontalLayout->addItem(horizontalSpacer_3);
 
-        horizontalLayout->setStretch(7, 3);
         horizontalLayout->setStretch(8, 3);
-        horizontalLayout->setStretch(10, 1);
-        horizontalLayout->setStretch(11, 1);
+        horizontalLayout->setStretch(9, 3);
+        horizontalLayout->setStretch(12, 1);
+        horizontalLayout->setStretch(14, 1);
 
         horizontalLayout_2->addLayout(horizontalLayout);
 
@@ -169,7 +207,7 @@ public:
         title->setText(QApplication::translate("hfMainTitle", "\347\273\274\345\220\210\344\277\241\346\201\257\347\233\221\346\216\247\347\263\273\347\273\237", Q_NULLPTR));
         sensor->setText(QString());
         time->setText(QString());
-        time_label->setText(QApplication::translate("hfMainTitle", "2020/12/14 14:43:00 ", Q_NULLPTR));
+        time_label->setText(QApplication::translate("hfMainTitle", "2020/12/14  \345\221\250\344\270\200   14:43", Q_NULLPTR));
         close->setText(QString());
     } // retranslateUi
 

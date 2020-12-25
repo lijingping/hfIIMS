@@ -3,12 +3,9 @@ hfMainTitle  {
 }
 
 hfMainTitle > QLabel{
-    font-size: 30px;
     color:white;
     font-weight: bold;
 }
-
-
 
 hfMainTitle > QLabel#time{
     border-image: url("./res/img/time.png");
