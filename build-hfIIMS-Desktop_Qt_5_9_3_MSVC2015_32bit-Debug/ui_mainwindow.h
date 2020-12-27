@@ -78,9 +78,16 @@ public:
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_9;
     QHBoxLayout *horizontalLayout_8;
+    QFrame *temperature_frame;
+    QHBoxLayout *horizontalLayout_15;
     hfTemperature *temperature;
+    QFrame *wet_frame;
+    QHBoxLayout *horizontalLayout_14;
     hfWetDisplay *wet;
+    QFrame *noise_frame;
+    QHBoxLayout *horizontalLayout_16;
     hfNoiseDisplay *noise;
+    QFrame *frame_9;
 
     void setupUi(QMainWindow *hfMainWindow)
     {
@@ -385,6 +392,7 @@ public:
         frame_10 = new QFrame(centralWidget);
         frame_10->setObjectName(QStringLiteral("frame_10"));
         frame_10->setEnabled(true);
+        frame_10->setMinimumSize(QSize(0, 334));
         frame_10->setFrameShape(QFrame::StyledPanel);
         frame_10->setFrameShadow(QFrame::Raised);
         horizontalLayout_9 = new QHBoxLayout(frame_10);
@@ -392,26 +400,70 @@ public:
         horizontalLayout_9->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
         horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setSpacing(6);
+        horizontalLayout_8->setSpacing(24);
         horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        temperature = new hfTemperature(frame_10);
+        temperature_frame = new QFrame(frame_10);
+        temperature_frame->setObjectName(QStringLiteral("temperature_frame"));
+        temperature_frame->setMinimumSize(QSize(466, 0));
+        temperature_frame->setFrameShape(QFrame::StyledPanel);
+        temperature_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_15 = new QHBoxLayout(temperature_frame);
+        horizontalLayout_15->setSpacing(6);
+        horizontalLayout_15->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_15->setObjectName(QStringLiteral("horizontalLayout_15"));
+        horizontalLayout_15->setContentsMargins(0, 0, 0, 0);
+        temperature = new hfTemperature(temperature_frame);
         temperature->setObjectName(QStringLiteral("temperature"));
 
-        horizontalLayout_8->addWidget(temperature);
+        horizontalLayout_15->addWidget(temperature);
 
-        wet = new hfWetDisplay(frame_10);
+
+        horizontalLayout_8->addWidget(temperature_frame);
+
+        wet_frame = new QFrame(frame_10);
+        wet_frame->setObjectName(QStringLiteral("wet_frame"));
+        wet_frame->setMinimumSize(QSize(466, 0));
+        wet_frame->setFrameShape(QFrame::StyledPanel);
+        wet_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_14 = new QHBoxLayout(wet_frame);
+        horizontalLayout_14->setSpacing(6);
+        horizontalLayout_14->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_14->setObjectName(QStringLiteral("horizontalLayout_14"));
+        horizontalLayout_14->setContentsMargins(0, 0, 0, 0);
+        wet = new hfWetDisplay(wet_frame);
         wet->setObjectName(QStringLiteral("wet"));
 
-        horizontalLayout_8->addWidget(wet);
+        horizontalLayout_14->addWidget(wet);
 
-        noise = new hfNoiseDisplay(frame_10);
+
+        horizontalLayout_8->addWidget(wet_frame);
+
+        noise_frame = new QFrame(frame_10);
+        noise_frame->setObjectName(QStringLiteral("noise_frame"));
+        noise_frame->setMinimumSize(QSize(466, 0));
+        noise_frame->setFrameShape(QFrame::StyledPanel);
+        noise_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_16 = new QHBoxLayout(noise_frame);
+        horizontalLayout_16->setSpacing(6);
+        horizontalLayout_16->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
+        horizontalLayout_16->setContentsMargins(0, 0, 0, 0);
+        noise = new hfNoiseDisplay(noise_frame);
         noise->setObjectName(QStringLiteral("noise"));
 
-        horizontalLayout_8->addWidget(noise);
+        horizontalLayout_16->addWidget(noise);
 
-        horizontalLayout_8->setStretch(0, 3);
-        horizontalLayout_8->setStretch(1, 3);
-        horizontalLayout_8->setStretch(2, 5);
+
+        horizontalLayout_8->addWidget(noise_frame);
+
+        frame_9 = new QFrame(frame_10);
+        frame_9->setObjectName(QStringLiteral("frame_9"));
+        frame_9->setMinimumSize(QSize(466, 0));
+        frame_9->setFrameShape(QFrame::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Raised);
+
+        horizontalLayout_8->addWidget(frame_9);
+
 
         horizontalLayout_9->addLayout(horizontalLayout_8);
 

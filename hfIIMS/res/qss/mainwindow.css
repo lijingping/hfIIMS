@@ -12,6 +12,21 @@ QFrame#frame{
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
 
+QFrame#temperature_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
+
+QFrame#wet_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
+
+QFrame#noise_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
+
 QFrame#frame_10{
     margin-top: 10px;
 }

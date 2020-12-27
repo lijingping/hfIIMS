@@ -3,3 +3,10 @@ QLabel#label_hint_temperature{
     color:white;
 }
 
+QLabel#temperature_icon{
+    border-image: url("./res/img/temperature.png");
+}
+
+QLabel#set{
+    border-image: url("./res/img/set.png");
+}

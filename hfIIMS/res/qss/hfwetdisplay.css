@@ -2,3 +2,11 @@ QLabel#wet_display_hint{
     font: 20px;
     color:white;
 }
+
+QLabel#wet_icon{
+    border-image: url("./res/img/wet.png");
+}
+
+QLabel#set{
+    border-image: url("./res/img/set.png");
+}
