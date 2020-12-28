@@ -303,7 +303,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
              <string>35%</string>
             </property>
            </widget>
-           <widget class="QLabel" name="oxygen_value">
+           <widget class="QLabel" name="oxygen_percent">
             <property name="geometry">
              <rect>
               <x>280</x>
@@ -403,6 +403,56 @@ font: 18pt &quot;宋体&quot;;</string>
              <set>Qt::AlignCenter</set>
             </property>
            </widget>
+           <widget class="QFrame" name="oxygen_value_frame">
+            <property name="geometry">
+             <rect>
+              <x>640</x>
+              <y>220</y>
+              <width>297</width>
+              <height>57</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+            <widget class="QLabel" name="oxygen_value_title">
+             <property name="geometry">
+              <rect>
+               <x>20</x>
+               <y>20</y>
+               <width>150</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>氧浓度阈值:</string>
+             </property>
+            </widget>
+            <widget class="QLabel" name="oxygen_value">
+             <property name="geometry">
+              <rect>
+               <x>170</x>
+               <y>20</y>
+               <width>120</width>
+               <height>20</height>
+              </rect>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;宋体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>20</string>
+             </property>
+            </widget>
+           </widget>
           </widget>
          </item>
          <item>
@@ -419,6 +469,36 @@ font: 18pt &quot;宋体&quot;;</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="QLabel" name="heart_rate_icon">
+            <property name="geometry">
+             <rect>
+              <x>10</x>
+              <y>10</y>
+              <width>43</width>
+              <height>43</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
+            </property>
+           </widget>
+           <widget class="QLabel" name="heart_rate_title">
+            <property name="geometry">
+             <rect>
+              <x>60</x>
+              <y>20</y>
+              <width>220</width>
+              <height>24</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;方正黑体简体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>氧浓度报警阈值</string>
+            </property>
+           </widget>
           </widget>
          </item>
         </layout>

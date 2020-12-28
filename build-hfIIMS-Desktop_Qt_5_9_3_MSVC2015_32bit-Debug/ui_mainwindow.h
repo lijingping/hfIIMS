@@ -52,13 +52,18 @@ public:
     QLabel *oxygen_value17;
     QLabel *oxygen_value23;
     QLabel *oxygen_value35;
-    QLabel *oxygen_value;
+    QLabel *oxygen_percent;
     QLabel *oxygen_alert_label1;
     QLabel *oxygen_alert_label2;
     QLabel *oxygen_alert_icon1;
     QLabel *oxygen_alert_icon2;
     QLabel *oxygen_value_2;
+    QFrame *oxygen_value_frame;
+    QLabel *oxygen_value_title;
+    QLabel *oxygen_value;
     QFrame *heart_rate_frame;
+    QLabel *heart_rate_icon;
+    QLabel *heart_rate_title;
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_8;
@@ -205,12 +210,12 @@ public:
         oxygen_value35->setLayoutDirection(Qt::RightToLeft);
         oxygen_value35->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
-        oxygen_value = new QLabel(oxygen_frame);
-        oxygen_value->setObjectName(QStringLiteral("oxygen_value"));
-        oxygen_value->setGeometry(QRect(280, 280, 100, 20));
-        oxygen_value->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+        oxygen_percent = new QLabel(oxygen_frame);
+        oxygen_percent->setObjectName(QStringLiteral("oxygen_percent"));
+        oxygen_percent->setGeometry(QRect(280, 280, 100, 20));
+        oxygen_percent->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
-        oxygen_value->setAlignment(Qt::AlignCenter);
+        oxygen_percent->setAlignment(Qt::AlignCenter);
         oxygen_alert_label1 = new QLabel(oxygen_frame);
         oxygen_alert_label1->setObjectName(QStringLiteral("oxygen_alert_label1"));
         oxygen_alert_label1->setGeometry(QRect(660, 100, 250, 20));
@@ -233,6 +238,21 @@ public:
         oxygen_value_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 18pt \"\345\256\213\344\275\223\";"));
         oxygen_value_2->setAlignment(Qt::AlignCenter);
+        oxygen_value_frame = new QFrame(oxygen_frame);
+        oxygen_value_frame->setObjectName(QStringLiteral("oxygen_value_frame"));
+        oxygen_value_frame->setGeometry(QRect(640, 220, 297, 57));
+        oxygen_value_frame->setFrameShape(QFrame::StyledPanel);
+        oxygen_value_frame->setFrameShadow(QFrame::Raised);
+        oxygen_value_title = new QLabel(oxygen_value_frame);
+        oxygen_value_title->setObjectName(QStringLiteral("oxygen_value_title"));
+        oxygen_value_title->setGeometry(QRect(20, 20, 150, 20));
+        oxygen_value_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_value = new QLabel(oxygen_value_frame);
+        oxygen_value->setObjectName(QStringLiteral("oxygen_value"));
+        oxygen_value->setGeometry(QRect(170, 20, 120, 20));
+        oxygen_value->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
 
         horizontalLayout_4->addWidget(oxygen_frame);
 
@@ -241,6 +261,14 @@ public:
         heart_rate_frame->setMinimumSize(QSize(913, 0));
         heart_rate_frame->setFrameShape(QFrame::StyledPanel);
         heart_rate_frame->setFrameShadow(QFrame::Raised);
+        heart_rate_icon = new QLabel(heart_rate_frame);
+        heart_rate_icon->setObjectName(QStringLiteral("heart_rate_icon"));
+        heart_rate_icon->setGeometry(QRect(10, 10, 43, 43));
+        heart_rate_title = new QLabel(heart_rate_frame);
+        heart_rate_title->setObjectName(QStringLiteral("heart_rate_title"));
+        heart_rate_title->setGeometry(QRect(60, 20, 220, 24));
+        heart_rate_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
 
         horizontalLayout_4->addWidget(heart_rate_frame);
 
@@ -630,12 +658,16 @@ public:
         oxygen_value17->setText(QApplication::translate("hfMainWindow", "17.5%", Q_NULLPTR));
         oxygen_value23->setText(QApplication::translate("hfMainWindow", "23.5%", Q_NULLPTR));
         oxygen_value35->setText(QApplication::translate("hfMainWindow", "35%", Q_NULLPTR));
-        oxygen_value->setText(QApplication::translate("hfMainWindow", "20.9%", Q_NULLPTR));
+        oxygen_percent->setText(QApplication::translate("hfMainWindow", "20.9%", Q_NULLPTR));
         oxygen_alert_label1->setText(QApplication::translate("hfMainWindow", "DAL<19.5%\346\212\245\350\255\246\345\200\274", Q_NULLPTR));
         oxygen_alert_label2->setText(QApplication::translate("hfMainWindow", "HAL>23.5%\346\212\245\350\255\246\345\200\274", Q_NULLPTR));
         oxygen_alert_icon1->setText(QString());
         oxygen_alert_icon2->setText(QString());
         oxygen_value_2->setText(QApplication::translate("hfMainWindow", "Healthy Embodiment", Q_NULLPTR));
+        oxygen_value_title->setText(QApplication::translate("hfMainWindow", "\346\260\247\346\265\223\345\272\246\351\230\210\345\200\274:", Q_NULLPTR));
+        oxygen_value->setText(QApplication::translate("hfMainWindow", "20", Q_NULLPTR));
+        heart_rate_icon->setText(QString());
+        heart_rate_title->setText(QApplication::translate("hfMainWindow", "\346\260\247\346\265\223\345\272\246\346\212\245\350\255\246\351\230\210\345\200\274", Q_NULLPTR));
         people_icon->setText(QString());
         current_people->setText(QApplication::translate("hfMainWindow", "    \346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
         last_people->setText(QApplication::translate("hfMainWindow", "        \344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));
