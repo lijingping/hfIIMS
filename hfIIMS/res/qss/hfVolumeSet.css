@@ -1,0 +1,50 @@
+
+QLabel#volume_set_icon{
+    border-image: url("./res/img/volume_set.png");
+}
+
+QFrame#volume_set_items{
+    border-image: url("./res/img/volume_set_frame.png");
+}
+
+QPushButton#alert{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QPushButton#beach_climb{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QPushButton#main_engine_work{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QPushButton#sea_wave{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QPushButton#sea_breeze{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QPushButton#thunder{
+    border-image: url("./res/img/volume_set_btn.png");
+}
+
+QLabel#sound_icon{
+    border-image: url("./res/img/sound.png");
+}
+
+QSlider#volume_set_slider::groove:horizontal {
+    border-image: url("./res/img/slider_bg.png");
+    margin: 0px 0;
+    left: 7px; right: 7px;
+}
+
+QSlider#volume_set_slider::handle:horizontal {
+    border: 0px;
+    border-image:url("./res/img/slider_ball.png");
+    width: 15px;
+    height: 14px;
+    margin: 0px -7px 0px -7px;
+}

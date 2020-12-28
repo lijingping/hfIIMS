@@ -27,6 +27,12 @@ QFrame#noise_frame{
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
 
+QFrame#volume_set_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
+
+
 QFrame#frame_10{
     margin-top: 10px;
 }

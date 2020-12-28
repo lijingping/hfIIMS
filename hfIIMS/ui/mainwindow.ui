@@ -68,6 +68,18 @@
             <enum>QFrame::Raised</enum>
            </property>
            <layout class="QHBoxLayout" name="horizontalLayout_10">
+            <property name="leftMargin">
+             <number>9</number>
+            </property>
+            <property name="topMargin">
+             <number>9</number>
+            </property>
+            <property name="rightMargin">
+             <number>9</number>
+            </property>
+            <property name="bottomMargin">
+             <number>9</number>
+            </property>
             <item>
              <layout class="QHBoxLayout" name="horizontalLayout_13">
               <item>
@@ -390,7 +402,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>621</width>
+                  <width>600</width>
                   <height>16777215</height>
                  </size>
                 </property>
@@ -433,6 +445,19 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                       <string/>
                      </property>
                     </widget>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_2">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>10</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
                    </item>
                    <item>
                     <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -513,6 +538,19 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                       </widget>
                      </item>
                     </layout>
+                   </item>
+                   <item>
+                    <spacer name="horizontalSpacer_3">
+                     <property name="orientation">
+                      <enum>Qt::Horizontal</enum>
+                     </property>
+                     <property name="sizeHint" stdset="0">
+                      <size>
+                       <width>40</width>
+                       <height>20</height>
+                      </size>
+                     </property>
+                    </spacer>
                    </item>
                   </layout>
                  </item>
@@ -688,7 +726,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
             </widget>
            </item>
            <item>
-            <widget class="QFrame" name="frame_9">
+            <widget class="QFrame" name="volume_set_frame">
              <property name="minimumSize">
               <size>
                <width>466</width>
@@ -701,6 +739,18 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
              <property name="frameShadow">
               <enum>QFrame::Raised</enum>
              </property>
+             <layout class="QHBoxLayout" name="horizontalLayout_17">
+              <item>
+               <widget class="hfVolumeSet" name="volume_set">
+                <property name="frameShape">
+                 <enum>QFrame::StyledPanel</enum>
+                </property>
+                <property name="frameShadow">
+                 <enum>QFrame::Raised</enum>
+                </property>
+               </widget>
+              </item>
+             </layout>
             </widget>
            </item>
           </layout>
@@ -737,6 +787,12 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
    <class>hfNoiseDisplay</class>
    <extends>QFrame</extends>
    <header>hfnoisedisplay.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>hfVolumeSet</class>
+   <extends>QFrame</extends>
+   <header>hfVolumeSet.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>

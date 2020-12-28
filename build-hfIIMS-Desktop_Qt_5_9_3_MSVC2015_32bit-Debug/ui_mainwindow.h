@@ -22,6 +22,7 @@
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
+#include "hfVolumeSet.h"
 #include "hfnoisedisplay.h"
 #include "hftemperature.h"
 #include "hfwetdisplay.h"
@@ -64,12 +65,14 @@ public:
     QHBoxLayout *horizontalLayout_11;
     QHBoxLayout *horizontalLayout_3;
     QLabel *waves_icon;
+    QSpacerItem *horizontalSpacer_2;
     QVBoxLayout *verticalLayout_2;
     QHBoxLayout *horizontalLayout_6;
     QLabel *waves_title;
     QLabel *waves_arrow;
     QSpacerItem *horizontalSpacer;
     QLabel *waves_label;
+    QSpacerItem *horizontalSpacer_3;
     hfMainTitle *main_title;
     QFrame *frame_2;
     QHBoxLayout *horizontalLayout_4;
@@ -87,7 +90,9 @@ public:
     QFrame *noise_frame;
     QHBoxLayout *horizontalLayout_16;
     hfNoiseDisplay *noise;
-    QFrame *frame_9;
+    QFrame *volume_set_frame;
+    QHBoxLayout *horizontalLayout_17;
+    hfVolumeSet *volume_set;
 
     void setupUi(QMainWindow *hfMainWindow)
     {
@@ -123,6 +128,7 @@ public:
         horizontalLayout_10->setSpacing(6);
         horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
+        horizontalLayout_10->setContentsMargins(9, 9, 9, 9);
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setSpacing(6);
         horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
@@ -286,7 +292,7 @@ public:
         frame_5 = new QFrame(frame);
         frame_5->setObjectName(QStringLiteral("frame_5"));
         frame_5->setMinimumSize(QSize(0, 0));
-        frame_5->setMaximumSize(QSize(621, 16777215));
+        frame_5->setMaximumSize(QSize(600, 16777215));
         frame_5->setFrameShape(QFrame::StyledPanel);
         frame_5->setFrameShadow(QFrame::Raised);
         horizontalLayout_11 = new QHBoxLayout(frame_5);
@@ -303,6 +309,10 @@ public:
         waves_icon->setMaximumSize(QSize(112, 16777215));
 
         horizontalLayout_3->addWidget(waves_icon);
+
+        horizontalSpacer_2 = new QSpacerItem(10, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_2);
 
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
@@ -342,6 +352,10 @@ public:
 
 
         horizontalLayout_3->addLayout(verticalLayout_2);
+
+        horizontalSpacer_3 = new QSpacerItem(40, 20, QSizePolicy::Expanding, QSizePolicy::Minimum);
+
+        horizontalLayout_3->addItem(horizontalSpacer_3);
 
 
         horizontalLayout_11->addLayout(horizontalLayout_3);
@@ -456,13 +470,24 @@ public:
 
         horizontalLayout_8->addWidget(noise_frame);
 
-        frame_9 = new QFrame(frame_10);
-        frame_9->setObjectName(QStringLiteral("frame_9"));
-        frame_9->setMinimumSize(QSize(466, 0));
-        frame_9->setFrameShape(QFrame::StyledPanel);
-        frame_9->setFrameShadow(QFrame::Raised);
+        volume_set_frame = new QFrame(frame_10);
+        volume_set_frame->setObjectName(QStringLiteral("volume_set_frame"));
+        volume_set_frame->setMinimumSize(QSize(466, 0));
+        volume_set_frame->setFrameShape(QFrame::StyledPanel);
+        volume_set_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_17 = new QHBoxLayout(volume_set_frame);
+        horizontalLayout_17->setSpacing(6);
+        horizontalLayout_17->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_17->setObjectName(QStringLiteral("horizontalLayout_17"));
+        volume_set = new hfVolumeSet(volume_set_frame);
+        volume_set->setObjectName(QStringLiteral("volume_set"));
+        volume_set->setFrameShape(QFrame::StyledPanel);
+        volume_set->setFrameShadow(QFrame::Raised);
 
-        horizontalLayout_8->addWidget(frame_9);
+        horizontalLayout_17->addWidget(volume_set);
+
+
+        horizontalLayout_8->addWidget(volume_set_frame);
 
 
         horizontalLayout_9->addLayout(horizontalLayout_8);

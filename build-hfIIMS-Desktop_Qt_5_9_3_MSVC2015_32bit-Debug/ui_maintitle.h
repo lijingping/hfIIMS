@@ -48,7 +48,7 @@ public:
     {
         if (hfMainTitle->objectName().isEmpty())
             hfMainTitle->setObjectName(QStringLiteral("hfMainTitle"));
-        hfMainTitle->resize(1356, 108);
+        hfMainTitle->resize(1556, 108);
         horizontalLayout_2 = new QHBoxLayout(hfMainTitle);
         horizontalLayout_2->setSpacing(0);
         horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));

@@ -55,7 +55,7 @@ public:
         label_hint_temperature->setObjectName(QStringLiteral("label_hint_temperature"));
         label_hint_temperature->setMaximumSize(QSize(16777215, 16777215));
         QFont font;
-        font.setFamily(QString::fromUtf8("\351\273\221\344\275\223"));
+        font.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
         font.setPointSize(20);
         label_hint_temperature->setFont(font);
 

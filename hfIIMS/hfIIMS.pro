@@ -32,7 +32,8 @@ SOURCES += \
     src/global.cpp \
     src/hftemperature.cpp \
     src/hfwetdisplay.cpp \
-    src/hfnoisedisplay.cpp
+    src/hfnoisedisplay.cpp \
+    src/hfVolumeSet.cpp
 
 HEADERS += \
     util/signleton.hpp \
@@ -41,14 +42,16 @@ HEADERS += \
     src/maintitle.h \
     src/hftemperature.h \
     src/hfwetdisplay.h \
-    src/hfnoisedisplay.h
+    src/hfnoisedisplay.h \
+    src/hfVolumeSet.h
 
 FORMS += \
       ui/mainwindow.ui \
     ui/maintitle.ui \
     src/hftemperature.ui \
     src/hfwetdisplay.ui \
-    src/hfnoisedisplay.ui
+    src/hfnoisedisplay.ui \
+    src/hfVolumeSet.ui
 
 DISTFILES += \
     res/img/logo.svg  \
