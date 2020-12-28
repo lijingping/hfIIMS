@@ -27,11 +27,20 @@ QFrame#noise_frame{
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
 
-QFrame#volume_set_frame{
+QFrame#heart_rate_frame{
     border-width:12px;
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
 
+QFrame#oxygen_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
+
+QFrame#volume_set_frame{
+    border-width:12px;
+    border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
+}
 
 QFrame#frame_10{
     margin-top: 10px;
@@ -85,5 +94,26 @@ QLabel#label_10{
 QLabel#label_11{
     font: 80px;
     color:white;
+}
+
+
+QLabel#oxygen_icon{
+    border-image: url("./res/img/oxygen.png");
+}
+
+QLabel#oxygen_alert{
+    border-image: url("./res/img/oxygen_alert.png");
+}
+
+QLabel#oxygen_point{
+    border-image: url("./res/img/oxygen_point.png");
+}
+
+QLabel#oxygen_alert_icon1{
+    border-image: url("./res/img/oxygen_alert_icon1.png");
+}
+
+QLabel#oxygen_alert_icon2{
+    border-image: url("./res/img/oxygen_alert_icon2.png");
 }
 

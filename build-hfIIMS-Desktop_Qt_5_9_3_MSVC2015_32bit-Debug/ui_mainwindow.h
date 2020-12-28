@@ -36,8 +36,45 @@ public:
     QWidget *centralWidget;
     QGridLayout *gridLayout_2;
     QGridLayout *gridLayout;
-    QFrame *control_panel;
+    QFrame *frame_2;
+    QHBoxLayout *horizontalLayout_4;
+    QFrame *oxygen_frame;
+    QLabel *oxygen_icon;
+    QLabel *oxygen_alert;
+    QLabel *oxygen_title;
+    QLabel *oxygen_point;
+    QLabel *oxygen_normal;
+    QLabel *oxygen_value0;
+    QLabel *oxygen_lowest;
+    QLabel *oxygen_dal;
+    QLabel *oxygen_hal;
+    QLabel *oxygen_heightest;
+    QLabel *oxygen_value17;
+    QLabel *oxygen_value23;
+    QLabel *oxygen_value35;
+    QLabel *oxygen_value;
+    QLabel *oxygen_alert_label1;
+    QLabel *oxygen_alert_label2;
+    QLabel *oxygen_alert_icon1;
+    QLabel *oxygen_alert_icon2;
+    QLabel *oxygen_value_2;
+    QFrame *heart_rate_frame;
+    QFrame *frame_10;
     QHBoxLayout *horizontalLayout_7;
+    QHBoxLayout *horizontalLayout_8;
+    QFrame *temperature_frame;
+    QHBoxLayout *horizontalLayout_15;
+    hfTemperature *temperature;
+    QFrame *wet_frame;
+    QHBoxLayout *horizontalLayout_14;
+    hfWetDisplay *wet;
+    QFrame *noise_frame;
+    QHBoxLayout *horizontalLayout_16;
+    hfNoiseDisplay *noise;
+    QFrame *volume_set_frame;
+    QHBoxLayout *horizontalLayout_17;
+    hfVolumeSet *volume_set;
+    hfMainTitle *main_title;
     QFrame *frame;
     QHBoxLayout *horizontalLayout_10;
     QHBoxLayout *horizontalLayout_13;
@@ -73,26 +110,6 @@ public:
     QSpacerItem *horizontalSpacer;
     QLabel *waves_label;
     QSpacerItem *horizontalSpacer_3;
-    hfMainTitle *main_title;
-    QFrame *frame_2;
-    QHBoxLayout *horizontalLayout_4;
-    QWidget *heartrate;
-    QWidget *oxygen;
-    QFrame *frame_10;
-    QHBoxLayout *horizontalLayout_9;
-    QHBoxLayout *horizontalLayout_8;
-    QFrame *temperature_frame;
-    QHBoxLayout *horizontalLayout_15;
-    hfTemperature *temperature;
-    QFrame *wet_frame;
-    QHBoxLayout *horizontalLayout_14;
-    hfWetDisplay *wet;
-    QFrame *noise_frame;
-    QHBoxLayout *horizontalLayout_16;
-    hfNoiseDisplay *noise;
-    QFrame *volume_set_frame;
-    QHBoxLayout *horizontalLayout_17;
-    hfVolumeSet *volume_set;
 
     void setupUi(QMainWindow *hfMainWindow)
     {
@@ -111,15 +128,232 @@ public:
         gridLayout = new QGridLayout();
         gridLayout->setSpacing(0);
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
-        control_panel = new QFrame(centralWidget);
-        control_panel->setObjectName(QStringLiteral("control_panel"));
-        control_panel->setFrameShape(QFrame::StyledPanel);
-        control_panel->setFrameShadow(QFrame::Raised);
-        horizontalLayout_7 = new QHBoxLayout(control_panel);
+        frame_2 = new QFrame(centralWidget);
+        frame_2->setObjectName(QStringLiteral("frame_2"));
+        frame_2->setMinimumSize(QSize(0, 353));
+        frame_2->setFrameShape(QFrame::StyledPanel);
+        frame_2->setFrameShadow(QFrame::Raised);
+        horizontalLayout_4 = new QHBoxLayout(frame_2);
+        horizontalLayout_4->setSpacing(6);
+        horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
+        horizontalLayout_4->setContentsMargins(0, 0, 0, 0);
+        oxygen_frame = new QFrame(frame_2);
+        oxygen_frame->setObjectName(QStringLiteral("oxygen_frame"));
+        oxygen_frame->setMinimumSize(QSize(913, 0));
+        oxygen_frame->setFrameShape(QFrame::StyledPanel);
+        oxygen_frame->setFrameShadow(QFrame::Raised);
+        oxygen_icon = new QLabel(oxygen_frame);
+        oxygen_icon->setObjectName(QStringLiteral("oxygen_icon"));
+        oxygen_icon->setGeometry(QRect(10, 10, 43, 43));
+        oxygen_alert = new QLabel(oxygen_frame);
+        oxygen_alert->setObjectName(QStringLiteral("oxygen_alert"));
+        oxygen_alert->setGeometry(QRect(850, 20, 73, 47));
+        oxygen_title = new QLabel(oxygen_frame);
+        oxygen_title->setObjectName(QStringLiteral("oxygen_title"));
+        oxygen_title->setGeometry(QRect(60, 20, 220, 24));
+        oxygen_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_point = new QLabel(oxygen_frame);
+        oxygen_point->setObjectName(QStringLiteral("oxygen_point"));
+        oxygen_point->setGeometry(QRect(170, 80, 323, 220));
+        oxygen_normal = new QLabel(oxygen_frame);
+        oxygen_normal->setObjectName(QStringLiteral("oxygen_normal"));
+        oxygen_normal->setGeometry(QRect(280, 50, 100, 20));
+        oxygen_normal->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_normal->setAlignment(Qt::AlignCenter);
+        oxygen_value0 = new QLabel(oxygen_frame);
+        oxygen_value0->setObjectName(QStringLiteral("oxygen_value0"));
+        oxygen_value0->setGeometry(QRect(240, 280, 100, 20));
+        oxygen_value0->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_lowest = new QLabel(oxygen_frame);
+        oxygen_lowest->setObjectName(QStringLiteral("oxygen_lowest"));
+        oxygen_lowest->setGeometry(QRect(70, 280, 100, 20));
+        oxygen_lowest->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_dal = new QLabel(oxygen_frame);
+        oxygen_dal->setObjectName(QStringLiteral("oxygen_dal"));
+        oxygen_dal->setGeometry(QRect(130, 180, 100, 20));
+        oxygen_dal->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_hal = new QLabel(oxygen_frame);
+        oxygen_hal->setObjectName(QStringLiteral("oxygen_hal"));
+        oxygen_hal->setGeometry(QRect(510, 180, 100, 20));
+        oxygen_hal->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_heightest = new QLabel(oxygen_frame);
+        oxygen_heightest->setObjectName(QStringLiteral("oxygen_heightest"));
+        oxygen_heightest->setGeometry(QRect(510, 280, 120, 20));
+        oxygen_heightest->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_value17 = new QLabel(oxygen_frame);
+        oxygen_value17->setObjectName(QStringLiteral("oxygen_value17"));
+        oxygen_value17->setGeometry(QRect(240, 210, 100, 20));
+        oxygen_value17->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_value23 = new QLabel(oxygen_frame);
+        oxygen_value23->setObjectName(QStringLiteral("oxygen_value23"));
+        oxygen_value23->setGeometry(QRect(380, 210, 100, 20));
+        oxygen_value23->setLayoutDirection(Qt::RightToLeft);
+        oxygen_value23->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_value35 = new QLabel(oxygen_frame);
+        oxygen_value35->setObjectName(QStringLiteral("oxygen_value35"));
+        oxygen_value35->setGeometry(QRect(380, 280, 100, 20));
+        oxygen_value35->setLayoutDirection(Qt::RightToLeft);
+        oxygen_value35->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_value = new QLabel(oxygen_frame);
+        oxygen_value->setObjectName(QStringLiteral("oxygen_value"));
+        oxygen_value->setGeometry(QRect(280, 280, 100, 20));
+        oxygen_value->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        oxygen_value->setAlignment(Qt::AlignCenter);
+        oxygen_alert_label1 = new QLabel(oxygen_frame);
+        oxygen_alert_label1->setObjectName(QStringLiteral("oxygen_alert_label1"));
+        oxygen_alert_label1->setGeometry(QRect(660, 100, 250, 20));
+        oxygen_alert_label1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_alert_label2 = new QLabel(oxygen_frame);
+        oxygen_alert_label2->setObjectName(QStringLiteral("oxygen_alert_label2"));
+        oxygen_alert_label2->setGeometry(QRect(660, 170, 250, 20));
+        oxygen_alert_label2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_alert_icon1 = new QLabel(oxygen_frame);
+        oxygen_alert_icon1->setObjectName(QStringLiteral("oxygen_alert_icon1"));
+        oxygen_alert_icon1->setGeometry(QRect(630, 100, 14, 14));
+        oxygen_alert_icon2 = new QLabel(oxygen_frame);
+        oxygen_alert_icon2->setObjectName(QStringLiteral("oxygen_alert_icon2"));
+        oxygen_alert_icon2->setGeometry(QRect(630, 170, 14, 14));
+        oxygen_value_2 = new QLabel(oxygen_frame);
+        oxygen_value_2->setObjectName(QStringLiteral("oxygen_value_2"));
+        oxygen_value_2->setGeometry(QRect(180, 320, 300, 20));
+        oxygen_value_2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        oxygen_value_2->setAlignment(Qt::AlignCenter);
+
+        horizontalLayout_4->addWidget(oxygen_frame);
+
+        heart_rate_frame = new QFrame(frame_2);
+        heart_rate_frame->setObjectName(QStringLiteral("heart_rate_frame"));
+        heart_rate_frame->setMinimumSize(QSize(913, 0));
+        heart_rate_frame->setFrameShape(QFrame::StyledPanel);
+        heart_rate_frame->setFrameShadow(QFrame::Raised);
+
+        horizontalLayout_4->addWidget(heart_rate_frame);
+
+
+        gridLayout->addWidget(frame_2, 4, 0, 1, 1);
+
+        frame_10 = new QFrame(centralWidget);
+        frame_10->setObjectName(QStringLiteral("frame_10"));
+        frame_10->setEnabled(true);
+        frame_10->setMinimumSize(QSize(0, 0));
+        frame_10->setMaximumSize(QSize(16777215, 645));
+        frame_10->setFrameShape(QFrame::StyledPanel);
+        frame_10->setFrameShadow(QFrame::Raised);
+        horizontalLayout_7 = new QHBoxLayout(frame_10);
         horizontalLayout_7->setSpacing(6);
         horizontalLayout_7->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
-        frame = new QFrame(control_panel);
+        horizontalLayout_7->setContentsMargins(15, -1, 15, -1);
+        horizontalLayout_8 = new QHBoxLayout();
+        horizontalLayout_8->setSpacing(24);
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
+        temperature_frame = new QFrame(frame_10);
+        temperature_frame->setObjectName(QStringLiteral("temperature_frame"));
+        temperature_frame->setMinimumSize(QSize(466, 0));
+        temperature_frame->setMaximumSize(QSize(16777215, 645));
+        temperature_frame->setFrameShape(QFrame::StyledPanel);
+        temperature_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_15 = new QHBoxLayout(temperature_frame);
+        horizontalLayout_15->setSpacing(6);
+        horizontalLayout_15->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_15->setObjectName(QStringLiteral("horizontalLayout_15"));
+        horizontalLayout_15->setContentsMargins(0, 0, 0, 0);
+        temperature = new hfTemperature(temperature_frame);
+        temperature->setObjectName(QStringLiteral("temperature"));
+
+        horizontalLayout_15->addWidget(temperature);
+
+
+        horizontalLayout_8->addWidget(temperature_frame);
+
+        wet_frame = new QFrame(frame_10);
+        wet_frame->setObjectName(QStringLiteral("wet_frame"));
+        wet_frame->setMinimumSize(QSize(466, 0));
+        wet_frame->setMaximumSize(QSize(16777215, 645));
+        wet_frame->setFrameShape(QFrame::StyledPanel);
+        wet_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_14 = new QHBoxLayout(wet_frame);
+        horizontalLayout_14->setSpacing(6);
+        horizontalLayout_14->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_14->setObjectName(QStringLiteral("horizontalLayout_14"));
+        horizontalLayout_14->setContentsMargins(0, 0, 0, 0);
+        wet = new hfWetDisplay(wet_frame);
+        wet->setObjectName(QStringLiteral("wet"));
+
+        horizontalLayout_14->addWidget(wet);
+
+
+        horizontalLayout_8->addWidget(wet_frame);
+
+        noise_frame = new QFrame(frame_10);
+        noise_frame->setObjectName(QStringLiteral("noise_frame"));
+        noise_frame->setMinimumSize(QSize(466, 0));
+        noise_frame->setMaximumSize(QSize(16777215, 645));
+        noise_frame->setFrameShape(QFrame::StyledPanel);
+        noise_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_16 = new QHBoxLayout(noise_frame);
+        horizontalLayout_16->setSpacing(6);
+        horizontalLayout_16->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
+        horizontalLayout_16->setContentsMargins(0, 0, 0, 0);
+        noise = new hfNoiseDisplay(noise_frame);
+        noise->setObjectName(QStringLiteral("noise"));
+
+        horizontalLayout_16->addWidget(noise);
+
+
+        horizontalLayout_8->addWidget(noise_frame);
+
+        volume_set_frame = new QFrame(frame_10);
+        volume_set_frame->setObjectName(QStringLiteral("volume_set_frame"));
+        volume_set_frame->setMinimumSize(QSize(466, 0));
+        volume_set_frame->setMaximumSize(QSize(16777215, 645));
+        volume_set_frame->setFrameShape(QFrame::StyledPanel);
+        volume_set_frame->setFrameShadow(QFrame::Raised);
+        horizontalLayout_17 = new QHBoxLayout(volume_set_frame);
+        horizontalLayout_17->setSpacing(6);
+        horizontalLayout_17->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_17->setObjectName(QStringLiteral("horizontalLayout_17"));
+        horizontalLayout_17->setContentsMargins(0, 0, 0, 0);
+        volume_set = new hfVolumeSet(volume_set_frame);
+        volume_set->setObjectName(QStringLiteral("volume_set"));
+        volume_set->setFrameShape(QFrame::StyledPanel);
+        volume_set->setFrameShadow(QFrame::Raised);
+
+        horizontalLayout_17->addWidget(volume_set);
+
+
+        horizontalLayout_8->addWidget(volume_set_frame);
+
+
+        horizontalLayout_7->addLayout(horizontalLayout_8);
+
+
+        gridLayout->addWidget(frame_10, 3, 0, 1, 1);
+
+        main_title = new hfMainTitle(centralWidget);
+        main_title->setObjectName(QStringLiteral("main_title"));
+        main_title->setEnabled(true);
+        main_title->setMaximumSize(QSize(16777215, 108));
+
+        gridLayout->addWidget(main_title, 0, 0, 1, 1);
+
+        frame = new QFrame(centralWidget);
         frame->setObjectName(QStringLiteral("frame"));
         frame->setMaximumSize(QSize(16777215, 160));
         frame->setFrameShape(QFrame::StyledPanel);
@@ -128,7 +362,7 @@ public:
         horizontalLayout_10->setSpacing(6);
         horizontalLayout_10->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
-        horizontalLayout_10->setContentsMargins(9, 9, 9, 9);
+        horizontalLayout_10->setContentsMargins(15, 9, 15, 9);
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setSpacing(6);
         horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
@@ -367,133 +601,7 @@ public:
         horizontalLayout_10->addLayout(horizontalLayout_13);
 
 
-        horizontalLayout_7->addWidget(frame);
-
-
-        gridLayout->addWidget(control_panel, 1, 0, 1, 1);
-
-        main_title = new hfMainTitle(centralWidget);
-        main_title->setObjectName(QStringLiteral("main_title"));
-        main_title->setEnabled(true);
-        main_title->setMaximumSize(QSize(16777215, 108));
-
-        gridLayout->addWidget(main_title, 0, 0, 1, 1);
-
-        frame_2 = new QFrame(centralWidget);
-        frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setFrameShape(QFrame::StyledPanel);
-        frame_2->setFrameShadow(QFrame::Raised);
-        horizontalLayout_4 = new QHBoxLayout(frame_2);
-        horizontalLayout_4->setSpacing(6);
-        horizontalLayout_4->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
-        heartrate = new QWidget(frame_2);
-        heartrate->setObjectName(QStringLiteral("heartrate"));
-
-        horizontalLayout_4->addWidget(heartrate);
-
-        oxygen = new QWidget(frame_2);
-        oxygen->setObjectName(QStringLiteral("oxygen"));
-        oxygen->setMinimumSize(QSize(860, 0));
-
-        horizontalLayout_4->addWidget(oxygen);
-
-        horizontalLayout_4->setStretch(0, 6);
-        horizontalLayout_4->setStretch(1, 5);
-
-        gridLayout->addWidget(frame_2, 3, 0, 1, 1);
-
-        frame_10 = new QFrame(centralWidget);
-        frame_10->setObjectName(QStringLiteral("frame_10"));
-        frame_10->setEnabled(true);
-        frame_10->setMinimumSize(QSize(0, 334));
-        frame_10->setFrameShape(QFrame::StyledPanel);
-        frame_10->setFrameShadow(QFrame::Raised);
-        horizontalLayout_9 = new QHBoxLayout(frame_10);
-        horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
-        horizontalLayout_8 = new QHBoxLayout();
-        horizontalLayout_8->setSpacing(24);
-        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
-        temperature_frame = new QFrame(frame_10);
-        temperature_frame->setObjectName(QStringLiteral("temperature_frame"));
-        temperature_frame->setMinimumSize(QSize(466, 0));
-        temperature_frame->setFrameShape(QFrame::StyledPanel);
-        temperature_frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout_15 = new QHBoxLayout(temperature_frame);
-        horizontalLayout_15->setSpacing(6);
-        horizontalLayout_15->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_15->setObjectName(QStringLiteral("horizontalLayout_15"));
-        horizontalLayout_15->setContentsMargins(0, 0, 0, 0);
-        temperature = new hfTemperature(temperature_frame);
-        temperature->setObjectName(QStringLiteral("temperature"));
-
-        horizontalLayout_15->addWidget(temperature);
-
-
-        horizontalLayout_8->addWidget(temperature_frame);
-
-        wet_frame = new QFrame(frame_10);
-        wet_frame->setObjectName(QStringLiteral("wet_frame"));
-        wet_frame->setMinimumSize(QSize(466, 0));
-        wet_frame->setFrameShape(QFrame::StyledPanel);
-        wet_frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout_14 = new QHBoxLayout(wet_frame);
-        horizontalLayout_14->setSpacing(6);
-        horizontalLayout_14->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_14->setObjectName(QStringLiteral("horizontalLayout_14"));
-        horizontalLayout_14->setContentsMargins(0, 0, 0, 0);
-        wet = new hfWetDisplay(wet_frame);
-        wet->setObjectName(QStringLiteral("wet"));
-
-        horizontalLayout_14->addWidget(wet);
-
-
-        horizontalLayout_8->addWidget(wet_frame);
-
-        noise_frame = new QFrame(frame_10);
-        noise_frame->setObjectName(QStringLiteral("noise_frame"));
-        noise_frame->setMinimumSize(QSize(466, 0));
-        noise_frame->setFrameShape(QFrame::StyledPanel);
-        noise_frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout_16 = new QHBoxLayout(noise_frame);
-        horizontalLayout_16->setSpacing(6);
-        horizontalLayout_16->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
-        horizontalLayout_16->setContentsMargins(0, 0, 0, 0);
-        noise = new hfNoiseDisplay(noise_frame);
-        noise->setObjectName(QStringLiteral("noise"));
-
-        horizontalLayout_16->addWidget(noise);
-
-
-        horizontalLayout_8->addWidget(noise_frame);
-
-        volume_set_frame = new QFrame(frame_10);
-        volume_set_frame->setObjectName(QStringLiteral("volume_set_frame"));
-        volume_set_frame->setMinimumSize(QSize(466, 0));
-        volume_set_frame->setFrameShape(QFrame::StyledPanel);
-        volume_set_frame->setFrameShadow(QFrame::Raised);
-        horizontalLayout_17 = new QHBoxLayout(volume_set_frame);
-        horizontalLayout_17->setSpacing(6);
-        horizontalLayout_17->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_17->setObjectName(QStringLiteral("horizontalLayout_17"));
-        volume_set = new hfVolumeSet(volume_set_frame);
-        volume_set->setObjectName(QStringLiteral("volume_set"));
-        volume_set->setFrameShape(QFrame::StyledPanel);
-        volume_set->setFrameShadow(QFrame::Raised);
-
-        horizontalLayout_17->addWidget(volume_set);
-
-
-        horizontalLayout_8->addWidget(volume_set_frame);
-
-
-        horizontalLayout_9->addLayout(horizontalLayout_8);
-
-
-        gridLayout->addWidget(frame_10, 2, 0, 1, 1);
+        gridLayout->addWidget(frame, 1, 0, 1, 1);
 
         gridLayout->setRowStretch(0, 1);
 
@@ -509,6 +617,25 @@ public:
     void retranslateUi(QMainWindow *hfMainWindow)
     {
         hfMainWindow->setWindowTitle(QApplication::translate("hfMainWindow", "MainWindow", Q_NULLPTR));
+        oxygen_icon->setText(QString());
+        oxygen_alert->setText(QString());
+        oxygen_title->setText(QApplication::translate("hfMainWindow", "\346\260\247\346\265\223\345\272\246\346\212\245\350\255\246\351\230\210\345\200\274", Q_NULLPTR));
+        oxygen_point->setText(QString());
+        oxygen_normal->setText(QApplication::translate("hfMainWindow", "Normal", Q_NULLPTR));
+        oxygen_value0->setText(QApplication::translate("hfMainWindow", "0%", Q_NULLPTR));
+        oxygen_lowest->setText(QApplication::translate("hfMainWindow", "Lowest", Q_NULLPTR));
+        oxygen_dal->setText(QApplication::translate("hfMainWindow", "DAL", Q_NULLPTR));
+        oxygen_hal->setText(QApplication::translate("hfMainWindow", "HAL", Q_NULLPTR));
+        oxygen_heightest->setText(QApplication::translate("hfMainWindow", "Heightest", Q_NULLPTR));
+        oxygen_value17->setText(QApplication::translate("hfMainWindow", "17.5%", Q_NULLPTR));
+        oxygen_value23->setText(QApplication::translate("hfMainWindow", "23.5%", Q_NULLPTR));
+        oxygen_value35->setText(QApplication::translate("hfMainWindow", "35%", Q_NULLPTR));
+        oxygen_value->setText(QApplication::translate("hfMainWindow", "20.9%", Q_NULLPTR));
+        oxygen_alert_label1->setText(QApplication::translate("hfMainWindow", "DAL<19.5%\346\212\245\350\255\246\345\200\274", Q_NULLPTR));
+        oxygen_alert_label2->setText(QApplication::translate("hfMainWindow", "HAL>23.5%\346\212\245\350\255\246\345\200\274", Q_NULLPTR));
+        oxygen_alert_icon1->setText(QString());
+        oxygen_alert_icon2->setText(QString());
+        oxygen_value_2->setText(QApplication::translate("hfMainWindow", "Healthy Embodiment", Q_NULLPTR));
         people_icon->setText(QString());
         current_people->setText(QApplication::translate("hfMainWindow", "    \346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
         last_people->setText(QApplication::translate("hfMainWindow", "        \344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));
