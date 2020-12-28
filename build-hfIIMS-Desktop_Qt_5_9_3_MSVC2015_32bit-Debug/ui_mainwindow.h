@@ -23,6 +23,7 @@
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 #include "hfVolumeSet.h"
+#include "hfheartrate.h"
 #include "hfnoisedisplay.h"
 #include "hftemperature.h"
 #include "hfwetdisplay.h"
@@ -64,6 +65,17 @@ public:
     QFrame *heart_rate_frame;
     QLabel *heart_rate_icon;
     QLabel *heart_rate_title;
+    QLabel *heart_rate_desc1;
+    hfHeartRate *frame_6;
+    hfHeartRate *frame_7;
+    hfHeartRate *frame_8;
+    hfHeartRate *frame_9;
+    hfHeartRate *frame_11;
+    hfHeartRate *frame_12;
+    hfHeartRate *frame_13;
+    hfHeartRate *frame_14;
+    hfHeartRate *frame_15;
+    hfHeartRate *frame_16;
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_8;
@@ -150,13 +162,13 @@ public:
         oxygen_frame->setFrameShadow(QFrame::Raised);
         oxygen_icon = new QLabel(oxygen_frame);
         oxygen_icon->setObjectName(QStringLiteral("oxygen_icon"));
-        oxygen_icon->setGeometry(QRect(10, 10, 43, 43));
+        oxygen_icon->setGeometry(QRect(10, 20, 43, 43));
         oxygen_alert = new QLabel(oxygen_frame);
         oxygen_alert->setObjectName(QStringLiteral("oxygen_alert"));
         oxygen_alert->setGeometry(QRect(850, 20, 73, 47));
         oxygen_title = new QLabel(oxygen_frame);
         oxygen_title->setObjectName(QStringLiteral("oxygen_title"));
-        oxygen_title->setGeometry(QRect(60, 20, 220, 24));
+        oxygen_title->setGeometry(QRect(60, 30, 220, 24));
         oxygen_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
         oxygen_point = new QLabel(oxygen_frame);
@@ -263,12 +275,67 @@ public:
         heart_rate_frame->setFrameShadow(QFrame::Raised);
         heart_rate_icon = new QLabel(heart_rate_frame);
         heart_rate_icon->setObjectName(QStringLiteral("heart_rate_icon"));
-        heart_rate_icon->setGeometry(QRect(10, 10, 43, 43));
+        heart_rate_icon->setGeometry(QRect(10, 20, 43, 43));
         heart_rate_title = new QLabel(heart_rate_frame);
         heart_rate_title->setObjectName(QStringLiteral("heart_rate_title"));
-        heart_rate_title->setGeometry(QRect(60, 20, 220, 24));
+        heart_rate_title->setGeometry(QRect(60, 30, 220, 24));
         heart_rate_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
+        heart_rate_desc1 = new QLabel(heart_rate_frame);
+        heart_rate_desc1->setObjectName(QStringLiteral("heart_rate_desc1"));
+        heart_rate_desc1->setGeometry(QRect(170, 90, 250, 20));
+        heart_rate_desc1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 18pt \"\345\256\213\344\275\223\";"));
+        frame_6 = new hfHeartRate(heart_rate_frame);
+        frame_6->setObjectName(QStringLiteral("frame_6"));
+        frame_6->setGeometry(QRect(47, 130, 160, 98));
+        frame_6->setFrameShape(QFrame::StyledPanel);
+        frame_6->setFrameShadow(QFrame::Raised);
+        frame_7 = new hfHeartRate(heart_rate_frame);
+        frame_7->setObjectName(QStringLiteral("frame_7"));
+        frame_7->setGeometry(QRect(47, 250, 160, 98));
+        frame_7->setFrameShape(QFrame::StyledPanel);
+        frame_7->setFrameShadow(QFrame::Raised);
+        frame_8 = new hfHeartRate(heart_rate_frame);
+        frame_8->setObjectName(QStringLiteral("frame_8"));
+        frame_8->setGeometry(QRect(220, 130, 160, 98));
+        frame_8->setFrameShape(QFrame::StyledPanel);
+        frame_8->setFrameShadow(QFrame::Raised);
+        frame_9 = new hfHeartRate(heart_rate_frame);
+        frame_9->setObjectName(QStringLiteral("frame_9"));
+        frame_9->setGeometry(QRect(220, 250, 160, 98));
+        frame_9->setFrameShape(QFrame::StyledPanel);
+        frame_9->setFrameShadow(QFrame::Raised);
+        frame_11 = new hfHeartRate(heart_rate_frame);
+        frame_11->setObjectName(QStringLiteral("frame_11"));
+        frame_11->setGeometry(QRect(390, 130, 160, 98));
+        frame_11->setFrameShape(QFrame::StyledPanel);
+        frame_11->setFrameShadow(QFrame::Raised);
+        frame_12 = new hfHeartRate(heart_rate_frame);
+        frame_12->setObjectName(QStringLiteral("frame_12"));
+        frame_12->setGeometry(QRect(390, 250, 160, 98));
+        frame_12->setFrameShape(QFrame::StyledPanel);
+        frame_12->setFrameShadow(QFrame::Raised);
+        frame_13 = new hfHeartRate(heart_rate_frame);
+        frame_13->setObjectName(QStringLiteral("frame_13"));
+        frame_13->setGeometry(QRect(570, 130, 160, 98));
+        frame_13->setFrameShape(QFrame::StyledPanel);
+        frame_13->setFrameShadow(QFrame::Raised);
+        frame_14 = new hfHeartRate(heart_rate_frame);
+        frame_14->setObjectName(QStringLiteral("frame_14"));
+        frame_14->setGeometry(QRect(570, 250, 160, 98));
+        frame_14->setFrameShape(QFrame::StyledPanel);
+        frame_14->setFrameShadow(QFrame::Raised);
+        frame_15 = new hfHeartRate(heart_rate_frame);
+        frame_15->setObjectName(QStringLiteral("frame_15"));
+        frame_15->setGeometry(QRect(760, 130, 160, 98));
+        frame_15->setFrameShape(QFrame::StyledPanel);
+        frame_15->setFrameShadow(QFrame::Raised);
+        frame_16 = new hfHeartRate(heart_rate_frame);
+        frame_16->setObjectName(QStringLiteral("frame_16"));
+        frame_16->setGeometry(QRect(760, 250, 160, 98));
+        frame_16->setFrameShape(QFrame::StyledPanel);
+        frame_16->setFrameShadow(QFrame::Raised);
 
         horizontalLayout_4->addWidget(heart_rate_frame);
 
@@ -667,7 +734,8 @@ public:
         oxygen_value_title->setText(QApplication::translate("hfMainWindow", "\346\260\247\346\265\223\345\272\246\351\230\210\345\200\274:", Q_NULLPTR));
         oxygen_value->setText(QApplication::translate("hfMainWindow", "20", Q_NULLPTR));
         heart_rate_icon->setText(QString());
-        heart_rate_title->setText(QApplication::translate("hfMainWindow", "\346\260\247\346\265\223\345\272\246\346\212\245\350\255\246\351\230\210\345\200\274", Q_NULLPTR));
+        heart_rate_title->setText(QApplication::translate("hfMainWindow", "\345\277\203\347\216\207\347\233\221\346\265\213\345\233\276", Q_NULLPTR));
+        heart_rate_desc1->setText(QApplication::translate("hfMainWindow", "ECG data /BPM", Q_NULLPTR));
         people_icon->setText(QString());
         current_people->setText(QApplication::translate("hfMainWindow", "    \346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
         last_people->setText(QApplication::translate("hfMainWindow", "        \344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));

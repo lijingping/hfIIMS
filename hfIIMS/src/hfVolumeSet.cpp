@@ -14,8 +14,8 @@ hfVolumeSet::hfVolumeSet(QWidget *parent) :
         exit(0);
     }
 
-    QTextStream in2(&file2);
-    QString css = in2.readAll();
+    QTextStream in(&file2);
+    QString css = in.readAll();
     this->setStyleSheet(css);
 
     ui->setupUi(this);

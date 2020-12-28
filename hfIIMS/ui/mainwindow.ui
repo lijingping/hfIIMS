@@ -89,7 +89,7 @@
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>20</y>
               <width>43</width>
               <height>43</height>
              </rect>
@@ -115,7 +115,7 @@
             <property name="geometry">
              <rect>
               <x>60</x>
-              <y>20</y>
+              <y>30</y>
               <width>220</width>
               <height>24</height>
              </rect>
@@ -473,7 +473,7 @@ font: 18pt &quot;宋体&quot;;</string>
             <property name="geometry">
              <rect>
               <x>10</x>
-              <y>10</y>
+              <y>20</y>
               <width>43</width>
               <height>43</height>
              </rect>
@@ -486,7 +486,7 @@ font: 18pt &quot;宋体&quot;;</string>
             <property name="geometry">
              <rect>
               <x>60</x>
-              <y>20</y>
+              <y>30</y>
               <width>220</width>
               <height>24</height>
              </rect>
@@ -496,7 +496,184 @@ font: 18pt &quot;宋体&quot;;</string>
 font: 20pt &quot;方正黑体简体&quot;;</string>
             </property>
             <property name="text">
-             <string>氧浓度报警阈值</string>
+             <string>心率监测图</string>
+            </property>
+           </widget>
+           <widget class="QLabel" name="heart_rate_desc1">
+            <property name="geometry">
+             <rect>
+              <x>170</x>
+              <y>90</y>
+              <width>250</width>
+              <height>20</height>
+             </rect>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">color: rgb(255, 255, 255);
+font: 18pt &quot;宋体&quot;;</string>
+            </property>
+            <property name="text">
+             <string>ECG data /BPM</string>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_6">
+            <property name="geometry">
+             <rect>
+              <x>47</x>
+              <y>130</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_7">
+            <property name="geometry">
+             <rect>
+              <x>47</x>
+              <y>250</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_8">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>130</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_9">
+            <property name="geometry">
+             <rect>
+              <x>220</x>
+              <y>250</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_11">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>130</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_12">
+            <property name="geometry">
+             <rect>
+              <x>390</x>
+              <y>250</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_13">
+            <property name="geometry">
+             <rect>
+              <x>570</x>
+              <y>130</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_14">
+            <property name="geometry">
+             <rect>
+              <x>570</x>
+              <y>250</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_15">
+            <property name="geometry">
+             <rect>
+              <x>760</x>
+              <y>130</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
+           <widget class="hfHeartRate" name="frame_16">
+            <property name="geometry">
+             <rect>
+              <x>760</x>
+              <y>250</y>
+              <width>160</width>
+              <height>98</height>
+             </rect>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
             </property>
            </widget>
           </widget>
@@ -1264,6 +1441,12 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
    <class>hfVolumeSet</class>
    <extends>QFrame</extends>
    <header>hfVolumeSet.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>hfHeartRate</class>
+   <extends>QFrame</extends>
+   <header>hfheartrate.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
