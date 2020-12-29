@@ -293,13 +293,13 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
          <property name="minimumSize">
           <size>
            <width>300</width>
-           <height>6</height>
+           <height>0</height>
           </size>
          </property>
          <property name="maximumSize">
           <size>
-           <width>300</width>
-           <height>6</height>
+           <width>16777215</width>
+           <height>16777215</height>
           </size>
          </property>
          <property name="orientation">

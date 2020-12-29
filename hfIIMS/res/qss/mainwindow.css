@@ -49,6 +49,10 @@ QFrame#frame_2{
     margin-top: 10px;
 }
 
+QFrame#oxygen_value_frame{
+    border-image: url("./res/img/oxygen_value_frame.png");
+}
+
 QLabel#label{
     border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
 }
@@ -121,7 +125,10 @@ QLabel#heart_rate_icon{
     border-image: url("./res/img/heart_rate.png");
 }
 
-QFrame#oxygen_value_frame{
-    border-image: url("./res/img/oxygen_value_frame.png");
+QLabel#heart_rate_set{
+    border-image: url("./res/img/set.png");
 }
 
+QLabel#heart_rate_alert{
+    border-image: url("./res/img/heart_rate_alert.png");
+}

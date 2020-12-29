@@ -29,7 +29,6 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *noise_icon;
     QLabel *noise_display_hint;
-    QLabel *set;
 
     void setupUi(QFrame *hfNoiseDisplay)
     {
@@ -59,13 +58,6 @@ public:
 
         horizontalLayout->addWidget(noise_display_hint);
 
-        set = new QLabel(hfNoiseDisplay);
-        set->setObjectName(QStringLiteral("set"));
-        set->setMinimumSize(QSize(35, 33));
-        set->setMaximumSize(QSize(35, 33));
-
-        horizontalLayout->addWidget(set);
-
 
         verticalLayout->addLayout(horizontalLayout);
 
@@ -83,7 +75,6 @@ public:
         hfNoiseDisplay->setWindowTitle(QApplication::translate("hfNoiseDisplay", "Frame", Q_NULLPTR));
         noise_icon->setText(QString());
         noise_display_hint->setText(QApplication::translate("hfNoiseDisplay", "\345\231\252\345\243\260\345\210\206\350\264\235\346\233\262\347\272\277\345\233\276", Q_NULLPTR));
-        set->setText(QString());
     } // retranslateUi
 
 };

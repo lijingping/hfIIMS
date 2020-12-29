@@ -36,15 +36,18 @@ QLabel#sound_icon{
 }
 
 QSlider#volume_set_slider::groove:horizontal {
+    height: 6px;
+    left: 7px; 
+    right: 7px;
     border-image: url("./res/img/slider_bg.png");
-    margin: 0px 0;
-    left: 7px; right: 7px;
 }
 
 QSlider#volume_set_slider::handle:horizontal {
-    border: 0px;
+    width:  15px; 
+    height: 14px; 
+    margin-top: -4px; 
+    margin-left: -4px; 
+    margin-bottom: -4px; 
+    margin-right: -4px;
     border-image:url("./res/img/slider_ball.png");
-    width: 15px;
-    height: 14px;
-    margin: 0px -7px 0px -7px;
 }

@@ -7,10 +7,6 @@ QLabel#heart_rate_alert{
     border-image: url("./res/img/heart_rate_alert.png");
 }
 
-QLabel#heart_rate_set{
-    border-image: url("./res/img/set.png");
-}
-
 QFrame#heart_rate_mask{
     border-image: url("./res/img/heart_rate_mask.png");
 }

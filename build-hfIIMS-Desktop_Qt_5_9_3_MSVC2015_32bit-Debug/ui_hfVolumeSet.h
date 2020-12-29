@@ -154,8 +154,8 @@ public:
 
         volume_set_slider = new QSlider(hfVolumeSet);
         volume_set_slider->setObjectName(QStringLiteral("volume_set_slider"));
-        volume_set_slider->setMinimumSize(QSize(300, 6));
-        volume_set_slider->setMaximumSize(QSize(300, 6));
+        volume_set_slider->setMinimumSize(QSize(300, 0));
+        volume_set_slider->setMaximumSize(QSize(16777215, 16777215));
         volume_set_slider->setOrientation(Qt::Horizontal);
 
         horizontalLayout_3->addWidget(volume_set_slider);

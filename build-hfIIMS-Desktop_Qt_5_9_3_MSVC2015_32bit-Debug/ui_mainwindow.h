@@ -76,6 +76,9 @@ public:
     hfHeartRate *frame_14;
     hfHeartRate *frame_15;
     hfHeartRate *frame_16;
+    QLabel *heart_rate_set;
+    QLabel *heart_rate_alert;
+    QLabel *heart_rate_desc2;
     QFrame *frame_10;
     QHBoxLayout *horizontalLayout_7;
     QHBoxLayout *horizontalLayout_8;
@@ -147,7 +150,8 @@ public:
         gridLayout->setObjectName(QStringLiteral("gridLayout"));
         frame_2 = new QFrame(centralWidget);
         frame_2->setObjectName(QStringLiteral("frame_2"));
-        frame_2->setMinimumSize(QSize(0, 353));
+        frame_2->setMinimumSize(QSize(0, 0));
+        frame_2->setMaximumSize(QSize(16777215, 390));
         frame_2->setFrameShape(QFrame::StyledPanel);
         frame_2->setFrameShadow(QFrame::Raised);
         horizontalLayout_4 = new QHBoxLayout(frame_2);
@@ -285,7 +289,7 @@ public:
         heart_rate_desc1->setObjectName(QStringLiteral("heart_rate_desc1"));
         heart_rate_desc1->setGeometry(QRect(170, 90, 250, 20));
         heart_rate_desc1->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font: 18pt \"\345\256\213\344\275\223\";"));
+"font: 12pt \"\345\256\213\344\275\223\";"));
         frame_6 = new hfHeartRate(heart_rate_frame);
         frame_6->setObjectName(QStringLiteral("frame_6"));
         frame_6->setGeometry(QRect(47, 130, 160, 98));
@@ -336,6 +340,19 @@ public:
         frame_16->setGeometry(QRect(760, 250, 160, 98));
         frame_16->setFrameShape(QFrame::StyledPanel);
         frame_16->setFrameShadow(QFrame::Raised);
+        heart_rate_set = new QLabel(heart_rate_frame);
+        heart_rate_set->setObjectName(QStringLiteral("heart_rate_set"));
+        heart_rate_set->setGeometry(QRect(880, 30, 35, 33));
+        heart_rate_set->setMinimumSize(QSize(35, 33));
+        heart_rate_set->setMaximumSize(QSize(35, 33));
+        heart_rate_alert = new QLabel(heart_rate_frame);
+        heart_rate_alert->setObjectName(QStringLiteral("heart_rate_alert"));
+        heart_rate_alert->setGeometry(QRect(750, 90, 23, 20));
+        heart_rate_desc2 = new QLabel(heart_rate_frame);
+        heart_rate_desc2->setObjectName(QStringLiteral("heart_rate_desc2"));
+        heart_rate_desc2->setGeometry(QRect(780, 90, 200, 20));
+        heart_rate_desc2->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 12pt \"\345\256\213\344\275\223\";"));
 
         horizontalLayout_4->addWidget(heart_rate_frame);
 
@@ -346,7 +363,7 @@ public:
         frame_10->setObjectName(QStringLiteral("frame_10"));
         frame_10->setEnabled(true);
         frame_10->setMinimumSize(QSize(0, 0));
-        frame_10->setMaximumSize(QSize(16777215, 645));
+        frame_10->setMaximumSize(QSize(16777215, 334));
         frame_10->setFrameShape(QFrame::StyledPanel);
         frame_10->setFrameShadow(QFrame::Raised);
         horizontalLayout_7 = new QHBoxLayout(frame_10);
@@ -491,7 +508,7 @@ public:
 
         current_people = new QLabel(frame_3);
         current_people->setObjectName(QStringLiteral("current_people"));
-        current_people->setMaximumSize(QSize(16777215, 20));
+        current_people->setMaximumSize(QSize(16777215, 24));
         QFont font;
         font.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
         font.setPointSize(20);
@@ -506,7 +523,7 @@ public:
 
         last_people = new QLabel(frame_3);
         last_people->setObjectName(QStringLiteral("last_people"));
-        last_people->setMaximumSize(QSize(16777215, 12));
+        last_people->setMaximumSize(QSize(16777215, 16));
         QFont font1;
         font1.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
         font1.setPointSize(12);
@@ -578,7 +595,7 @@ public:
 
         label_7 = new QLabel(frame_4);
         label_7->setObjectName(QStringLiteral("label_7"));
-        label_7->setMaximumSize(QSize(16777215, 20));
+        label_7->setMaximumSize(QSize(16777215, 24));
         label_7->setFont(font);
         label_7->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
@@ -587,7 +604,7 @@ public:
 
         label_8 = new QLabel(frame_4);
         label_8->setObjectName(QStringLiteral("label_8"));
-        label_8->setMaximumSize(QSize(16777215, 12));
+        label_8->setMaximumSize(QSize(16777215, 16));
         label_8->setFont(font1);
         label_8->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 12pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
@@ -736,6 +753,9 @@ public:
         heart_rate_icon->setText(QString());
         heart_rate_title->setText(QApplication::translate("hfMainWindow", "\345\277\203\347\216\207\347\233\221\346\265\213\345\233\276", Q_NULLPTR));
         heart_rate_desc1->setText(QApplication::translate("hfMainWindow", "ECG data /BPM", Q_NULLPTR));
+        heart_rate_set->setText(QString());
+        heart_rate_alert->setText(QString());
+        heart_rate_desc2->setText(QApplication::translate("hfMainWindow", "\344\270\272\345\274\202\345\270\270\347\212\266\346\200\201\345\277\203\347\216\207", Q_NULLPTR));
         people_icon->setText(QString());
         current_people->setText(QApplication::translate("hfMainWindow", "    \346\234\254\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260:", Q_NULLPTR));
         last_people->setText(QApplication::translate("hfMainWindow", "        \344\270\212\346\254\241\350\256\255\347\273\203\344\272\272\346\225\260: 100", Q_NULLPTR));
