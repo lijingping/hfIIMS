@@ -246,6 +246,7 @@ Makefile: ..\hfIIMS\hfIIMS.pro C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\win32-msvc\q
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Charts.prl \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Widgets.prl \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Gui.prl \
+		C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Sql.prl \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Core.prl
 	$(QMAKE) -o Makefile ..\hfIIMS\hfIIMS.pro -spec win32-msvc "CONFIG+=debug" "CONFIG+=qml_debug"
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\mkspecs\features\spec_pre.prf:
@@ -419,6 +420,7 @@ C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\qtmaind.prl:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Charts.prl:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Widgets.prl:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Gui.prl:
+C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Sql.prl:
 C:\Qt\Qt5.9.3\5.9.3\msvc2015\lib\Qt5Core.prl:
 qmake: FORCE
 	@$(QMAKE) -o Makefile ..\hfIIMS\hfIIMS.pro -spec win32-msvc "CONFIG+=debug" "CONFIG+=qml_debug"

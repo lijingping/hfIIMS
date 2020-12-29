@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui charts
+QT       += core gui charts sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -34,7 +34,8 @@ SOURCES += \
     src/hfwetdisplay.cpp \
     src/hfnoisedisplay.cpp \
     src/hfVolumeSet.cpp \
-    src/hfHeartRate.cpp
+    src/hfHeartRate.cpp \
+    src/database.cpp
 
 HEADERS += \
     util/signleton.hpp \
@@ -45,7 +46,8 @@ HEADERS += \
     src/hfwetdisplay.h \
     src/hfnoisedisplay.h \
     src/hfVolumeSet.h \
-    src/hfHeartRate.h
+    src/hfHeartRate.h \
+    src/database.h
 
 FORMS += \
       ui/mainwindow.ui \
