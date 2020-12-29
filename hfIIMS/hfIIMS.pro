@@ -35,7 +35,8 @@ SOURCES += \
     src/hfnoisedisplay.cpp \
     src/hfVolumeSet.cpp \
     src/hfHeartRate.cpp \
-    src/database.cpp
+    src/database.cpp \
+    src/logoDisplay.cpp
 
 HEADERS += \
     util/signleton.hpp \
@@ -47,7 +48,8 @@ HEADERS += \
     src/hfnoisedisplay.h \
     src/hfVolumeSet.h \
     src/hfHeartRate.h \
-    src/database.h
+    src/database.h \
+    src/logoDisplay.h
 
 FORMS += \
       ui/mainwindow.ui \
@@ -56,7 +58,8 @@ FORMS += \
     src/hfwetdisplay.ui \
     src/hfnoisedisplay.ui \
     src/hfVolumeSet.ui \
-    src/hfHeartRate.ui
+    src/hfHeartRate.ui \
+    src/logoDisplay.ui
 
 DISTFILES += \
     res/img/logo.svg  \

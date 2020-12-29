@@ -132,3 +132,7 @@ QLabel#heart_rate_set{
 QLabel#heart_rate_alert{
     border-image: url("./res/img/heart_rate_alert.png");
 }
+
+QTextEdit#oxygen_lineEdit{
+
+}
