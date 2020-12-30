@@ -18,6 +18,7 @@ public:
     void paintEvent(QPaintEvent *event);
 public slots:
     void OnCloseWindow();
+
 private:
     Ui::hfMainWindow *ui;
 };

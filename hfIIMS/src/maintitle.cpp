@@ -4,6 +4,7 @@
 #include <QDebug>
 #include <QFile>
 #include <QPainter>
+#include "database.h"
 
 hfMainTitle::hfMainTitle(QWidget *parent) :
     QWidget(parent),
@@ -49,6 +50,16 @@ void hfMainTitle::UpdateTime()
     ui->time_label->setText(l_specific_date + l_week + l_time);
 }
 
+void hfMainTitle::OnUpdateUserName()
+{
+    database *l_userDb = database::getInstance();
+    hfSqlTables_user_data l_userData = l_userDb->getUserData();
+    if(l_userDb->queryData(l_userData.username, l_userData.password))
+    {
+        ui->user_name->setText(l_userData.username);
+    }
+}
+
 void hfMainTitle::paintEvent(QPaintEvent *)
 {
       QStyleOption opt;
@@ -60,4 +71,9 @@ void hfMainTitle::paintEvent(QPaintEvent *)
 void hfMainTitle::on_close_clicked()
 {
     emit this->OnCloseWindow();
+}
+
+void hfMainTitle::on_user_name_clicked()
+{
+    ui_arrow
 }

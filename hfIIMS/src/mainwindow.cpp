@@ -18,6 +18,8 @@ hfMainWindow::hfMainWindow(QWidget *parent) :
 
     hfLogo *l_hfLogo = new hfLogo(this);
     l_hfLogo->setObjectName(QStringLiteral("hfLogo"));
+    connect(l_hfLogo,SIGNAL(OnUpdateUserName()),ui->main_title,SLOT(OnUpdateUserName()));
+    l_hfLogo->installEventFilter(this);
     l_hfLogo->show();
 
     QFile file("./res/qss/mainwindow.css");

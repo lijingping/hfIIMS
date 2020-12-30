@@ -1,6 +1,7 @@
 #ifndef HFLOGO_H
 #define HFLOGO_H
 
+#include <QLabel>
 #include <QWidget>
 
 namespace Ui {
@@ -14,6 +15,9 @@ class hfLogo : public QWidget
 public:
     explicit hfLogo(QWidget *parent = 0);
     ~hfLogo();
+
+signals:
+    void OnUpdateUserName();
 
 private slots:
     void on_logo_enter_clicked();

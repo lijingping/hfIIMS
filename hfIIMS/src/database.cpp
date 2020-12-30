@@ -45,7 +45,7 @@ bool database::addRegiserUser(const QString &username, const QString &password)
 
     //将输入username、password的数据插入表中
     query.prepare(
-        "INSERT INTO tb_user (id,username,password,last_logon_date,modify_date,create_date) VALUES ((select count(*)+1 from tb_user),?, ?,datetime('now','localtime'),datetime('now','localtime'),datetime('now','localtime'))");
+        "INSERT INTO tb_user (id,username,password,last_logo_date,modify_date,create_date) VALUES ((select count(*)+1 from tb_user),?, ?,datetime('now','localtime'),datetime('now','localtime'),datetime('now','localtime'))");
 
     query.addBindValue(username);
     query.addBindValue(password);
@@ -75,6 +75,9 @@ bool database::logo(const QString &username, const QString &password)
     if(!ok){
         qDebug() << "Fail add regiser user : " << query.lastError().text();
     }
+
+    m_user_data.username = username;
+    m_user_data.password = password;
 
     return ok;
 }
@@ -155,15 +158,48 @@ bool database::queryPassword(const QString &username,const QString &password)
         qDebug() << "Fail query register password" << db.lastError().text();
         return false;
     }
-//    if(query.next()){
-        QStringList tableList;
-        while (query.next()) {
-            tableList << query.value(0).toString();
-        }
-
+    if(query.next()){
         return true;
-//    }
-//    else{
-//        return false;
-//    }
+    }
+    else{
+        return false;
+    }
+}
+
+bool database::queryData(const QString &username, const QString &password)
+{
+    QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
+    QSqlQuery query(db);
+    query.prepare("select *from tb_user where username=? and password=?");
+    query.addBindValue(username);
+    query.addBindValue(password);
+    bool ok = query.exec();
+    if(!ok)
+    {
+        qDebug() << "Fail query register password" << db.lastError().text();
+        return false;
+    }
+    if(query.next())
+    {
+        m_user_data.id = query.value(ID).toInt();
+        m_user_data.username = query.value(USERNAME).toString();
+        m_user_data.password = query.value(PASSWORD).toString();
+        m_user_data.address = query.value(ADDRESS).toString();
+        m_user_data.age = query.value(AGE).toInt();
+        m_user_data.email = query.value(EMAIL).toString();
+        m_user_data.desc = query.value(DESC).toString();
+        m_user_data.last_logo_date = query.value(LAST_LOGON_DATE).toString();
+        m_user_data.create_date = query.value(CREATE_DATE).toString();
+        m_user_data.modify_date = query.value(MODIFY_DATE).toString();
+        return true;
+    }
+    else
+    {
+        return false;
+    }
+}
+
+hfSqlTables_user_data database::getUserData()
+{
+    return m_user_data;
 }

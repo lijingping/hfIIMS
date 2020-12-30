@@ -14,6 +14,7 @@ signals:
     void OnCloseWindow();
 public slots:
     void UpdateTime();
+    void OnUpdateUserName();
 
 public:
     void paintEvent(QPaintEvent *);
@@ -21,6 +22,8 @@ public:
     ~hfMainTitle();
 private slots:
     void on_close_clicked();
+
+    void on_user_name_clicked();
 
 private:
     Ui::hfMainTitle *ui;
