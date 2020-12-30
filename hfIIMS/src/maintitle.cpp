@@ -35,6 +35,7 @@ hfMainTitle::hfMainTitle(QWidget *parent) :
 
 hfMainTitle::~hfMainTitle()
 {
+    delete database::getInstance();
     delete ui;
 }
 
@@ -75,5 +76,4 @@ void hfMainTitle::on_close_clicked()
 
 void hfMainTitle::on_user_name_clicked()
 {
-    ui_arrow
 }
