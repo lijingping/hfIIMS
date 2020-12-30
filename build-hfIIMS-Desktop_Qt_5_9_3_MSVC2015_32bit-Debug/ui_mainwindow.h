@@ -620,12 +620,12 @@ public:
         oxygen_value_title->setObjectName(QStringLiteral("oxygen_value_title"));
         oxygen_value_title->setGeometry(QRect(20, 20, 150, 20));
         oxygen_value_title->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font: 18pt \"\345\256\213\344\275\223\";"));
+"font: 18pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
         oxygen_lineEdit = new QLineEdit(oxygen_value_frame);
         oxygen_lineEdit->setObjectName(QStringLiteral("oxygen_lineEdit"));
         oxygen_lineEdit->setGeometry(QRect(158, 12, 130, 40));
         oxygen_lineEdit->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
-"font: 18pt \"\345\256\213\344\275\223\";\n"
+"font: 18pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
 "background-color: rgba(255, 255, 255, 0);\n"
 "border:0px;"));
 

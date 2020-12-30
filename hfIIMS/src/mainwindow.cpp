@@ -5,6 +5,7 @@
 #include <QSpacerItem>
 #include "ui_mainwindow.h"
 #include "database.h"
+#include "hfLogo.h"
 
 hfMainWindow::hfMainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -15,6 +16,11 @@ hfMainWindow::hfMainWindow(QWidget *parent) :
 
     connect(ui->main_title,SIGNAL(OnCloseWindow()),this,SLOT(OnCloseWindow()));
     ui->main_title->installEventFilter(this);
+
+    hfLogo *l_hfLogo = new hfLogo(this);
+    l_hfLogo->setObjectName(QStringLiteral("hfLogo"));
+//    l_hfLogo->move();
+    l_hfLogo->show();
 
     QFile file("./res/qss/mainwindow.css");
     if (!file.open(QIODevice::ReadOnly)) {

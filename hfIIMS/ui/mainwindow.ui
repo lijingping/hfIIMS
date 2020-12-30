@@ -1160,7 +1160,7 @@ font: 18pt &quot;宋体&quot;;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">color: rgb(255, 255, 255);
-font: 18pt &quot;宋体&quot;;</string>
+font: 18pt &quot;方正黑体简体&quot;;</string>
              </property>
              <property name="text">
               <string>氧浓度阈值:</string>
@@ -1177,7 +1177,7 @@ font: 18pt &quot;宋体&quot;;</string>
              </property>
              <property name="styleSheet">
               <string notr="true">color: rgb(255, 255, 255);
-font: 18pt &quot;宋体&quot;;
+font: 18pt &quot;方正黑体简体&quot;;
 background-color: rgba(255, 255, 255, 0);
 border:0px;</string>
              </property>
