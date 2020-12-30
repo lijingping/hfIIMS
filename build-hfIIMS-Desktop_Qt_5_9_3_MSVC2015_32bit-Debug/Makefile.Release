@@ -4701,8 +4701,6 @@ release\mainwindow.obj: ..\hfIIMS\src\mainwindow.cpp ../hfIIMS/src/mainwindow.h 
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\QSpacerItem \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\qlayoutitem.h \
 		ui_mainwindow.h \
-		../hfIIMS/src/database.h \
-		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtCore\QObject \
 		../hfIIMS/src/hfLogo.h \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\QWidget
 
@@ -6906,6 +6904,11 @@ release\hfLogo.obj: ..\hfIIMS\src\hfLogo.cpp ../hfIIMS/src/hfLogo.h \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtCore\qfiledevice.h \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtGui\qvector2d.h \
 		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtGui\qtouchdevice.h \
+		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\QMessageBox \
+		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\qmessagebox.h \
+		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtWidgets\qdialog.h \
+		../hfIIMS/src/database.h \
+		C:\Qt\Qt5.9.3\5.9.3\msvc2015\include\QtCore\QObject \
 		ui_hfLogo.h
 
 release\qrc_logo.obj: release\qrc_logo.cpp 

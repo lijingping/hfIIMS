@@ -4,7 +4,6 @@
 #include <QPainter>
 #include <QSpacerItem>
 #include "ui_mainwindow.h"
-#include "database.h"
 #include "hfLogo.h"
 
 hfMainWindow::hfMainWindow(QWidget *parent) :
@@ -19,7 +18,6 @@ hfMainWindow::hfMainWindow(QWidget *parent) :
 
     hfLogo *l_hfLogo = new hfLogo(this);
     l_hfLogo->setObjectName(QStringLiteral("hfLogo"));
-//    l_hfLogo->move();
     l_hfLogo->show();
 
     QFile file("./res/qss/mainwindow.css");
@@ -31,25 +29,6 @@ hfMainWindow::hfMainWindow(QWidget *parent) :
     QString css = in.readAll();
     qDebug()<<css;
     this->setStyleSheet(css);
-
-    database *l_userDb = database::getInstance();
-    QString l_username = "hfll";
-    if(l_userDb->queryUsername(l_username)){
-        //在数据库中查询到了就跳转到主页
-        if(l_userDb->queryPassword(l_username, "123456")){
-//            major->show();//跳转到major页面
-            this->close(); //关闭登陆页面
-        }
-        //在数据库中查询不到即弹出信息错误窗口
-        else{
-            QMessageBox::information(NULL,"登录","密码错误",QMessageBox::Ok);
-        }
-    }
-    else{
-        QMessageBox::information(NULL,"登录","用户名不存在",QMessageBox::Ok);
-    }
-    return;
-
 }
 
 hfMainWindow::~hfMainWindow()

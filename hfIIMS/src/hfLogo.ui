@@ -137,7 +137,7 @@ color:rgb(255, 255, 255)</string>
   <widget class="QFrame" name="logo_password_frame">
    <property name="geometry">
     <rect>
-     <x>760</x>
+     <x>765</x>
      <y>560</y>
      <width>28</width>
      <height>40</height>
@@ -189,7 +189,7 @@ border:0px;</string>
     <set>Qt::ImhHiddenText|Qt::ImhNoAutoUppercase|Qt::ImhNoPredictiveText|Qt::ImhSensitiveData</set>
    </property>
    <property name="text">
-    <string>gsgsdgsgsg</string>
+    <string/>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
@@ -235,9 +235,9 @@ font: 18pt &quot;方正黑体简体&quot;;</string>
   <widget class="QPushButton" name="logo_modify">
    <property name="geometry">
     <rect>
-     <x>1015</x>
+     <x>1060</x>
      <y>670</y>
-     <width>142</width>
+     <width>110</width>
      <height>34</height>
     </rect>
    </property>
@@ -250,12 +250,12 @@ color: rgb(255, 255, 255);</string>
     <string>修改密码</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="logo_pushButton">
+  <widget class="QPushButton" name="logo_enter">
    <property name="geometry">
     <rect>
-     <x>750</x>
+     <x>740</x>
      <y>670</y>
-     <width>142</width>
+     <width>110</width>
      <height>34</height>
     </rect>
    </property>
@@ -265,7 +265,25 @@ border-image: url(:/logo/logo_btn.png);
 color: rgb(255, 255, 255);</string>
    </property>
    <property name="text">
-    <string>登入/注册</string>
+    <string>登入</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="logo_register">
+   <property name="geometry">
+    <rect>
+     <x>900</x>
+     <y>670</y>
+     <width>110</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正黑体简体&quot;;
+border-image: url(:/logo/logo_btn.png);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>注册</string>
    </property>
   </widget>
   <zorder>logo_touch_pushButton</zorder>
@@ -280,7 +298,8 @@ color: rgb(255, 255, 255);</string>
   <zorder>logo_username</zorder>
   <zorder>oxygen_value_title_2</zorder>
   <zorder>logo_modify</zorder>
-  <zorder>logo_pushButton</zorder>
+  <zorder>logo_enter</zorder>
+  <zorder>logo_register</zorder>
  </widget>
  <resources/>
  <connections/>

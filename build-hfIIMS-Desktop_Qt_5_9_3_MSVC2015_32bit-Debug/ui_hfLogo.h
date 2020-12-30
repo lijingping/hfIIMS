@@ -37,7 +37,8 @@ public:
     QLineEdit *logo_username;
     QLabel *oxygen_value_title_2;
     QPushButton *logo_modify;
-    QPushButton *logo_pushButton;
+    QPushButton *logo_enter;
+    QPushButton *logo_register;
 
     void setupUi(QWidget *hfLogo)
     {
@@ -79,7 +80,7 @@ public:
         logo_user_frame->setFrameShadow(QFrame::Raised);
         logo_password_frame = new QFrame(hfLogo);
         logo_password_frame->setObjectName(QStringLiteral("logo_password_frame"));
-        logo_password_frame->setGeometry(QRect(760, 560, 28, 40));
+        logo_password_frame->setGeometry(QRect(765, 560, 28, 40));
         logo_password_frame->setStyleSheet(QStringLiteral("image: url(:/logo/logo_password.png);"));
         logo_password_frame->setFrameShape(QFrame::StyledPanel);
         logo_password_frame->setFrameShadow(QFrame::Raised);
@@ -112,14 +113,20 @@ public:
 "font: 18pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
         logo_modify = new QPushButton(hfLogo);
         logo_modify->setObjectName(QStringLiteral("logo_modify"));
-        logo_modify->setGeometry(QRect(1015, 670, 142, 34));
+        logo_modify->setGeometry(QRect(1060, 670, 110, 34));
         logo_modify->setStyleSheet(QString::fromUtf8("font: 14pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
 "border-image: url(:/logo/logo_btn.png);\n"
 "color: rgb(255, 255, 255);"));
-        logo_pushButton = new QPushButton(hfLogo);
-        logo_pushButton->setObjectName(QStringLiteral("logo_pushButton"));
-        logo_pushButton->setGeometry(QRect(750, 670, 142, 34));
-        logo_pushButton->setStyleSheet(QString::fromUtf8("font: 14pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
+        logo_enter = new QPushButton(hfLogo);
+        logo_enter->setObjectName(QStringLiteral("logo_enter"));
+        logo_enter->setGeometry(QRect(740, 670, 110, 34));
+        logo_enter->setStyleSheet(QString::fromUtf8("font: 14pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
+"border-image: url(:/logo/logo_btn.png);\n"
+"color: rgb(255, 255, 255);"));
+        logo_register = new QPushButton(hfLogo);
+        logo_register->setObjectName(QStringLiteral("logo_register"));
+        logo_register->setGeometry(QRect(900, 670, 110, 34));
+        logo_register->setStyleSheet(QString::fromUtf8("font: 14pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
 "border-image: url(:/logo/logo_btn.png);\n"
 "color: rgb(255, 255, 255);"));
         logo_touch_pushButton->raise();
@@ -134,7 +141,8 @@ public:
         logo_username->raise();
         oxygen_value_title_2->raise();
         logo_modify->raise();
-        logo_pushButton->raise();
+        logo_enter->raise();
+        logo_register->raise();
 
         retranslateUi(hfLogo);
 
@@ -149,11 +157,12 @@ public:
         logo_input_frame->setText(QString());
         logo_input_frame_2->setText(QString());
         oxygen_value_title->setText(QApplication::translate("hfLogo", "\345\257\206\347\240\201", Q_NULLPTR));
-        logo_password->setText(QApplication::translate("hfLogo", "gsgsdgsgsg", Q_NULLPTR));
+        logo_password->setText(QString());
         logo_username->setText(QString());
         oxygen_value_title_2->setText(QApplication::translate("hfLogo", "\347\224\250\346\210\267\345\220\215", Q_NULLPTR));
         logo_modify->setText(QApplication::translate("hfLogo", "\344\277\256\346\224\271\345\257\206\347\240\201", Q_NULLPTR));
-        logo_pushButton->setText(QApplication::translate("hfLogo", "\347\231\273\345\205\245/\346\263\250\345\206\214", Q_NULLPTR));
+        logo_enter->setText(QApplication::translate("hfLogo", "\347\231\273\345\205\245", Q_NULLPTR));
+        logo_register->setText(QApplication::translate("hfLogo", "\346\263\250\345\206\214", Q_NULLPTR));
     } // retranslateUi
 
 };

@@ -15,6 +15,11 @@ public:
     explicit hfLogo(QWidget *parent = 0);
     ~hfLogo();
 
+private slots:
+    void on_logo_enter_clicked();
+    void on_logo_modify_clicked();
+    void on_logo_register_clicked();
+
 private:
     Ui::hfLogo *ui;
 };

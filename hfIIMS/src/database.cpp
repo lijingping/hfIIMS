@@ -35,7 +35,7 @@ database::~database()
 }
 
 //注册功能
-bool database::addRegiserUser(const QString &username, const QString &password, const QString &phone)
+bool database::addRegiserUser(const QString &username, const QString &password)
 {
     //调用QSqlDatabase的静态函数databas创建了一个名为hfIIMS的连接
     QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
@@ -43,13 +43,55 @@ bool database::addRegiserUser(const QString &username, const QString &password, 
     //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
     QSqlQuery  query(db);
 
-    //将输入username、password、phone 的数据插入表中；
-    query.prepare("INSERT INTO User (username,password,phone) "
-                  "VALUES (?, ?, ?)");
+    //将输入username、password的数据插入表中
+    query.prepare(
+        "INSERT INTO tb_user (id,username,password,last_logon_date,modify_date,create_date) VALUES ((select count(*)+1 from tb_user),?, ?,datetime('now','localtime'),datetime('now','localtime'),datetime('now','localtime'))");
 
     query.addBindValue(username);
     query.addBindValue(password);
-    query.addBindValue(phone);
+    bool ok = query.exec(); //判断打开数据库是否成功；
+    if(!ok){
+        qDebug() << "Fail add regiser user : " << query.lastError().text();
+    }
+
+    return ok;
+}
+
+//注册功能
+bool database::logo(const QString &username, const QString &password)
+{
+    //调用QSqlDatabase的静态函数databas创建了一个名为hfIIMS的连接
+    QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
+
+    //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
+    QSqlQuery  query(db);
+
+    //将输入username、password的数据插入表中
+    query.prepare("update tb_user set last_logon_date = datetime('now','localtime') where username = ? and password = ?");
+
+    query.addBindValue(username);
+    query.addBindValue(password);
+    bool ok = query.exec(); //判断打开数据库是否成功；
+    if(!ok){
+        qDebug() << "Fail add regiser user : " << query.lastError().text();
+    }
+
+    return ok;
+}
+
+bool database::modifyPassword(const QString &username, const QString &password)
+{
+    //调用QSqlDatabase的静态函数databas创建了一个名为hfIIMS的连接
+    QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
+
+    //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
+    QSqlQuery  query(db);
+
+    //将输入username、password的数据插入表中
+    query.prepare("update tb_user set password = ? where username = ?");
+
+    query.addBindValue(password);
+    query.addBindValue(username);
     bool ok = query.exec(); //判断打开数据库是否成功；
     if(!ok){
         qDebug() << "Fail add regiser user : " << query.lastError().text();
@@ -85,7 +127,7 @@ bool database::queryUsername(const QString &username)
 {
     QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
     QSqlQuery query(db);
-    query.prepare("select *from tb_user where name=?");
+    query.prepare("select *from tb_user where username=?");
     query.addBindValue(username);
     bool ok = query.exec();
     if(!ok){
@@ -105,7 +147,7 @@ bool database::queryPassword(const QString &username,const QString &password)
 {
     QSqlDatabase db = QSqlDatabase::database(CONNECTION_NAME);
     QSqlQuery query(db);
-    query.prepare("select *from tb_user where name=? and password=?");
+    query.prepare("select *from tb_user where username=? and password=?");
     query.addBindValue(username);
     query.addBindValue(password);
     bool ok = query.exec();
@@ -113,10 +155,15 @@ bool database::queryPassword(const QString &username,const QString &password)
         qDebug() << "Fail query register password" << db.lastError().text();
         return false;
     }
-    if(query.next()){
+//    if(query.next()){
+        QStringList tableList;
+        while (query.next()) {
+            tableList << query.value(0).toString();
+        }
+
         return true;
-    }
-    else{
-        return false;
-    }
+//    }
+//    else{
+//        return false;
+//    }
 }
