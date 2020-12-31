@@ -32,7 +32,7 @@ hfTemperature::hfTemperature(QWidget *parent) :
     mCharts->addAxis(mAxisX,Qt::AlignBottom);
     mAxisY = new QValueAxis();
 //    mAxisY->setTitleText(tr("摄氏度（C）"));
-    mAxisY->setLabelFormat("%g .C");
+    mAxisY->setLabelFormat("%gC");
     mAxisY->setRange(0,40);
     mCharts->addAxis(mAxisY,Qt::AlignLeft);
 
@@ -49,7 +49,7 @@ hfTemperature::hfTemperature(QWidget *parent) :
     mCharts->setAxisY(mAxisY, l_pSpLineSeries);
 
     mCharts->setBackgroundVisible(false);
-    mChartview->setGeometry(0,40, 440, 240);
+    mChartview->setGeometry(0,45, 440, 240);
 }
 
 hfTemperature::~hfTemperature()

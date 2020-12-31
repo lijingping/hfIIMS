@@ -51,6 +51,7 @@ public:
         temperature_icon->setObjectName(QStringLiteral("temperature_icon"));
         temperature_icon->setMinimumSize(QSize(28, 50));
         temperature_icon->setMaximumSize(QSize(28, 50));
+        temperature_icon->setStyleSheet(QStringLiteral("image: url(:/img/temperature.png);"));
 
         horizontalLayout->addWidget(temperature_icon);
 
@@ -61,6 +62,8 @@ public:
         font.setFamily(QString::fromUtf8("\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223"));
         font.setPointSize(20);
         label_hint_temperature->setFont(font);
+        label_hint_temperature->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
+"font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
 
         horizontalLayout->addWidget(label_hint_temperature);
 
@@ -68,6 +71,7 @@ public:
         set->setObjectName(QStringLiteral("set"));
         set->setMinimumSize(QSize(35, 33));
         set->setMaximumSize(QSize(35, 33));
+        set->setStyleSheet(QStringLiteral("image: url(:/img/set.png);"));
 
         horizontalLayout->addWidget(set);
 
@@ -115,7 +119,7 @@ public:
         label_hint_temperature->setText(QApplication::translate("hfTemperature", "\346\270\251\345\272\246\346\233\262\347\272\277\345\233\276", Q_NULLPTR));
         set->setText(QString());
         temperature_desc->setText(QApplication::translate("hfTemperature", "\342\204\203/Min.    ", Q_NULLPTR));
-        temperature_unit->setText(QApplication::translate("hfTemperature", "        \346\221\204\346\260\217\345\272\246\357\274\210C\357\274\211", Q_NULLPTR));
+        temperature_unit->setText(QApplication::translate("hfTemperature", "       \346\221\204\346\260\217\345\272\246\357\274\210C\357\274\211", Q_NULLPTR));
         temperature_time->setText(QApplication::translate("hfTemperature", "\346\257\217\345\210\206\351\222\237\357\274\210Min\357\274\211        ", Q_NULLPTR));
     } // retranslateUi
 

@@ -48,6 +48,9 @@
          <height>50</height>
         </size>
        </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/temperature.png);</string>
+       </property>
        <property name="text">
         <string/>
        </property>
@@ -67,6 +70,10 @@
          <pointsize>20</pointsize>
         </font>
        </property>
+       <property name="styleSheet">
+        <string notr="true">color: rgb(255, 255, 255);
+font: 20pt &quot;方正黑体简体&quot;;</string>
+       </property>
        <property name="text">
         <string>温度曲线图</string>
        </property>
@@ -85,6 +92,9 @@
          <width>35</width>
          <height>33</height>
         </size>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">image: url(:/img/set.png);</string>
        </property>
        <property name="text">
         <string/>
@@ -120,7 +130,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
 color: rgb(91, 90, 117);</string>
      </property>
      <property name="text">
-      <string>        摄氏度（C）</string>
+      <string>       摄氏度（C）</string>
      </property>
     </widget>
    </item>
