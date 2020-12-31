@@ -76,6 +76,7 @@ void hfMainTitle::on_close_clicked()
 {
     if (m_phfModifyUser != NULL) {
         ((hfModifyUser*)m_phfModifyUser)->close();
+        m_phfModifyUser = NULL;
     }
     emit this->OnCloseWindow();
 }

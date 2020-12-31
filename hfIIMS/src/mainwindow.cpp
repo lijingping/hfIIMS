@@ -16,11 +16,11 @@ hfMainWindow::hfMainWindow(QWidget *parent) :
     connect(ui->main_title,SIGNAL(OnCloseWindow()),this,SLOT(OnCloseWindow()));
     ui->main_title->installEventFilter(this);
 
-    hfLogo *l_hfLogo = new hfLogo(this);
-    l_hfLogo->setObjectName(QStringLiteral("hfLogo"));
-    connect(l_hfLogo,SIGNAL(OnUpdateUserName()),ui->main_title,SLOT(OnUpdateUserName()));
-    l_hfLogo->installEventFilter(this);
-    l_hfLogo->show();
+//    hfLogo *l_hfLogo = new hfLogo(this);
+//    l_hfLogo->setObjectName(QStringLiteral("hfLogo"));
+//    connect(l_hfLogo,SIGNAL(OnUpdateUserName()),ui->main_title,SLOT(OnUpdateUserName()));
+//    l_hfLogo->installEventFilter(this);
+//    l_hfLogo->show();
 
     QFile file("./res/qss/mainwindow.css");
     if (!file.open(QIODevice::ReadOnly)) {

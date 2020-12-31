@@ -258,6 +258,7 @@ debug\qrc_img.cpp: ..\hfIIMS\res\img\img.qrc \
 		..\hfIIMS\res\img\data.svg \
 		..\hfIIMS\res\img\oxygen_point.png \
 		..\hfIIMS\res\img\sensor.svg \
+		..\hfIIMS\res\img\logo_icon.png \
 		..\hfIIMS\res\img\time.png \
 		..\hfIIMS\res\img\oxygen_alert_icon2.png \
 		..\hfIIMS\res\img\img.qrc \
