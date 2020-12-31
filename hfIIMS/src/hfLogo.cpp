@@ -37,6 +37,9 @@ void hfLogo::on_logo_enter_clicked()
             //关闭登陆页面
             this->close();
             l_userDb->logo(l_username, l_password);
+            if(!l_userDb->queryData(l_username, l_password)){
+                QMessageBox::information(NULL, "请求数据", "失败", QMessageBox::Ok);
+            }
             emit this->OnUpdateUserName();
         }
         //在数据库中查询不到即弹出信息错误窗口

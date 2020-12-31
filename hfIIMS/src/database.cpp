@@ -16,7 +16,6 @@ database::database(QObject *parent) : QObject(parent)
     //打开数据库
     bool l_ok = l_db.open();
     if(!l_ok){
-        /*<< db.lastError.text();*/
        qDebug() << "Fail to open database,error:" ;
     }
 }
@@ -51,7 +50,8 @@ bool database::addRegiserUser(const QString &username, const QString &password)
 
     l_query.addBindValue(username);
     l_query.addBindValue(password);
-    bool l_ok = l_query.exec(); //判断打开数据库是否成功；
+    //判断打开数据库是否成功；
+    bool l_ok = l_query.exec();
     if(!l_ok){
         qDebug() << "Fail add regiser user : " << l_query.lastError().text();
     }
@@ -68,12 +68,11 @@ bool database::logo(const QString &username, const QString &password)
     //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
     QSqlQuery  l_query(l_db);
 
-    //将输入username、password的数据插入表中
     l_query.prepare("update tb_user set last_logon_date = datetime('now','localtime') where username = ? and password = ?");
 
     l_query.addBindValue(username);
     l_query.addBindValue(password);
-    bool l_ok = l_query.exec(); //判断打开数据库是否成功；
+    bool l_ok = l_query.exec();
     if(!l_ok){
         qDebug() << "Fail add regiser user : " << l_query.lastError().text();
     }
@@ -92,15 +91,43 @@ bool database::modifyPassword(const QString &username, const QString &password)
     //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
     QSqlQuery  l_query(l_db);
 
-    //将输入username、password的数据插入表中
     l_query.prepare("update tb_user set password = ? where username = ?");
 
     l_query.addBindValue(password);
     l_query.addBindValue(username);
-    bool l_ok = l_query.exec(); //判断打开数据库是否成功；
+    bool l_ok = l_query.exec();
     if(!l_ok){
         qDebug() << "Fail add regiser user : " << l_query.lastError().text();
     }
+
+    return l_ok;
+}
+
+bool database::modifyData(const hfSqlTables_user_data &userData)
+{
+    //调用QSqlDatabase的静态函数databas创建了一个名为hfIIMS的连接
+    QSqlDatabase l_db = QSqlDatabase::database(CONNECTION_NAME);
+
+    //创建一个关联的QSqlQuery对象，由QSqlQuery来实现以下工作
+    QSqlQuery  l_query(l_db);
+    l_query.prepare("update tb_user set username=?,age=?,work=?,phone=?,desc=? where id=?");
+
+    l_query.addBindValue(userData.username);
+    l_query.addBindValue(userData.age);
+    l_query.addBindValue(userData.work);
+    l_query.addBindValue(userData.phone);
+    l_query.addBindValue(userData.desc);
+    l_query.addBindValue(m_user_data.id);
+    bool l_ok = l_query.exec();
+    if(!l_ok){
+        qDebug() << "Fail add regiser user : " << l_query.lastError().text();
+    }
+
+    m_user_data.username = userData.username;
+    m_user_data.age = userData.age;
+    m_user_data.work = userData.work;
+    m_user_data.phone = userData.phone;
+    m_user_data.desc = userData.desc;
 
     return l_ok;
 }
@@ -193,6 +220,8 @@ bool database::queryData(const QString &username, const QString &password)
         m_user_data.last_logo_date = l_query.value(LAST_LOGON_DATE).toString();
         m_user_data.create_date = l_query.value(CREATE_DATE).toString();
         m_user_data.modify_date = l_query.value(MODIFY_DATE).toString();
+        m_user_data.phone = l_query.value(PHONE).toInt();
+        m_user_data.work = l_query.value(WORK).toString();
         return true;
     }
     else

@@ -38,11 +38,16 @@
         <file>waves.png</file>
         <file>waves_arrow.png</file>
         <file>wet.png</file>
-        <file>个人信息框.png</file>
-        <file>设置阈值框.png</file>
         <file>信息图标.png</file>
         <file>噪音分贝图.png</file>
         <file>噪音框.png</file>
         <file>照片 拷贝.png</file>
+        <file>user_desc.png</file>
+        <file>user_frame.png</file>
+        <file>logo_icon.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>user_desc.png</file>
+        <file>user_frame.png</file>
     </qresource>
 </RCC>

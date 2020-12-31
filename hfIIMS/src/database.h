@@ -14,10 +14,27 @@ typedef enum
     DESC,
     LAST_LOGON_DATE,
     CREATE_DATE,
-    MODIFY_DATE
+    MODIFY_DATE,
+    PHONE,
+    WORK
 }hfSqlTables_user;
 
 struct hfSqlTables_user_data {
+    hfSqlTables_user_data(){
+        id = 0;
+        username = "";
+        password = "";
+        address = "";
+        age = 0;
+        email = "";
+        desc = "";
+        last_logo_date = "";
+        create_date = "";
+        modify_date = "";
+        phone = 0;
+        work = "";
+    }
+
     int id;
     QString username;
     QString password;
@@ -28,6 +45,8 @@ struct hfSqlTables_user_data {
     QString last_logo_date;
     QString create_date;
     QString modify_date;
+    int phone;
+    QString work;
 };
 
 class database : public QObject
@@ -40,6 +59,7 @@ public:
     bool addRegiserUser(const QString &username,const QString &password);
     bool logo(const QString &username, const QString &password);
     bool modifyPassword(const QString &username, const QString &password);
+    bool modifyData(const hfSqlTables_user_data &userData);
     bool queryPhone(const QString &phone);
     bool queryUsername(const QString &username);
     bool queryPassword(const QString &username,const QString &password);

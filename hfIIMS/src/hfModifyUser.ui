@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>hfModifyUser</class>
+ <widget class="QWidget" name="hfModifyUser">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>233</width>
+    <height>295</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QLabel" name="modify_title_2">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>40</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>用户名：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="modify_username">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>40</y>
+     <width>260</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;
+background-color: rgba(255, 255, 255, 0);
+border:0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QFrame" name="modify_frame">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>233</width>
+     <height>295</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/img/user_frame.png);</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modify_title_3">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>67</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>年龄：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="modify_age">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>67</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;
+background-color: rgba(255, 255, 255, 0);
+border:0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modify_title_4">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>94</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>职业：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="modify_work">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>94</y>
+     <width>300</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;方正黑体简体&quot;;
+background-color: rgba(255, 255, 255, 0);
+border:0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modify_title_5">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>121</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>联系方式：</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="modify_phone">
+   <property name="geometry">
+    <rect>
+     <x>90</x>
+     <y>121</y>
+     <width>260</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;
+background-color: rgba(255, 255, 255, 0);
+border:0px;
+</string>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+  </widget>
+  <widget class="QLabel" name="modify_title_6">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>146</y>
+     <width>80</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+   </property>
+   <property name="text">
+    <string>个人介绍：</string>
+   </property>
+  </widget>
+  <widget class="QTextEdit" name="modify_desc_textEdit">
+   <property name="geometry">
+    <rect>
+     <x>17</x>
+     <y>170</y>
+     <width>200</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;
+border-image: url(:/img/user_desc.png);</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="modify_save">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>240</y>
+     <width>110</width>
+     <height>34</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 14pt &quot;方正黑体简体&quot;;
+border-image: url(:/logo/logo_btn.png);
+color: rgb(255, 255, 255);</string>
+   </property>
+   <property name="text">
+    <string>保存</string>
+   </property>
+  </widget>
+  <zorder>modify_frame</zorder>
+  <zorder>modify_title_2</zorder>
+  <zorder>modify_username</zorder>
+  <zorder>modify_title_3</zorder>
+  <zorder>modify_age</zorder>
+  <zorder>modify_title_4</zorder>
+  <zorder>modify_work</zorder>
+  <zorder>modify_title_5</zorder>
+  <zorder>modify_phone</zorder>
+  <zorder>modify_title_6</zorder>
+  <zorder>modify_desc_textEdit</zorder>
+  <zorder>modify_save</zorder>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
