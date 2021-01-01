@@ -34,8 +34,8 @@ public:
     QLabel *set;
     QLabel *temperature_desc;
     QLabel *temperature_unit;
-    QSpacerItem *verticalSpacer;
     QLabel *temperature_time;
+    QSpacerItem *verticalSpacer;
 
     void setupUi(QFrame *hfWetDisplay)
     {
@@ -65,6 +65,8 @@ public:
 
         wet_display_hint = new QLabel(hfWetDisplay);
         wet_display_hint->setObjectName(QStringLiteral("wet_display_hint"));
+        wet_display_hint->setMinimumSize(QSize(0, 0));
+        wet_display_hint->setMaximumSize(QSize(16777215, 16777215));
         wet_display_hint->setStyleSheet(QString::fromUtf8("color: rgb(255, 255, 255);\n"
 "font: 20pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";"));
 
@@ -96,21 +98,21 @@ public:
         temperature_unit = new QLabel(hfWetDisplay);
         temperature_unit->setObjectName(QStringLiteral("temperature_unit"));
         temperature_unit->setStyleSheet(QString::fromUtf8("font: 10pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
-"color: rgb(91, 90, 117);"));
+"color: rgb(93, 97, 127);"));
 
         formLayout->setWidget(4, QFormLayout::FieldRole, temperature_unit);
-
-        verticalSpacer = new QSpacerItem(20, 500, QSizePolicy::Minimum, QSizePolicy::Expanding);
-
-        formLayout->setItem(5, QFormLayout::LabelRole, verticalSpacer);
 
         temperature_time = new QLabel(hfWetDisplay);
         temperature_time->setObjectName(QStringLiteral("temperature_time"));
         temperature_time->setStyleSheet(QString::fromUtf8("font: 10pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
-"color: rgb(91, 90, 117);"));
+"color: rgb(93, 97, 127);"));
         temperature_time->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
-        formLayout->setWidget(6, QFormLayout::SpanningRole, temperature_time);
+        formLayout->setWidget(6, QFormLayout::FieldRole, temperature_time);
+
+        verticalSpacer = new QSpacerItem(20, 400, QSizePolicy::Minimum, QSizePolicy::Expanding);
+
+        formLayout->setItem(5, QFormLayout::FieldRole, verticalSpacer);
 
 
         retranslateUi(hfWetDisplay);

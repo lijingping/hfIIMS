@@ -28,12 +28,12 @@ hfWetDisplay::hfWetDisplay(QWidget *parent) :
     mAxisX->setLabelFormat("%g");
     mAxisX->setRange(0,60);
     mAxisX->setTickCount(l_nRow);
-    mAxisX->setGridLineVisible(false);
     mCharts->addAxis(mAxisX,Qt::AlignBottom);
 
     mAxisY = new QValueAxis();
     mAxisY->setLabelFormat("%g%%");
     mAxisY->setRange(0,100);
+    mAxisY->setGridLineVisible(false);
     mCharts->addAxis(mAxisY,Qt::AlignLeft);
 
     //创建光滑曲线序列，并添加数据

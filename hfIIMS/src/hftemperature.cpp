@@ -34,6 +34,7 @@ hfTemperature::hfTemperature(QWidget *parent) :
 //    mAxisY->setTitleText(tr("摄氏度（C）"));
     mAxisY->setLabelFormat("%gC");
     mAxisY->setRange(0,40);
+    mAxisY->setGridLineVisible(false);
     mCharts->addAxis(mAxisY,Qt::AlignLeft);
 
     //创建光滑曲线序列，并添加数据

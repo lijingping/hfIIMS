@@ -127,7 +127,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
     <widget class="QLabel" name="temperature_unit">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
-color: rgb(91, 90, 117);</string>
+color: rgb(93, 97, 127);</string>
      </property>
      <property name="text">
       <string>       摄氏度（C）</string>
@@ -151,7 +151,7 @@ color: rgb(91, 90, 117);</string>
     <widget class="QLabel" name="temperature_time">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
-color: rgb(91, 90, 117);</string>
+color: rgb(93, 97, 127);</string>
      </property>
      <property name="text">
       <string>每分钟（Min）        </string>

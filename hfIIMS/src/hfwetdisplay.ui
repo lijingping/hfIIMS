@@ -68,6 +68,18 @@
        </item>
        <item>
         <widget class="QLabel" name="wet_display_hint">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>0</height>
+          </size>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>16777215</width>
+           <height>16777215</height>
+          </size>
+         </property>
          <property name="styleSheet">
           <string notr="true">color: rgb(255, 255, 255);
 font: 20pt &quot;方正黑体简体&quot;;</string>
@@ -127,31 +139,18 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
     <widget class="QLabel" name="temperature_unit">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
-color: rgb(91, 90, 117);</string>
+color: rgb(93, 97, 127);</string>
      </property>
      <property name="text">
       <string>       湿度RH%</string>
      </property>
     </widget>
    </item>
-   <item row="5" column="0">
-    <spacer name="verticalSpacer">
-     <property name="orientation">
-      <enum>Qt::Vertical</enum>
-     </property>
-     <property name="sizeHint" stdset="0">
-      <size>
-       <width>20</width>
-       <height>500</height>
-      </size>
-     </property>
-    </spacer>
-   </item>
-   <item row="6" column="0" colspan="2">
+   <item row="6" column="1">
     <widget class="QLabel" name="temperature_time">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
-color: rgb(91, 90, 117);</string>
+color: rgb(93, 97, 127);</string>
      </property>
      <property name="text">
       <string>每分钟（Min）        </string>
@@ -160,6 +159,19 @@ color: rgb(91, 90, 117);</string>
       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
      </property>
     </widget>
+   </item>
+   <item row="5" column="1">
+    <spacer name="verticalSpacer">
+     <property name="orientation">
+      <enum>Qt::Vertical</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>20</width>
+       <height>400</height>
+      </size>
+     </property>
+    </spacer>
    </item>
   </layout>
  </widget>

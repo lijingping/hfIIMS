@@ -90,7 +90,7 @@ public:
         temperature_unit = new QLabel(hfTemperature);
         temperature_unit->setObjectName(QStringLiteral("temperature_unit"));
         temperature_unit->setStyleSheet(QString::fromUtf8("font: 10pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
-"color: rgb(91, 90, 117);"));
+"color: rgb(93, 97, 127);"));
 
         verticalLayout_2->addWidget(temperature_unit);
 
@@ -101,7 +101,7 @@ public:
         temperature_time = new QLabel(hfTemperature);
         temperature_time->setObjectName(QStringLiteral("temperature_time"));
         temperature_time->setStyleSheet(QString::fromUtf8("font: 10pt \"\346\226\271\346\255\243\351\273\221\344\275\223\347\256\200\344\275\223\";\n"
-"color: rgb(91, 90, 117);"));
+"color: rgb(93, 97, 127);"));
         temperature_time->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         verticalLayout_2->addWidget(temperature_time);
