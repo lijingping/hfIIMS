@@ -35,7 +35,7 @@ void hfModifyUser::on_modify_save_clicked()
 {
     if (ui->modify_username->text().isEmpty())
     {
-        QMessageBox::information(NULL, "error", "用户名空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("用户名空"), QMessageBox::Ok);
         return;
     }
 
@@ -49,10 +49,10 @@ void hfModifyUser::on_modify_save_clicked()
     if(l_userDb->modifyData(userData)){
         emit this->OnUpdateUserName();
 
-        QMessageBox::information(NULL, "", "保存成功", QMessageBox::Ok);
+        QMessageBox::information(NULL, "", tr("保存成功"), QMessageBox::Ok);
     }
     else
     {
-        QMessageBox::information(NULL, "error", "保存失败", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("保存失败"), QMessageBox::Ok);
     }
 }

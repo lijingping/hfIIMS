@@ -21,12 +21,12 @@ void hfLogo::on_logo_enter_clicked()
     QString l_password = ui->logo_password->text();
     if (l_username.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "用户名空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("用户名空"), QMessageBox::Ok);
         return;
     }
     else if (l_password.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "密码为空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("密码为空"), QMessageBox::Ok);
         return;
     }
 
@@ -38,19 +38,19 @@ void hfLogo::on_logo_enter_clicked()
             this->close();
             l_userDb->logo(l_username, l_password);
             if(!l_userDb->queryData(l_username, l_password)){
-                QMessageBox::information(NULL, "请求数据", "失败", QMessageBox::Ok);
+                QMessageBox::information(NULL, tr("请求数据"), tr("失败"), QMessageBox::Ok);
             }
             emit this->OnUpdateUserName();
         }
         //在数据库中查询不到即弹出信息错误窗口
         else
         {
-            QMessageBox::information(NULL, "error", "密码错误", QMessageBox::Ok);
+            QMessageBox::information(NULL, "error", tr("密码错误"), QMessageBox::Ok);
         }
     }
     else
     {
-        QMessageBox::information(NULL, "error", "用户名错", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error",tr( "用户名错"), QMessageBox::Ok);
     }
 }
 
@@ -60,23 +60,23 @@ void hfLogo::on_logo_modify_clicked()
     QString l_password = ui->logo_password->text();
     if (l_username.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "用户名空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("用户名空"), QMessageBox::Ok);
         return;
     }
     else if (l_password.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "密码为空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("密码为空"), QMessageBox::Ok);
         return;
     }
 
     database *l_userDb = database::getInstance();
     if(l_userDb->modifyPassword(l_username, l_password)){
-        QMessageBox::information(NULL, "", "修改成功", QMessageBox::Ok);
+        QMessageBox::information(NULL, "", tr("修改成功"), QMessageBox::Ok);
     }
     //在数据库中查询不到即弹出信息错误窗口
     else
     {
-        QMessageBox::information(NULL, "error", "修改失败", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("修改失败"), QMessageBox::Ok);
     }
 }
 
@@ -86,22 +86,22 @@ void hfLogo::on_logo_register_clicked()
     QString l_password = ui->logo_password->text();
     if (l_username.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "用户名空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("用户名空"), QMessageBox::Ok);
         return;
     }
     else if (l_password.isEmpty())
     {
-        QMessageBox::information(NULL, "error", "密码为空", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("密码为空"), QMessageBox::Ok);
         return;
     }
 
     database *l_userDb = database::getInstance();
     if(l_userDb->addRegiserUser(l_username, l_password)){
-        QMessageBox::information(NULL, "", "注册成功", QMessageBox::Ok);
+        QMessageBox::information(NULL, "", tr("注册成功"), QMessageBox::Ok);
     }
     //在数据库中查询不到即弹出信息错误窗口
     else
     {
-        QMessageBox::information(NULL, "error", "注册失败", QMessageBox::Ok);
+        QMessageBox::information(NULL, "error", tr("注册失败"), QMessageBox::Ok);
     }
 }
