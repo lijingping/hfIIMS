@@ -1,9 +1,11 @@
 #include "hftemperature.h"
 #include "ui_hftemperature.h"
+#include "hfThreshold.h"
 
 hfTemperature::hfTemperature(QWidget *parent) :
     QFrame(parent),
-    ui(new Ui::hfTemperature)
+    ui(new Ui::hfTemperature),
+    m_phfThreshold(NULL)
 {
     QFile file2("./res/qss/hftemperature.css");
     if (!file2.open(QIODevice::ReadOnly)) {
@@ -56,4 +58,26 @@ hfTemperature::hfTemperature(QWidget *parent) :
 hfTemperature::~hfTemperature()
 {
     delete ui;
+}
+
+void hfTemperature::on_temperature_set_clicked()
+{
+    if (m_phfThreshold){
+        m_phfThreshold->close();
+    }
+
+    hfThreshold *l_hfThreshold = new hfThreshold();
+    l_hfThreshold->setObjectName(QStringLiteral("hfThreshold"));
+
+    l_hfThreshold->setWindowIcon(QIcon(":/img/logo_icon.png"));
+    l_hfThreshold->setWindowTitle(tr("修改温度"));
+    l_hfThreshold->setWindowFlags(Qt::Tool);
+    l_hfThreshold->setFocus();
+    l_hfThreshold->show();
+
+    m_phfThreshold = l_hfThreshold;
+
+    const QRect &geometry = ui->temperature_set->geometry();
+    QPoint pos = ui->temperature_set->mapToGlobal(QPoint(0, 0));
+    m_phfThreshold->move(pos.x()+geometry.width()-m_phfThreshold->width(), pos.y()+geometry.height());
 }

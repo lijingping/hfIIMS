@@ -17,6 +17,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 
@@ -29,7 +30,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *temperature_icon;
     QLabel *label_hint_temperature;
-    QLabel *set;
+    QPushButton *temperature_set;
     QLabel *temperature_desc;
     QLabel *temperature_unit;
     QSpacerItem *verticalSpacer;
@@ -67,13 +68,13 @@ public:
 
         horizontalLayout->addWidget(label_hint_temperature);
 
-        set = new QLabel(hfTemperature);
-        set->setObjectName(QStringLiteral("set"));
-        set->setMinimumSize(QSize(35, 33));
-        set->setMaximumSize(QSize(35, 33));
-        set->setStyleSheet(QStringLiteral("image: url(:/img/set.png);"));
+        temperature_set = new QPushButton(hfTemperature);
+        temperature_set->setObjectName(QStringLiteral("temperature_set"));
+        temperature_set->setMinimumSize(QSize(35, 33));
+        temperature_set->setMaximumSize(QSize(35, 33));
+        temperature_set->setStyleSheet(QStringLiteral("border-image: url(:/img/set.png);"));
 
-        horizontalLayout->addWidget(set);
+        horizontalLayout->addWidget(temperature_set);
 
 
         verticalLayout_2->addLayout(horizontalLayout);
@@ -117,7 +118,7 @@ public:
         hfTemperature->setWindowTitle(QApplication::translate("hfTemperature", "Frame", Q_NULLPTR));
         temperature_icon->setText(QString());
         label_hint_temperature->setText(QApplication::translate("hfTemperature", "\346\270\251\345\272\246\346\233\262\347\272\277\345\233\276", Q_NULLPTR));
-        set->setText(QString());
+        temperature_set->setText(QString());
         temperature_desc->setText(QApplication::translate("hfTemperature", "\342\204\203/Min.    ", Q_NULLPTR));
         temperature_unit->setText(QApplication::translate("hfTemperature", "       \346\221\204\346\260\217\345\272\246\357\274\210C\357\274\211", Q_NULLPTR));
         temperature_time->setText(QApplication::translate("hfTemperature", "\346\257\217\345\210\206\351\222\237\357\274\210Min\357\274\211        ", Q_NULLPTR));

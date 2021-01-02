@@ -17,6 +17,9 @@ public:
     explicit hfTemperature(QWidget *parent = 0);
     ~hfTemperature();
 
+private slots:
+    void on_temperature_set_clicked();
+
 private:
     Ui::hfTemperature *ui;
     QChart *mCharts;
@@ -24,6 +27,7 @@ private:
     QValueAxis *mAxisX;
     QValueAxis *mAxisY;
     QLineSeries *mData;
+    QWidget *m_phfThreshold;
 
 };
 

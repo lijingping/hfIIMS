@@ -37,7 +37,8 @@ SOURCES += \
     src/hfHeartRate.cpp \
     src/database.cpp \
     src/hfLogo.cpp \
-    src/hfModifyUser.cpp
+    src/hfModifyUser.cpp \
+    src/hfThreshold.cpp
 
 HEADERS += \
     util/signleton.hpp \
@@ -51,7 +52,8 @@ HEADERS += \
     src/hfHeartRate.h \
     src/database.h \
     src/hfLogo.h \
-    src/hfModifyUser.h
+    src/hfModifyUser.h \
+    src/hfThreshold.h
 
 FORMS += \
       ui/mainwindow.ui \
@@ -62,7 +64,8 @@ FORMS += \
     src/hfVolumeSet.ui \
     src/hfHeartRate.ui \
     src/hfLogo.ui \
-    src/hfModifyUser.ui
+    src/hfModifyUser.ui \
+    src/hfThreshold.ui
 
 DISTFILES += \
     res/img/logo.svg  \

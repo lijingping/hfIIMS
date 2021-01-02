@@ -9,7 +9,8 @@
 
 hfMainTitle::hfMainTitle(QWidget *parent) :
     QWidget(parent),
-    ui(new Ui::hfMainTitle)
+    ui(new Ui::hfMainTitle),
+    m_phfModifyUser(NULL)
 {
     QFile file2("./res/qss/hfmaintitle.css");
     if (!file2.open(QIODevice::ReadOnly)) {
@@ -32,8 +33,6 @@ hfMainTitle::hfMainTitle(QWidget *parent) :
     //时分
     QString l_time = l_date.toString("   hh:mm");
     ui->time_label->setText(l_specific_date + l_week + l_time);
-
-    m_phfModifyUser = NULL;
 }
 
 hfMainTitle::~hfMainTitle()
