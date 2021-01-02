@@ -62,7 +62,7 @@ hfTemperature::~hfTemperature()
 
 void hfTemperature::onThreshold(QString value)
 {
-    qDebug() << "n"+value;
+    qDebug() << value;
 }
 
 void hfTemperature::on_temperature_set_clicked()

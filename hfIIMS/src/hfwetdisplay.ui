@@ -90,7 +90,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
         </widget>
        </item>
        <item>
-        <widget class="QLabel" name="set">
+        <widget class="QPushButton" name="wet_set">
          <property name="minimumSize">
           <size>
            <width>35</width>
@@ -104,7 +104,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
           </size>
          </property>
          <property name="styleSheet">
-          <string notr="true">image: url(:/img/set.png);</string>
+          <string notr="true">border-image: url(:/img/set.png);</string>
          </property>
          <property name="text">
           <string/>

@@ -38,9 +38,6 @@ hfMainTitle::hfMainTitle(QWidget *parent) :
 hfMainTitle::~hfMainTitle()
 {
     delete database::getInstance();
-    if (m_phfModifyUser != NULL) {
-        ((hfModifyUser*)m_phfModifyUser)->close();
-    }
     delete ui;
 }
 
@@ -73,43 +70,30 @@ void hfMainTitle::paintEvent(QPaintEvent *)
 
 void hfMainTitle::on_close_clicked()
 {
-    if (m_phfModifyUser != NULL) {
-        ((hfModifyUser*)m_phfModifyUser)->close();
-        m_phfModifyUser = NULL;
-    }
     emit this->OnCloseWindow();
 }
 
 void hfMainTitle::on_user_name_clicked()
 {
-//    if (m_phfModifyUser != NULL) {
-//        ((hfModifyUser*)m_phfModifyUser)->close();
-
-//        m_phfModifyUser = NULL;
-//    }
-
-    if (m_phfModifyUser == NULL) {
-        hfModifyUser *l_hfModifyUser = new hfModifyUser();
-        l_hfModifyUser->setObjectName(QStringLiteral("hfModifyUser"));
-
-        connect(l_hfModifyUser, SIGNAL(OnUpdateUserName()),this, SLOT(OnUpdateUserName()));
-        l_hfModifyUser->installEventFilter(this);
-
-
-        //l_hfModifyUser->setWindowFlags(l_hfModifyUser->windowFlags() | Qt::FramelessWindowHint);
-        l_hfModifyUser->setWindowIcon(QIcon(":/img/logo_icon.png"));
-        l_hfModifyUser->setWindowTitle(tr("修改用户"));
-        l_hfModifyUser->setWindowFlags(Qt::WindowStaysOnTopHint);
-        //l_hfModifyUser->setAttribute(Qt::WA_DeleteOnClose);
-        //l_hfModifyUser->setWindowOpacity(100);
-        //l_hfModifyUser->setAttribute(Qt::WA_TranslucentBackground);
-        l_hfModifyUser->show();
-
-        m_phfModifyUser = l_hfModifyUser;
+    if (m_phfModifyUser != NULL) {
+        m_phfModifyUser->close();
     }
 
+    hfModifyUser *l_hfModifyUser = new hfModifyUser();
+    l_hfModifyUser->setObjectName(QStringLiteral("hfModifyUser"));
+
+    connect(l_hfModifyUser, SIGNAL(OnUpdateUserName()),this, SLOT(OnUpdateUserName()));
+    l_hfModifyUser->installEventFilter(this);
+
+
+    l_hfModifyUser->setWindowIcon(QIcon(":/img/logo_icon.png"));
+    l_hfModifyUser->setWindowTitle(tr("修改用户"));
+    l_hfModifyUser->setWindowFlags(Qt::Tool);
+    l_hfModifyUser->show();
+
+    m_phfModifyUser = l_hfModifyUser;
+
     const QRect &geometry = ui->user_name->geometry();
-    const int &width = ((hfModifyUser*)m_phfModifyUser)->geometry().width();
-    ((hfModifyUser*)m_phfModifyUser)->move(geometry.right()-width, geometry.bottom()+geometry.height());
-    ((hfModifyUser*)m_phfModifyUser)->refreshData();
+    QPoint pos = ui->user_name->mapToGlobal(QPoint(0, 0));
+    m_phfModifyUser->move(pos.x()+geometry.width()-m_phfModifyUser->width(), pos.y()+geometry.height());
 }

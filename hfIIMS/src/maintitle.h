@@ -28,7 +28,7 @@ private slots:
 private:
     Ui::hfMainTitle *ui;
     QTimer m_timer;
-    void* m_phfModifyUser;
+    QWidget* m_phfModifyUser;
 };
 
 #endif // MAINTITLE_H

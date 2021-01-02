@@ -18,6 +18,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QSpacerItem>
 #include <QtWidgets/QVBoxLayout>
 
@@ -31,7 +32,7 @@ public:
     QHBoxLayout *horizontalLayout;
     QLabel *wet_icon;
     QLabel *wet_display_hint;
-    QLabel *set;
+    QPushButton *wet_set;
     QLabel *temperature_desc;
     QLabel *temperature_unit;
     QLabel *temperature_time;
@@ -72,13 +73,13 @@ public:
 
         horizontalLayout->addWidget(wet_display_hint);
 
-        set = new QLabel(hfWetDisplay);
-        set->setObjectName(QStringLiteral("set"));
-        set->setMinimumSize(QSize(35, 33));
-        set->setMaximumSize(QSize(35, 33));
-        set->setStyleSheet(QStringLiteral("image: url(:/img/set.png);"));
+        wet_set = new QPushButton(hfWetDisplay);
+        wet_set->setObjectName(QStringLiteral("wet_set"));
+        wet_set->setMinimumSize(QSize(35, 33));
+        wet_set->setMaximumSize(QSize(35, 33));
+        wet_set->setStyleSheet(QStringLiteral("border-image: url(:/img/set.png);"));
 
-        horizontalLayout->addWidget(set);
+        horizontalLayout->addWidget(wet_set);
 
 
         verticalLayout->addLayout(horizontalLayout);
@@ -125,7 +126,7 @@ public:
         hfWetDisplay->setWindowTitle(QApplication::translate("hfWetDisplay", "Frame", Q_NULLPTR));
         wet_icon->setText(QString());
         wet_display_hint->setText(QApplication::translate("hfWetDisplay", "\346\271\277\345\272\246\346\233\262\347\272\277\345\233\276:", Q_NULLPTR));
-        set->setText(QString());
+        wet_set->setText(QString());
         temperature_desc->setText(QApplication::translate("hfWetDisplay", "RH.%/Min.    ", Q_NULLPTR));
         temperature_unit->setText(QApplication::translate("hfWetDisplay", "       \346\271\277\345\272\246RH%", Q_NULLPTR));
         temperature_time->setText(QApplication::translate("hfWetDisplay", "\346\257\217\345\210\206\351\222\237\357\274\210Min\357\274\211        ", Q_NULLPTR));

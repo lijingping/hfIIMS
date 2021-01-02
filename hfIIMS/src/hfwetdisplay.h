@@ -16,6 +16,12 @@ public:
     explicit hfWetDisplay(QWidget *parent = 0);
     ~hfWetDisplay();
 
+public slots:
+    void onThreshold(QString value);
+
+private slots:
+    void on_wet_set_clicked();
+
 private:
     Ui::hfWetDisplay *ui;
     QChart *mCharts;
@@ -23,6 +29,7 @@ private:
     QValueAxis *mAxisX;
     QValueAxis *mAxisY;
     QLineSeries *mData;
+    QWidget *m_phfThreshold;
 };
 
 #endif // HFWETDISPLAY_H
