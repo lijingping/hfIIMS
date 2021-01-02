@@ -17,6 +17,12 @@ public:
 
     void setUnit(QString unit);
 
+signals:
+    void onThreshold(QString value);
+
+private slots:
+    void on_threshold_lineEdit_editingFinished();
+
 private:
     Ui::hfThreshold *ui;
 };

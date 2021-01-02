@@ -60,6 +60,11 @@ hfTemperature::~hfTemperature()
     delete ui;
 }
 
+void hfTemperature::onThreshold(QString value)
+{
+    qDebug() << "n"+value;
+}
+
 void hfTemperature::on_temperature_set_clicked()
 {
     if (m_phfThreshold){
@@ -68,6 +73,9 @@ void hfTemperature::on_temperature_set_clicked()
 
     hfThreshold *l_hfThreshold = new hfThreshold();
     l_hfThreshold->setObjectName(QStringLiteral("hfThreshold"));
+
+    connect(l_hfThreshold, SIGNAL(onThreshold(QString)),this, SLOT(onThreshold(QString)));
+    l_hfThreshold->installEventFilter(this);
 
     l_hfThreshold->setWindowIcon(QIcon(":/img/logo_icon.png"));
     l_hfThreshold->setWindowTitle(tr("修改温度"));

@@ -17,6 +17,9 @@ public:
     explicit hfTemperature(QWidget *parent = 0);
     ~hfTemperature();
 
+public slots:
+    void onThreshold(QString value);
+
 private slots:
     void on_temperature_set_clicked();
 
