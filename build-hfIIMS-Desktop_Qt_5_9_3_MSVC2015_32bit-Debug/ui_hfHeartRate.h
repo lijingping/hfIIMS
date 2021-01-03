@@ -16,6 +16,7 @@
 #include <QtWidgets/QFrame>
 #include <QtWidgets/QHeaderView>
 #include <QtWidgets/QLabel>
+#include "qchartview.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -27,12 +28,15 @@ public:
     QLabel *heart_rate_bpm;
     QLabel *heart_rate_alert;
     QFrame *heart_rate_mask;
+    QFrame *heart_rate_frame;
+    QtCharts::QChartView *heart_rate_chartView;
 
     void setupUi(QFrame *hfHeartRate)
     {
         if (hfHeartRate->objectName().isEmpty())
             hfHeartRate->setObjectName(QStringLiteral("hfHeartRate"));
         hfHeartRate->resize(160, 98);
+        hfHeartRate->setStyleSheet(QStringLiteral(""));
         hfHeartRate->setFrameShape(QFrame::StyledPanel);
         hfHeartRate->setFrameShadow(QFrame::Raised);
         user_name = new QLabel(hfHeartRate);
@@ -56,11 +60,29 @@ public:
         heart_rate_alert = new QLabel(hfHeartRate);
         heart_rate_alert->setObjectName(QStringLiteral("heart_rate_alert"));
         heart_rate_alert->setGeometry(QRect(50, 30, 53, 40));
+        heart_rate_alert->setStyleSheet(QStringLiteral("border-image: url(:/img/heart_rate_alert.png);"));
         heart_rate_mask = new QFrame(hfHeartRate);
         heart_rate_mask->setObjectName(QStringLiteral("heart_rate_mask"));
         heart_rate_mask->setGeometry(QRect(0, 0, 160, 98));
+        heart_rate_mask->setStyleSheet(QStringLiteral("border-image: url(:/img/heart_rate_mask.png);"));
         heart_rate_mask->setFrameShape(QFrame::StyledPanel);
         heart_rate_mask->setFrameShadow(QFrame::Raised);
+        heart_rate_frame = new QFrame(hfHeartRate);
+        heart_rate_frame->setObjectName(QStringLiteral("heart_rate_frame"));
+        heart_rate_frame->setGeometry(QRect(0, 0, 160, 98));
+        heart_rate_frame->setStyleSheet(QStringLiteral("border-image: url(:/img/heart_rate_frame.png);"));
+        heart_rate_frame->setFrameShape(QFrame::StyledPanel);
+        heart_rate_frame->setFrameShadow(QFrame::Raised);
+        heart_rate_chartView = new QtCharts::QChartView(hfHeartRate);
+        heart_rate_chartView->setObjectName(QStringLiteral("heart_rate_chartView"));
+        heart_rate_chartView->setGeometry(QRect(0, 20, 160, 58));
+        heart_rate_frame->raise();
+        user_name->raise();
+        heart_rate_chartView->raise();
+        heart_rate_bpm->raise();
+        rate_value->raise();
+        heart_rate_alert->raise();
+        heart_rate_mask->raise();
 
         retranslateUi(hfHeartRate);
 
