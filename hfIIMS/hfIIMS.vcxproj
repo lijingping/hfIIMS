@@ -482,9 +482,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\img\?????.png" />
     <None Include="res\img\close.png" />
-    <None Include="res\img\data.svg" />
     <None Include="res\img\frame.png" />
     <None Include="res\img\heart.png" />
     <None Include="res\img\heart_rate.png" />
@@ -494,11 +492,11 @@
     <None Include="res\img\heart_rate_mask.png" />
     <CustomBuild Include="res\img\img.qrc">
       <FileType>Document</FileType>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\user_desc.png;res\img\user_frame.png;res\img\set.png;res\img\pan.svg;res\img\?????.png;res\img\logo.png;res\img\temperature.png;res\img\slider_bg.png;res\img\user_name.png;res\img\user_icon.png;res\img\heart_rate_frame.png;res\img\volume_set_frame.png;res\img\heart.png;res\img\data.svg;res\img\oxygen_point.png;res\img\sensor.svg;res\img\logo_icon.png;res\img\threshold.png;res\img\time.png;res\img\oxygen_alert_icon2.png;res\img\oxygen.png;res\img\noise_frame.png;res\img\waves.png;res\img\oxygen_value_frame.png;res\img\rectangle.svg;res\img\volume_set_btn.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert.png;res\img\people.png;res\img\sensor.png;res\img\heart_rate.png;res\img\waves_arrow.png;res\img\noise.png;res\img\heart_rate_gaphic.png;res\img\volume_set.png;res\img\logo.svg;res\img\sound.png;res\img\slider_ball.png;res\img\wet.png;res\img\close.png;res\img\frame.png;res\img\heart_rate_mask.png;res\img\heart_rate_alert.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\people.png;res\img\oxygen_value_frame.png;res\img\oxygen.png;res\img\heart.png;res\img\close.png;res\img\noise_frame.png;res\img\volume_set_btn.png;res\img\wet.png;res\img\noise.png;res\img\sensor.png;res\img\waves_arrow.png;res\img\heart_rate.png;res\img\user_name.png;res\img\user_frame.png;res\img\set.png;res\img\heart_rate_gaphic.png;res\img\user_icon.png;res\img\logo_icon.png;res\img\heart_rate_frame.png;res\img\user_desc.png;res\img\temperature.png;res\img\sound.png;res\img\oxygen_alert.png;res\img\time.png;res\img\oxygen_point.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert_icon2.png;res\img\threshold.png;res\img\volume_set.png;res\img\slider_ball.png;res\img\slider_bg.png;res\img\heart_rate_mask.png;res\img\logo.png;res\img\waves.png;res\img\frame.png;res\img\heart_rate_alert.png;res\img\volume_set_frame.png;%(AdditionalInputs)</AdditionalInputs>
       <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name img res\img\img.qrc -o release\qrc_img.cpp</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC res/img/img.qrc</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_img.cpp;%(Outputs)</Outputs>
-      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\user_desc.png;res\img\user_frame.png;res\img\set.png;res\img\pan.svg;res\img\?????.png;res\img\logo.png;res\img\temperature.png;res\img\slider_bg.png;res\img\user_name.png;res\img\user_icon.png;res\img\heart_rate_frame.png;res\img\volume_set_frame.png;res\img\heart.png;res\img\data.svg;res\img\oxygen_point.png;res\img\sensor.svg;res\img\logo_icon.png;res\img\threshold.png;res\img\time.png;res\img\oxygen_alert_icon2.png;res\img\oxygen.png;res\img\noise_frame.png;res\img\waves.png;res\img\oxygen_value_frame.png;res\img\rectangle.svg;res\img\volume_set_btn.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert.png;res\img\people.png;res\img\sensor.png;res\img\heart_rate.png;res\img\waves_arrow.png;res\img\noise.png;res\img\heart_rate_gaphic.png;res\img\volume_set.png;res\img\logo.svg;res\img\sound.png;res\img\slider_ball.png;res\img\wet.png;res\img\close.png;res\img\frame.png;res\img\heart_rate_mask.png;res\img\heart_rate_alert.png;%(AdditionalInputs)</AdditionalInputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\people.png;res\img\oxygen_value_frame.png;res\img\oxygen.png;res\img\heart.png;res\img\close.png;res\img\noise_frame.png;res\img\volume_set_btn.png;res\img\wet.png;res\img\noise.png;res\img\sensor.png;res\img\waves_arrow.png;res\img\heart_rate.png;res\img\user_name.png;res\img\user_frame.png;res\img\set.png;res\img\heart_rate_gaphic.png;res\img\user_icon.png;res\img\logo_icon.png;res\img\heart_rate_frame.png;res\img\user_desc.png;res\img\temperature.png;res\img\sound.png;res\img\oxygen_alert.png;res\img\time.png;res\img\oxygen_point.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert_icon2.png;res\img\threshold.png;res\img\volume_set.png;res\img\slider_ball.png;res\img\slider_bg.png;res\img\heart_rate_mask.png;res\img\logo.png;res\img\waves.png;res\img\frame.png;res\img\heart_rate_alert.png;res\img\volume_set_frame.png;%(AdditionalInputs)</AdditionalInputs>
       <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name img res\img\img.qrc -o debug\qrc_img.cpp</Command>
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC res/img/img.qrc</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_img.cpp;%(Outputs)</Outputs>
@@ -515,7 +513,6 @@
       <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC res/logo/logo.qrc</Message>
       <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_logo.cpp;%(Outputs)</Outputs>
     </CustomBuild>
-    <None Include="res\img\logo.svg" />
     <None Include="res\logo\logo_bg.png" />
     <None Include="res\logo\logo_btn.png" />
     <None Include="res\img\logo_icon.png" />
@@ -530,11 +527,8 @@
     <None Include="res\img\oxygen_alert_icon2.png" />
     <None Include="res\img\oxygen_point.png" />
     <None Include="res\img\oxygen_value_frame.png" />
-    <None Include="res\img\pan.svg" />
     <None Include="res\img\people.png" />
-    <None Include="res\img\rectangle.svg" />
     <None Include="res\img\sensor.png" />
-    <None Include="res\img\sensor.svg" />
     <None Include="res\img\set.png" />
     <None Include="res\img\slider_ball.png" />
     <None Include="res\img\slider_bg.png" />

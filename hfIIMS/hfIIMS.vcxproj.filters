@@ -287,13 +287,7 @@
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <None Include="res\img\?????.png">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\img\close.png">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\img\data.svg">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="res\img\frame.png">
@@ -326,9 +320,6 @@
     <CustomBuild Include="res\logo\logo.qrc">
       <Filter>Resource Files</Filter>
     </CustomBuild>
-    <None Include="res\img\logo.svg">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\logo\logo_bg.png">
       <Filter>Resource Files</Filter>
     </None>
@@ -371,19 +362,10 @@
     <None Include="res\img\oxygen_value_frame.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="res\img\pan.svg">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\img\people.png">
       <Filter>Resource Files</Filter>
     </None>
-    <None Include="res\img\rectangle.svg">
-      <Filter>Resource Files</Filter>
-    </None>
     <None Include="res\img\sensor.png">
-      <Filter>Resource Files</Filter>
-    </None>
-    <None Include="res\img\sensor.svg">
       <Filter>Resource Files</Filter>
     </None>
     <None Include="res\img\set.png">
