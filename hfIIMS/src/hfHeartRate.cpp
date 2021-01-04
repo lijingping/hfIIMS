@@ -22,6 +22,9 @@ hfHeartRate::hfHeartRate(QWidget *parent) :
     originListIndex = 0;
     this->initEcgWaveLineChart();
     this->onShowPushButtonClick();
+
+    ui->heart_rate_mask->hide();
+    ui->heart_rate_alert->hide();
 }
 
 hfHeartRate::~hfHeartRate()

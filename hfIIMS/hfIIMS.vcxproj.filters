@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;moc;h;def;odl;idl;res;</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Distribution Files">
+      <UniqueIdentifier>{B83CAF91-C7BF-462F-B76C-EA11631F866C}</UniqueIdentifier>
+      <Extensions>*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\global.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfHeartRate.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfLogo.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfModifyUser.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfThreshold.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfVolumeSet.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfnoisedisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hftemperature.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hfwetdisplay.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\maintitle.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\database.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="src\global.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <CustomBuild Include="src\hfHeartRate.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfLogo.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfModifyUser.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfThreshold.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfVolumeSet.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfnoisedisplay.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hftemperature.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfwetdisplay.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\maintitle.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\mainwindow.h">
+      <Filter>Header Files</Filter>
+    </CustomBuild>
+    <ClInclude Include="util\signleton.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_database.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfHeartRate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfHeartRate.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfLogo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfLogo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfModifyUser.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfModifyUser.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfThreshold.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfThreshold.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfVolumeSet.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfVolumeSet.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfnoisedisplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfnoisedisplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hftemperature.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hftemperature.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfwetdisplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfwetdisplay.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_maintitle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_maintitle.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <Filter>Generated Files</Filter>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_img.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_img.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_logo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="release\qrc_logo.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClInclude Include="ui_hfHeartRate.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfLogo.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfModifyUser.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfThreshold.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfVolumeSet.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfnoisedisplay.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hftemperature.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_hfwetdisplay.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_maintitle.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\hfHeartRate.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfLogo.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfModifyUser.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfThreshold.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfVolumeSet.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfnoisedisplay.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hftemperature.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="src\hfwetdisplay.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\maintitle.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ui\mainwindow.ui">
+      <Filter>Form Files</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\img\?????.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\close.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\data.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart_rate.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart_rate_alert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart_rate_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart_rate_gaphic.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\heart_rate_mask.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="res\img\img.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="res\img\logo.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <CustomBuild Include="res\logo\logo.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <None Include="res\img\logo.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo\logo_bg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo\logo_btn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\logo_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo\logo_input_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo\logo_name.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\logo\logo_password.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\noise.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\noise_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen_alert.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen_alert_icon1.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen_alert_icon2.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen_point.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\oxygen_value_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\pan.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\people.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\rectangle.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\sensor.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\sensor.svg">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\set.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\slider_ball.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\slider_bg.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\sound.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\temperature.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\threshold.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\time.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\user_desc.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\user_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\user_icon.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\user_name.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\volume_set.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\volume_set_btn.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\volume_set_frame.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\waves.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\waves_arrow.png">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\img\wet.png">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\qss\hfmaintitle.css">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="res\img\logo.svg">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="res\qss\mainwindow.css">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="res\qss\qss.css">
+      <Filter>Distribution Files</Filter>
+    </None>
+    <None Include="res\img\rectangle.svg">
+      <Filter>Distribution Files</Filter>
+    </None>
+  </ItemGroup>
+</Project>

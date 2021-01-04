@@ -1,0 +1,565 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{392FB9E6-9AF8-3471-83A4-21E6BC237491}</ProjectGuid>
+    <RootNamespace>hfIIMS</RootNamespace>
+    <Keyword>Qt4VSv1.0</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>release\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>release\</IntermediateDirectory>
+    <PrimaryOutput>hfIIMS</PrimaryOutput>
+  </PropertyGroup>
+  <PropertyGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="Configuration">
+    <PlatformToolset>v140</PlatformToolset>
+    <OutputDirectory>debug\</OutputDirectory>
+    <ATLMinimizesCRunTimeLibraryUsage>false</ATLMinimizesCRunTimeLibraryUsage>
+    <CharacterSet>NotSet</CharacterSet>
+    <ConfigurationType>Application</ConfigurationType>
+    <IntermediateDirectory>debug\</IntermediateDirectory>
+    <PrimaryOutput>hfIIMS</PrimaryOutput>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <ImportGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists(&apos;$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props&apos;)" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">hfIIMS</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</IgnoreImportLibrary>
+    <LinkIncremental Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">false</LinkIncremental>
+    <OutDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</OutDir>
+    <IntDir Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\</IntDir>
+    <TargetName Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">hfIIMS</TargetName>
+    <IgnoreImportLibrary Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</IgnoreImportLibrary>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;src;ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtCharts;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtGui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtSql;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtCore;release;.;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>release\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>None</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>release\</ObjectFileName>
+      <Optimization>MaxSpeed</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <ProgramDataBaseFileName></ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\qtmain.lib;shell32.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Charts.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Widgets.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Gui.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Sql.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Core.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <LinkIncremental>false</LinkIncremental>
+      <OutputFile>$(OutDir)\hfIIMS.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_NO_DEBUG;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;src;ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtCharts;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtWidgets;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtGui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtANGLE;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtSql;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\include\QtCore;debug;.;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\win32-msvc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>-Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 %(AdditionalOptions)</AdditionalOptions>
+      <AssemblerListingLocation>debug\</AssemblerListingLocation>
+      <BrowseInformation>false</BrowseInformation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <DisableSpecificWarnings>4577;4467;%(DisableSpecificWarnings)</DisableSpecificWarnings>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ObjectFileName>debug\</ObjectFileName>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessToFile>false</PreprocessToFile>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TreatWChar_tAsBuiltInType>true</TreatWChar_tAsBuiltInType>
+      <WarningLevel>Level3</WarningLevel>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\qtmaind.lib;shell32.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Chartsd.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Widgetsd.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Guid.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Sqld.lib;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib\Qt5Cored.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\lib;C:\utils\my_sql\my_sql\lib;C:\utils\postgresql\pgsql\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>&quot;/MANIFESTDEPENDENCY:type=&apos;win32&apos; name=&apos;Microsoft.Windows.Common-Controls&apos; version=&apos;6.0.0.0&apos; publicKeyToken=&apos;6595b64144ccf1df&apos; language=&apos;*&apos; processorArchitecture=&apos;*&apos;&quot; %(AdditionalOptions)</AdditionalOptions>
+      <DataExecutionPrevention>true</DataExecutionPrevention>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreImportLibrary>true</IgnoreImportLibrary>
+      <OutputFile>$(OutDir)\hfIIMS.exe</OutputFile>
+      <RandomizedBaseAddress>true</RandomizedBaseAddress>
+      <SubSystem>Windows</SubSystem>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </Link>
+    <Midl>
+      <DefaultCharType>Unsigned</DefaultCharType>
+      <EnableErrorChecks>None</EnableErrorChecks>
+      <WarningLevel>0</WarningLevel>
+    </Midl>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_WINDOWS;UNICODE;_UNICODE;WIN32;WIN64;QT_DEPRECATED_WARNINGS;QT_CHARTS_LIB;QT_WIDGETS_LIB;QT_GUI_LIB;QT_SQL_LIB;QT_CORE_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="src\database.cpp" />
+    <ClCompile Include="src\global.cpp" />
+    <ClCompile Include="src\hfHeartRate.cpp" />
+    <ClCompile Include="src\hfLogo.cpp" />
+    <ClCompile Include="src\hfModifyUser.cpp" />
+    <ClCompile Include="src\hfThreshold.cpp" />
+    <ClCompile Include="src\hfVolumeSet.cpp" />
+    <ClCompile Include="src\hfnoisedisplay.cpp" />
+    <ClCompile Include="src\hftemperature.cpp" />
+    <ClCompile Include="src\hfwetdisplay.cpp" />
+    <ClCompile Include="src\main.cpp" />
+    <ClCompile Include="src\maintitle.cpp" />
+    <ClCompile Include="src\mainwindow.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\database.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\database.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\database.h -o release\moc_database.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/database.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_database.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\database.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\database.h -o debug\moc_database.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/database.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_database.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="src\global.h" />
+    <CustomBuild Include="src\hfHeartRate.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfHeartRate.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfHeartRate.h -o release\moc_hfHeartRate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfHeartRate.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfHeartRate.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfHeartRate.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfHeartRate.h -o debug\moc_hfHeartRate.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfHeartRate.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfHeartRate.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfLogo.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfLogo.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfLogo.h -o release\moc_hfLogo.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfLogo.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfLogo.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfLogo.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfLogo.h -o debug\moc_hfLogo.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfLogo.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfLogo.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfModifyUser.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfModifyUser.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfModifyUser.h -o release\moc_hfModifyUser.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfModifyUser.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfModifyUser.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfModifyUser.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfModifyUser.h -o debug\moc_hfModifyUser.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfModifyUser.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfModifyUser.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfThreshold.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfThreshold.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfThreshold.h -o release\moc_hfThreshold.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfThreshold.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfThreshold.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfThreshold.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfThreshold.h -o debug\moc_hfThreshold.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfThreshold.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfThreshold.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfVolumeSet.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfVolumeSet.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfVolumeSet.h -o release\moc_hfVolumeSet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfVolumeSet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfVolumeSet.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfVolumeSet.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfVolumeSet.h -o debug\moc_hfVolumeSet.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfVolumeSet.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfVolumeSet.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfnoisedisplay.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfnoisedisplay.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfnoisedisplay.h -o release\moc_hfnoisedisplay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfnoisedisplay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfnoisedisplay.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfnoisedisplay.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfnoisedisplay.h -o debug\moc_hfnoisedisplay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfnoisedisplay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfnoisedisplay.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hftemperature.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hftemperature.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hftemperature.h -o release\moc_hftemperature.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hftemperature.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hftemperature.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hftemperature.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hftemperature.h -o debug\moc_hftemperature.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hftemperature.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hftemperature.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfwetdisplay.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfwetdisplay.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfwetdisplay.h -o release\moc_hfwetdisplay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/hfwetdisplay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_hfwetdisplay.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfwetdisplay.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\hfwetdisplay.h -o debug\moc_hfwetdisplay.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/hfwetdisplay.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_hfwetdisplay.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\maintitle.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\maintitle.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\maintitle.h -o release\moc_maintitle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/maintitle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_maintitle.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\maintitle.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\maintitle.h -o debug\moc_maintitle.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/maintitle.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_maintitle.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\mainwindow.h">
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\mainwindow.h;release\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include release/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\mainwindow.h -o release\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">MOC src/mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_mainwindow.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\mainwindow.h;debug\moc_predefs.h;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\moc.exe  -DUNICODE -D_UNICODE -DWIN32 -DWIN64 -DQT_DEPRECATED_WARNINGS -DQT_CHARTS_LIB -DQT_WIDGETS_LIB -DQT_GUI_LIB -DQT_SQL_LIB -DQT_CORE_LIB --compiler-flavor=msvc --include debug/moc_predefs.h -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/mkspecs/win32-msvc -ID:/project/hfIIMS/hfIIMS -ID:/project/hfIIMS/hfIIMS/src -ID:/project/hfIIMS/hfIIMS/ui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCharts -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtWidgets -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtGui -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtANGLE -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtSql -IC:/Qt/Qt5.9.3/5.9.3/msvc2015_64/include/QtCore src\mainwindow.h -o debug\moc_mainwindow.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">MOC src/mainwindow.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_mainwindow.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <ClInclude Include="util\signleton.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="debug\moc_database.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_database.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfHeartRate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfHeartRate.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfLogo.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfLogo.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfModifyUser.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfModifyUser.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfThreshold.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfThreshold.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfVolumeSet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfVolumeSet.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfnoisedisplay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfnoisedisplay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hftemperature.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hftemperature.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_hfwetdisplay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_hfwetdisplay.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_maintitle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_maintitle.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\moc_mainwindow.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <CustomBuild Include="debug\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">cl -BxC:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -Zi -MDd -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >debug\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\moc_predefs.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="release\moc_predefs.h.cbt">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\features\data\dummy.cpp;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">cl -BxC:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\qmake.exe -nologo -Zc:wchar_t -FS -Zc:rvalueCast -Zc:inline -Zc:strictStrings -Zc:throwingNew -O2 -MD -W3 -w34100 -w34189 -w44996 -w44456 -w44457 -w44458 -wd4577 -wd4467 -E C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\mkspecs\features\data\dummy.cpp 2>NUL >release\moc_predefs.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">Generate moc_predefs.h</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\moc_predefs.h;%(Outputs)</Outputs>
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </CustomBuild>
+    <ClCompile Include="debug\qrc_img.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_img.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="debug\qrc_logo.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="release\qrc_logo.cpp">
+      <ExcludedFromBuild Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClInclude Include="ui_hfHeartRate.h" />
+    <ClInclude Include="ui_hfLogo.h" />
+    <ClInclude Include="ui_hfModifyUser.h" />
+    <ClInclude Include="ui_hfThreshold.h" />
+    <ClInclude Include="ui_hfVolumeSet.h" />
+    <ClInclude Include="ui_hfnoisedisplay.h" />
+    <ClInclude Include="ui_hftemperature.h" />
+    <ClInclude Include="ui_hfwetdisplay.h" />
+    <ClInclude Include="ui_maintitle.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="src\hfHeartRate.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfHeartRate.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;qchartview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfHeartRate.ui -o ui_hfHeartRate.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfHeartRate.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfHeartRate.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfHeartRate.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;qchartview.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfHeartRate.ui -o ui_hfHeartRate.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfHeartRate.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfHeartRate.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfLogo.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfLogo.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfLogo.ui -o ui_hfLogo.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfLogo.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfLogo.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfLogo.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfLogo.ui -o ui_hfLogo.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfLogo.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfLogo.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfModifyUser.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfModifyUser.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfModifyUser.ui -o ui_hfModifyUser.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfModifyUser.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfModifyUser.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfModifyUser.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfModifyUser.ui -o ui_hfModifyUser.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfModifyUser.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfModifyUser.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfThreshold.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfThreshold.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfThreshold.ui -o ui_hfThreshold.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfThreshold.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfThreshold.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfThreshold.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfThreshold.ui -o ui_hfThreshold.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfThreshold.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfThreshold.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfVolumeSet.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfVolumeSet.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfVolumeSet.ui -o ui_hfVolumeSet.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfVolumeSet.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfVolumeSet.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfVolumeSet.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfVolumeSet.ui -o ui_hfVolumeSet.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfVolumeSet.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfVolumeSet.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfnoisedisplay.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfnoisedisplay.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfnoisedisplay.ui -o ui_hfnoisedisplay.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfnoisedisplay.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfnoisedisplay.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfnoisedisplay.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfnoisedisplay.ui -o ui_hfnoisedisplay.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfnoisedisplay.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfnoisedisplay.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hftemperature.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hftemperature.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hftemperature.ui -o ui_hftemperature.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hftemperature.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hftemperature.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hftemperature.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hftemperature.ui -o ui_hftemperature.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hftemperature.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hftemperature.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="src\hfwetdisplay.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">src\hfwetdisplay.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfwetdisplay.ui -o ui_hfwetdisplay.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC src/hfwetdisplay.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_hfwetdisplay.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">src\hfwetdisplay.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe src\hfwetdisplay.ui -o ui_hfwetdisplay.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC src/hfwetdisplay.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_hfwetdisplay.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ui\maintitle.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui\maintitle.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe ui\maintitle.ui -o ui_maintitle.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC ui/maintitle.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_maintitle.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui\maintitle.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe ui\maintitle.ui -o ui_maintitle.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC ui/maintitle.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_maintitle.h;%(Outputs)</Outputs>
+    </CustomBuild>
+    <CustomBuild Include="ui\mainwindow.ui">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui\mainwindow.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;maintitle.h;hftemperature.h;hfwetdisplay.h;hfnoisedisplay.h;hfVolumeSet.h;hfheartrate.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe ui\mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">UIC ui/mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui\mainwindow.ui;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe;maintitle.h;hftemperature.h;hfwetdisplay.h;hfnoisedisplay.h;hfVolumeSet.h;hfheartrate.h;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\uic.exe ui\mainwindow.ui -o ui_mainwindow.h</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">UIC ui/mainwindow.ui</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">ui_mainwindow.h;%(Outputs)</Outputs>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\img\?????.png" />
+    <None Include="res\img\close.png" />
+    <None Include="res\img\data.svg" />
+    <None Include="res\img\frame.png" />
+    <None Include="res\img\heart.png" />
+    <None Include="res\img\heart_rate.png" />
+    <None Include="res\img\heart_rate_alert.png" />
+    <None Include="res\img\heart_rate_frame.png" />
+    <None Include="res\img\heart_rate_gaphic.png" />
+    <None Include="res\img\heart_rate_mask.png" />
+    <CustomBuild Include="res\img\img.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\user_desc.png;res\img\user_frame.png;res\img\set.png;res\img\pan.svg;res\img\?????.png;res\img\logo.png;res\img\temperature.png;res\img\slider_bg.png;res\img\user_name.png;res\img\user_icon.png;res\img\heart_rate_frame.png;res\img\volume_set_frame.png;res\img\heart.png;res\img\data.svg;res\img\oxygen_point.png;res\img\sensor.svg;res\img\logo_icon.png;res\img\threshold.png;res\img\time.png;res\img\oxygen_alert_icon2.png;res\img\oxygen.png;res\img\noise_frame.png;res\img\waves.png;res\img\oxygen_value_frame.png;res\img\rectangle.svg;res\img\volume_set_btn.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert.png;res\img\people.png;res\img\sensor.png;res\img\heart_rate.png;res\img\waves_arrow.png;res\img\noise.png;res\img\heart_rate_gaphic.png;res\img\volume_set.png;res\img\logo.svg;res\img\sound.png;res\img\slider_ball.png;res\img\wet.png;res\img\close.png;res\img\frame.png;res\img\heart_rate_mask.png;res\img\heart_rate_alert.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name img res\img\img.qrc -o release\qrc_img.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC res/img/img.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_img.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">res\img\img.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\img\user_desc.png;res\img\user_frame.png;res\img\set.png;res\img\pan.svg;res\img\?????.png;res\img\logo.png;res\img\temperature.png;res\img\slider_bg.png;res\img\user_name.png;res\img\user_icon.png;res\img\heart_rate_frame.png;res\img\volume_set_frame.png;res\img\heart.png;res\img\data.svg;res\img\oxygen_point.png;res\img\sensor.svg;res\img\logo_icon.png;res\img\threshold.png;res\img\time.png;res\img\oxygen_alert_icon2.png;res\img\oxygen.png;res\img\noise_frame.png;res\img\waves.png;res\img\oxygen_value_frame.png;res\img\rectangle.svg;res\img\volume_set_btn.png;res\img\oxygen_alert_icon1.png;res\img\oxygen_alert.png;res\img\people.png;res\img\sensor.png;res\img\heart_rate.png;res\img\waves_arrow.png;res\img\noise.png;res\img\heart_rate_gaphic.png;res\img\volume_set.png;res\img\logo.svg;res\img\sound.png;res\img\slider_ball.png;res\img\wet.png;res\img\close.png;res\img\frame.png;res\img\heart_rate_mask.png;res\img\heart_rate_alert.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name img res\img\img.qrc -o debug\qrc_img.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC res/img/img.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_img.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\img\logo.png" />
+    <CustomBuild Include="res\logo\logo.qrc">
+      <FileType>Document</FileType>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">res\logo\logo.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\logo\logo_btn.png;res\logo\logo_bg.png;res\logo\logo_password.png;res\logo\logo_name.png;res\logo\logo_input_frame.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name logo res\logo\logo.qrc -o release\qrc_logo.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">RCC res/logo/logo.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Release|x64&apos;">release\qrc_logo.cpp;%(Outputs)</Outputs>
+      <AdditionalInputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">res\logo\logo.qrc;C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe;res\logo\logo_btn.png;res\logo\logo_bg.png;res\logo\logo_password.png;res\logo\logo_name.png;res\logo\logo_input_frame.png;%(AdditionalInputs)</AdditionalInputs>
+      <Command Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">C:\Qt\Qt5.9.3\5.9.3\msvc2015_64\bin\rcc.exe -name logo res\logo\logo.qrc -o debug\qrc_logo.cpp</Command>
+      <Message Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">RCC res/logo/logo.qrc</Message>
+      <Outputs Condition="&apos;$(Configuration)|$(Platform)&apos;==&apos;Debug|x64&apos;">debug\qrc_logo.cpp;%(Outputs)</Outputs>
+    </CustomBuild>
+    <None Include="res\img\logo.svg" />
+    <None Include="res\logo\logo_bg.png" />
+    <None Include="res\logo\logo_btn.png" />
+    <None Include="res\img\logo_icon.png" />
+    <None Include="res\logo\logo_input_frame.png" />
+    <None Include="res\logo\logo_name.png" />
+    <None Include="res\logo\logo_password.png" />
+    <None Include="res\img\noise.png" />
+    <None Include="res\img\noise_frame.png" />
+    <None Include="res\img\oxygen.png" />
+    <None Include="res\img\oxygen_alert.png" />
+    <None Include="res\img\oxygen_alert_icon1.png" />
+    <None Include="res\img\oxygen_alert_icon2.png" />
+    <None Include="res\img\oxygen_point.png" />
+    <None Include="res\img\oxygen_value_frame.png" />
+    <None Include="res\img\pan.svg" />
+    <None Include="res\img\people.png" />
+    <None Include="res\img\rectangle.svg" />
+    <None Include="res\img\sensor.png" />
+    <None Include="res\img\sensor.svg" />
+    <None Include="res\img\set.png" />
+    <None Include="res\img\slider_ball.png" />
+    <None Include="res\img\slider_bg.png" />
+    <None Include="res\img\sound.png" />
+    <None Include="res\img\temperature.png" />
+    <None Include="res\img\threshold.png" />
+    <None Include="res\img\time.png" />
+    <None Include="res\img\user_desc.png" />
+    <None Include="res\img\user_frame.png" />
+    <None Include="res\img\user_icon.png" />
+    <None Include="res\img\user_name.png" />
+    <None Include="res\img\volume_set.png" />
+    <None Include="res\img\volume_set_btn.png" />
+    <None Include="res\img\volume_set_frame.png" />
+    <None Include="res\img\waves.png" />
+    <None Include="res\img\waves_arrow.png" />
+    <None Include="res\img\wet.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\qss\hfmaintitle.css" />
+    <None Include="res\img\logo.svg" />
+    <None Include="res\qss\mainwindow.css" />
+    <None Include="res\qss\qss.css" />
+    <None Include="res\img\rectangle.svg" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
