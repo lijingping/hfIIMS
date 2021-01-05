@@ -5,9 +5,7 @@ hfMainWindow{
 QFrame#control_panel{
     margin-top: 10px;
 }
-QFrame#frame{
-    margin-left: 5px;
-    margin-right: 5px;
+QFrame#train_bg_frame{
     border-width:12px;
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
@@ -42,24 +40,10 @@ QFrame#volume_set_frame{
     border-image: url("./res/img/frame.png") 12px 12px 12px 12px stretch stretch;
 }
 
-QFrame#frame_10{
-    margin-top: 10px;
-}
-QFrame#frame_2{
-    margin-top: 10px;
-}
-
 QFrame#oxygen_value_frame{
     border-image: url("./res/img/oxygen_value_frame.png");
 }
 
-QLabel#label{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
-}
-QLabel#label_2{
-    font: 35px;
-    color:white;
-}
 QLabel#people_icon{
     border-image: url("./res/img/people.png");
 }
@@ -73,33 +57,6 @@ QLabel#waves_icon{
 QLabel#waves_arrow{
     border-image: url("./res/img/waves_arrow.png");
 }
-
-QLabel#label_4{
-    border-image: url("D:\\project\\hfIIMS\\hfIIMS\\res\\img\\logo.svg");
-}
-
-QLabel#label_7{
-    font: 35px;
-    color:white;
-
-}
-QLabel#label_8{
-    font: 20px;
-    color:white;
-}
-QLabel#label_9{
-    font: 80px;
-    color:white;
-}
-QLabel#label_10{
-    font: 80px;
-    color:white;
-}
-QLabel#label_11{
-    font: 80px;
-    color:white;
-}
-
 
 QLabel#oxygen_icon{
     border-image: url("./res/img/oxygen.png");
@@ -131,8 +88,4 @@ QLabel#heart_rate_set{
 
 QLabel#heart_rate_alert{
     border-image: url("./res/img/heart_rate_alert.png");
-}
-
-QTextEdit#oxygen_lineEdit{
-
 }
