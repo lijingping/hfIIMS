@@ -717,7 +717,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                      </property>
                      <property name="sizeHint" stdset="0">
                       <size>
-                       <width>30</width>
+                       <width>50</width>
                        <height>20</height>
                       </size>
                      </property>
@@ -777,7 +777,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                      </property>
                      <property name="sizeHint" stdset="0">
                       <size>
-                       <width>40</width>
+                       <width>80</width>
                        <height>20</height>
                       </size>
                      </property>
@@ -789,7 +789,36 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                </widget>
               </item>
               <item>
-               <widget class="QWidget" name="widget" native="true"/>
+               <widget class="QWidget" name="oil_btn" native="true">
+                <property name="minimumSize">
+                 <size>
+                  <width>109</width>
+                  <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>109</height>
+                 </size>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">border-image: url(:/img/oil_icon.jpg);</string>
+                </property>
+               </widget>
+              </item>
+              <item>
+               <spacer name="trainHorizontalSpacer">
+                <property name="orientation">
+                 <enum>Qt::Horizontal</enum>
+                </property>
+                <property name="sizeHint" stdset="0">
+                 <size>
+                  <width>80</width>
+                  <height>20</height>
+                 </size>
+                </property>
+               </spacer>
               </item>
              </layout>
             </item>

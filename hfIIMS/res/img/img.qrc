@@ -44,6 +44,9 @@
         <file>user_frame.png</file>
         <file>logo_icon.png</file>
         <file>threshold.png</file>
+        <file>oil_icon.jpg</file>
+        <file>ray_circle.jpg</file>
+        <file>ray_icon.jpg</file>
     </qresource>
     <qresource prefix="/">
         <file>user_desc.png</file>
