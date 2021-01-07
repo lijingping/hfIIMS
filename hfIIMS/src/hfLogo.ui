@@ -83,7 +83,7 @@ color:rgb(255, 255, 255)</string>
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QLabel" name="logo_input_frame">
+  <widget class="QLabel" name="logo_input_name_frame">
    <property name="geometry">
     <rect>
      <x>740</x>
@@ -99,7 +99,7 @@ color:rgb(255, 255, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="logo_input_frame_2">
+  <widget class="QLabel" name="logo_input_password_frame">
    <property name="geometry">
     <rect>
      <x>740</x>
@@ -115,7 +115,7 @@ color:rgb(255, 255, 255)</string>
     <string/>
    </property>
   </widget>
-  <widget class="QFrame" name="logo_user_frame">
+  <widget class="QFrame" name="logo_user_icon">
    <property name="geometry">
     <rect>
      <x>760</x>
@@ -134,7 +134,7 @@ color:rgb(255, 255, 255)</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QFrame" name="logo_password_frame">
+  <widget class="QFrame" name="logo_password_icon">
    <property name="geometry">
     <rect>
      <x>765</x>
@@ -153,7 +153,7 @@ color:rgb(255, 255, 255)</string>
     <enum>QFrame::Raised</enum>
    </property>
   </widget>
-  <widget class="QLabel" name="oxygen_value_title">
+  <widget class="QLabel" name="logo_password_label">
    <property name="geometry">
     <rect>
      <x>820</x>
@@ -215,7 +215,7 @@ border:0px;
     <string/>
    </property>
   </widget>
-  <widget class="QLabel" name="oxygen_value_title_2">
+  <widget class="QLabel" name="logo_name_label">
    <property name="geometry">
     <rect>
      <x>810</x>
@@ -289,14 +289,14 @@ color: rgb(255, 255, 255);</string>
   <zorder>logo_touch_pushButton</zorder>
   <zorder>logo_frame</zorder>
   <zorder>logo_title</zorder>
-  <zorder>logo_input_frame</zorder>
-  <zorder>logo_input_frame_2</zorder>
-  <zorder>logo_user_frame</zorder>
-  <zorder>logo_password_frame</zorder>
-  <zorder>oxygen_value_title</zorder>
+  <zorder>logo_input_name_frame</zorder>
+  <zorder>logo_input_password_frame</zorder>
+  <zorder>logo_user_icon</zorder>
+  <zorder>logo_password_icon</zorder>
+  <zorder>logo_password_label</zorder>
   <zorder>logo_password</zorder>
   <zorder>logo_username</zorder>
-  <zorder>oxygen_value_title_2</zorder>
+  <zorder>logo_name_label</zorder>
   <zorder>logo_modify</zorder>
   <zorder>logo_enter</zorder>
   <zorder>logo_register</zorder>

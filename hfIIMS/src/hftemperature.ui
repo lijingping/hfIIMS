@@ -19,7 +19,7 @@
   <property name="frameShadow">
    <enum>QFrame::Raised</enum>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="hfTemperatureLayout">
    <property name="leftMargin">
     <number>0</number>
    </property>
@@ -33,7 +33,7 @@
     <number>0</number>
    </property>
    <item>
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QHBoxLayout" name="titleHorizontalLayout">
      <item>
       <widget class="QLabel" name="temperature_icon">
        <property name="minimumSize">
@@ -135,7 +135,7 @@ color: rgb(93, 97, 127);</string>
     </widget>
    </item>
    <item>
-    <spacer name="verticalSpacer">
+    <spacer name="bottomVerticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>

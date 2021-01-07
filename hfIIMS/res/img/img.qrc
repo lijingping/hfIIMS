@@ -1,6 +1,7 @@
 <RCC>
     <qresource prefix="/img">
         <file>close.png</file>
+        <file>data.svg</file>
         <file>frame.png</file>
         <file>heart.png</file>
         <file>heart_rate.png</file>
@@ -8,7 +9,9 @@
         <file>heart_rate_frame.png</file>
         <file>heart_rate_gaphic.png</file>
         <file>heart_rate_mask.png</file>
+        <file>img.qrc</file>
         <file>logo.png</file>
+        <file>logo.svg</file>
         <file>noise.png</file>
         <file>oxygen.png</file>
         <file>oxygen_alert.png</file>
@@ -16,8 +19,11 @@
         <file>oxygen_alert_icon2.png</file>
         <file>oxygen_point.png</file>
         <file>oxygen_value_frame.png</file>
+        <file>pan.svg</file>
         <file>people.png</file>
+        <file>rectangle.svg</file>
         <file>sensor.png</file>
+        <file>sensor.svg</file>
         <file>set.png</file>
         <file>slider_ball.png</file>
         <file>slider_bg.png</file>
@@ -32,10 +38,15 @@
         <file>waves.png</file>
         <file>waves_arrow.png</file>
         <file>wet.png</file>
+        <file>噪音分贝图.png</file>
         <file>noise_frame.png</file>
         <file>user_desc.png</file>
         <file>user_frame.png</file>
         <file>logo_icon.png</file>
         <file>threshold.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>user_desc.png</file>
+        <file>user_frame.png</file>
     </qresource>
 </RCC>

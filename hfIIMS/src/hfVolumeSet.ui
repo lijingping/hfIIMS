@@ -19,7 +19,7 @@
   <property name="frameShadow">
    <enum>QFrame::Raised</enum>
   </property>
-  <layout class="QVBoxLayout" name="verticalLayout_2">
+  <layout class="QVBoxLayout" name="hfVolumeSetLayout">
    <property name="leftMargin">
     <number>0</number>
    </property>
@@ -35,7 +35,7 @@
    <item>
     <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="titleHorizontalLayout">
        <item>
         <widget class="QLabel" name="volume_set_icon">
          <property name="minimumSize">
@@ -75,7 +75,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
       </layout>
      </item>
      <item>
-      <spacer name="verticalSpacer_2">
+      <spacer name="titleBottomVerticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -88,9 +88,9 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
+      <layout class="QHBoxLayout" name="middleHorizontalLayout">
        <item>
-        <spacer name="horizontalSpacer">
+        <spacer name="frontMiddleHorizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -198,7 +198,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
            <string>雷电</string>
           </property>
          </widget>
-         <widget class="QPushButton" name="alert">
+         <widget class="QPushButton" name="volume_set_alert">
           <property name="geometry">
            <rect>
             <x>140</x>
@@ -239,7 +239,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_2">
+        <spacer name="backMiddleHorizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -254,7 +254,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
       </layout>
      </item>
      <item>
-      <spacer name="verticalSpacer_3">
+      <spacer name="sliderUpVerticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>
@@ -267,9 +267,9 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
       </spacer>
      </item>
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout_3">
+      <layout class="QHBoxLayout" name="bottomHorizontalLayout">
        <item>
-        <spacer name="horizontalSpacer_3">
+        <spacer name="frontBottomHorizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -320,7 +320,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
         </widget>
        </item>
        <item>
-        <spacer name="horizontalSpacer_4">
+        <spacer name="backBottomhorizontalSpacer">
          <property name="orientation">
           <enum>Qt::Horizontal</enum>
          </property>
@@ -335,7 +335,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
       </layout>
      </item>
      <item>
-      <spacer name="verticalSpacer">
+      <spacer name="bottomVerticalSpacer">
        <property name="orientation">
         <enum>Qt::Vertical</enum>
        </property>

@@ -30,7 +30,7 @@
    </property>
    <layout class="QVBoxLayout" name="verticalLayout">
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout">
+     <layout class="QHBoxLayout" name="titleHorizontalLayout">
       <item>
        <widget class="QLabel" name="noise_icon">
         <property name="minimumSize">
@@ -76,7 +76,7 @@ color: rgb(255, 255, 255);</string>
      </layout>
     </item>
     <item>
-     <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <layout class="QHBoxLayout" name="unitHorizontalLayout">
       <item>
        <widget class="QLabel" name="noise_unit">
         <property name="minimumSize">
@@ -123,7 +123,7 @@ font:20pt &quot;方正黑体简体&quot;;</string>
      </layout>
     </item>
     <item>
-     <widget class="QFrame" name="frame">
+     <widget class="QFrame" name="noise_chart_frame">
       <property name="minimumSize">
        <size>
         <width>0</width>
@@ -132,7 +132,7 @@ font:20pt &quot;方正黑体简体&quot;;</string>
       </property>
       <property name="maximumSize">
        <size>
-        <width>16777215</width>
+        <width>450</width>
         <height>16777215</height>
        </size>
       </property>
@@ -148,7 +148,7 @@ font:20pt &quot;方正黑体简体&quot;;</string>
      </widget>
     </item>
     <item>
-     <spacer name="verticalSpacer">
+     <spacer name="bottomVerticalSpacer">
       <property name="orientation">
        <enum>Qt::Vertical</enum>
       </property>

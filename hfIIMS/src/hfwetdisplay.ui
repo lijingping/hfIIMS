@@ -24,7 +24,7 @@
   <property name="frameShadow">
    <enum>QFrame::Raised</enum>
   </property>
-  <layout class="QFormLayout" name="formLayout">
+  <layout class="QFormLayout" name="hfWetDisplayLayout">
    <property name="horizontalSpacing">
     <number>0</number>
    </property>
@@ -41,9 +41,9 @@
     <number>0</number>
    </property>
    <item row="1" column="1">
-    <layout class="QVBoxLayout" name="verticalLayout">
+    <layout class="QVBoxLayout" name="titleVerticalLayout">
      <item>
-      <layout class="QHBoxLayout" name="horizontalLayout">
+      <layout class="QHBoxLayout" name="titleHorizontalLayout">
        <item>
         <widget class="QLabel" name="wet_icon">
          <property name="minimumSize">
@@ -116,7 +116,7 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
     </layout>
    </item>
    <item row="3" column="1">
-    <widget class="QLabel" name="temperature_desc">
+    <widget class="QLabel" name="wet_desc">
      <property name="maximumSize">
       <size>
        <width>16777215</width>
@@ -136,7 +136,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
     </widget>
    </item>
    <item row="4" column="1">
-    <widget class="QLabel" name="temperature_unit">
+    <widget class="QLabel" name="wet_unit">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
 color: rgb(93, 97, 127);</string>
@@ -147,7 +147,7 @@ color: rgb(93, 97, 127);</string>
     </widget>
    </item>
    <item row="6" column="1">
-    <widget class="QLabel" name="temperature_time">
+    <widget class="QLabel" name="wet_time">
      <property name="styleSheet">
       <string notr="true">font: 10pt &quot;方正黑体简体&quot;;
 color: rgb(93, 97, 127);</string>
@@ -161,7 +161,7 @@ color: rgb(93, 97, 127);</string>
     </widget>
    </item>
    <item row="5" column="1">
-    <spacer name="verticalSpacer">
+    <spacer name="bottomVerticalSpacer">
      <property name="orientation">
       <enum>Qt::Vertical</enum>
      </property>
