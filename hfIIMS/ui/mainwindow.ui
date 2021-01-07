@@ -789,21 +789,24 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                </widget>
               </item>
               <item>
-               <widget class="QWidget" name="oil_btn" native="true">
+               <widget class="QPushButton" name="oil_btn">
                 <property name="minimumSize">
                  <size>
                   <width>109</width>
-                  <height>0</height>
+                  <height>109</height>
                  </size>
                 </property>
                 <property name="maximumSize">
                  <size>
-                  <width>16777215</width>
-                  <height>109</height>
+                  <width>109</width>
+                  <height>16777215</height>
                  </size>
                 </property>
                 <property name="styleSheet">
                  <string notr="true">border-image: url(:/img/oil_icon.jpg);</string>
+                </property>
+                <property name="text">
+                 <string/>
                 </property>
                </widget>
               </item>
