@@ -60,7 +60,7 @@
         </property>
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
+          <width>1920</width>
           <height>364</height>
          </size>
         </property>
@@ -273,7 +273,7 @@
        <widget class="QFrame" name="train_frame">
         <property name="maximumSize">
          <size>
-          <width>16777215</width>
+          <width>1920</width>
           <height>180</height>
          </size>
         </property>
@@ -404,7 +404,7 @@
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="people_count_verticalLayout" stretch="0,2,2,1">
+                    <layout class="QVBoxLayout" name="people_count_verticalLayout" stretch="0,2,0,1">
                      <item>
                       <spacer name="people_count_verticalSpacer2">
                        <property name="orientation">
@@ -419,11 +419,11 @@
                       </spacer>
                      </item>
                      <item>
-                      <widget class="QLabel" name="current_people">
+                      <widget class="QLabel" name="current_people_title">
                        <property name="maximumSize">
                         <size>
                          <width>16777215</width>
-                         <height>24</height>
+                         <height>30</height>
                         </size>
                        </property>
                        <property name="font">
@@ -445,30 +445,48 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLabel" name="last_people">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>16</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>方正黑体简体</family>
-                         <pointsize>12</pointsize>
-                         <weight>50</weight>
-                         <italic>false</italic>
-                         <bold>false</bold>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);
+                      <layout class="QHBoxLayout" name="currentPeopleHorizontalLayout">
+                       <item>
+                        <widget class="QLabel" name="last_people_title">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>方正黑体简体</family>
+                           <pointsize>12</pointsize>
+                           <weight>50</weight>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
 font: 12pt &quot;方正黑体简体&quot;;</string>
-                       </property>
-                       <property name="text">
-                        <string>        上次训练人数: 100</string>
-                       </property>
-                      </widget>
+                         </property>
+                         <property name="text">
+                          <string>        上次训练人数: </string>
+                         </property>
+                         <property name="alignment">
+                          <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="last_people">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正品尚细黑简体&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string>100</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </item>
                      <item>
                       <spacer name="people_count_verticalSpacer1">
@@ -486,7 +504,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
                     </layout>
                    </item>
                    <item>
-                    <widget class="QLabel" name="people_label">
+                    <widget class="QLabel" name="current_people">
                      <property name="font">
                       <font>
                        <family>方正品尚细黑简体</family>
@@ -516,6 +534,12 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                  <size>
                   <width>660</width>
                   <height>0</height>
+                 </size>
+                </property>
+                <property name="maximumSize">
+                 <size>
+                  <width>16777215</width>
+                  <height>16777215</height>
                  </size>
                 </property>
                 <property name="frameShape">
@@ -578,7 +602,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                        <property name="maximumSize">
                         <size>
                          <width>16777215</width>
-                         <height>24</height>
+                         <height>30</height>
                         </size>
                        </property>
                        <property name="font">
@@ -868,7 +892,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
           <widget class="QFrame" name="oxygen_frame">
            <property name="minimumSize">
             <size>
-             <width>913</width>
+             <width>462</width>
              <height>0</height>
             </size>
            </property>
@@ -1121,7 +1145,7 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
              <rect>
               <x>660</x>
               <y>100</y>
-              <width>250</width>
+              <width>300</width>
               <height>20</height>
              </rect>
             </property>
@@ -1138,7 +1162,7 @@ font: 18pt &quot;方正黑体简体&quot;;</string>
              <rect>
               <x>660</x>
               <y>170</y>
-              <width>250</width>
+              <width>300</width>
               <height>20</height>
              </rect>
             </property>
@@ -1217,7 +1241,7 @@ font: 18pt &quot;宋体&quot;;</string>
                <x>20</x>
                <y>20</y>
                <width>150</width>
-               <height>20</height>
+               <height>25</height>
               </rect>
              </property>
              <property name="styleSheet">
@@ -1248,6 +1272,22 @@ border:0px;</string>
              </property>
             </widget>
            </widget>
+          </widget>
+         </item>
+         <item>
+          <widget class="QFrame" name="rays_frame">
+           <property name="minimumSize">
+            <size>
+             <width>462</width>
+             <height>0</height>
+            </size>
+           </property>
+           <property name="frameShape">
+            <enum>QFrame::StyledPanel</enum>
+           </property>
+           <property name="frameShadow">
+            <enum>QFrame::Raised</enum>
+           </property>
           </widget>
          </item>
          <item>
@@ -1471,31 +1511,6 @@ font: 12pt &quot;宋体&quot;;</string>
              <enum>QFrame::Raised</enum>
             </property>
            </widget>
-           <widget class="QLabel" name="heart_rate_set">
-            <property name="geometry">
-             <rect>
-              <x>880</x>
-              <y>30</y>
-              <width>35</width>
-              <height>33</height>
-             </rect>
-            </property>
-            <property name="minimumSize">
-             <size>
-              <width>35</width>
-              <height>33</height>
-             </size>
-            </property>
-            <property name="maximumSize">
-             <size>
-              <width>35</width>
-              <height>33</height>
-             </size>
-            </property>
-            <property name="text">
-             <string/>
-            </property>
-           </widget>
            <widget class="QLabel" name="heart_rate_alert">
             <property name="geometry">
              <rect>
@@ -1524,6 +1539,19 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
             </property>
             <property name="text">
              <string>为异常状态心率</string>
+            </property>
+           </widget>
+           <widget class="QPushButton" name="heart_rate_set">
+            <property name="geometry">
+             <rect>
+              <x>880</x>
+              <y>30</y>
+              <width>35</width>
+              <height>33</height>
+             </rect>
+            </property>
+            <property name="text">
+             <string/>
             </property>
            </widget>
           </widget>

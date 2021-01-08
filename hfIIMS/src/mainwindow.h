@@ -20,15 +20,11 @@ public slots:
     void OnCloseWindow();
 
 private slots:
-    void on_oil_btn_clicked();
+    void on_oil_btn_clicked(){}
+    void on_heart_rate_set_clicked(){}
 
 private:
     Ui::hfMainWindow *ui;
 };
 
 #endif // MAINWINDOW_H
-
-void hfMainWindow::on_oil_btn_clicked()
-{
-
-}

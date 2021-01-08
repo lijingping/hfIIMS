@@ -25,14 +25,7 @@ hfMainTitle::hfMainTitle(QWidget *parent) :
     connect(&this->m_timer,SIGNAL(timeout()),this,SLOT(UpdateTime()));
     this->m_timer.start(1000);
 
-    QDateTime l_date = QDateTime::currentDateTime();
-    //年月日
-    QString l_specific_date = l_date.toString("yyyy/MM/dd   ");
-    //获取星期，“周一”，“周二”，“周三”等等
-    QString l_week = l_date.toString("ddd");
-    //时分
-    QString l_time = l_date.toString("   hh:mm");
-    ui->time_label->setText(l_specific_date + l_week + l_time);
+    this->UpdateTime();
 }
 
 hfMainTitle::~hfMainTitle()
@@ -43,14 +36,9 @@ hfMainTitle::~hfMainTitle()
 
 void hfMainTitle::UpdateTime()
 {
-    QDateTime l_date = QDateTime::currentDateTime();
-    //年月日
-    QString l_specific_date = l_date.toString("yyyy/MM/dd   ");
-    //获取星期，“周一”，“周二”，“周三”等等
-    QString l_week = l_date.toString("ddd");
-    //时分
-    QString l_time = l_date.toString("   hh:mm");
-    ui->time_label->setText(l_specific_date + l_week + l_time);
+    QDateTime l_time = QDateTime::currentDateTime();
+    //年月日星期时分
+    ui->time_label->setText(l_time.toString("yyyy/MM/dd ddd hh:mm"));
 }
 
 void hfMainTitle::OnUpdateUserName()

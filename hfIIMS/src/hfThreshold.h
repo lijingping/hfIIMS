@@ -16,6 +16,7 @@ public:
     ~hfThreshold();
 
     void setUnit(QString unit);
+    void setValueTitle(QString value);
 
 signals:
     void onThreshold(QString value);

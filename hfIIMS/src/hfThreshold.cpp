@@ -18,6 +18,11 @@ void hfThreshold::setUnit(QString unit)
     ui->threshold_unit->setText(unit);
 }
 
+void hfThreshold::setValueTitle(QString value)
+{
+    ui->value_title->setText(value);
+}
+
 void hfThreshold::on_threshold_lineEdit_editingFinished()
 {
     emit this->onThreshold(ui->threshold_lineEdit->text());
