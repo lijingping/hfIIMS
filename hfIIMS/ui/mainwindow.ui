@@ -583,7 +583,7 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
                     </widget>
                    </item>
                    <item>
-                    <layout class="QVBoxLayout" name="trains_heart_rate_verticalLayout" stretch="1,2,2,1">
+                    <layout class="QVBoxLayout" name="trains_heart_rate_verticalLayout" stretch="1,2,0,1">
                      <item>
                       <spacer name="trains_heart_rate_verticalSpacer1">
                        <property name="orientation">
@@ -624,30 +624,45 @@ font: 20pt &quot;方正黑体简体&quot;;</string>
                       </widget>
                      </item>
                      <item>
-                      <widget class="QLabel" name="trains_heart_rate_count">
-                       <property name="maximumSize">
-                        <size>
-                         <width>16777215</width>
-                         <height>16</height>
-                        </size>
-                       </property>
-                       <property name="font">
-                        <font>
-                         <family>方正黑体简体</family>
-                         <pointsize>12</pointsize>
-                         <weight>50</weight>
-                         <italic>false</italic>
-                         <bold>false</bold>
-                        </font>
-                       </property>
-                       <property name="styleSheet">
-                        <string notr="true">color: rgb(255, 255, 255);
+                      <layout class="QHBoxLayout" name="trains_heart_rateHorizontalLayout">
+                       <item>
+                        <widget class="QLabel" name="trains_heart_rate_title">
+                         <property name="maximumSize">
+                          <size>
+                           <width>16777215</width>
+                           <height>16</height>
+                          </size>
+                         </property>
+                         <property name="font">
+                          <font>
+                           <family>方正黑体简体</family>
+                           <pointsize>12</pointsize>
+                           <weight>50</weight>
+                           <italic>false</italic>
+                           <bold>false</bold>
+                          </font>
+                         </property>
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
 font: 12pt &quot;方正黑体简体&quot;;</string>
-                       </property>
-                       <property name="text">
-                        <string>       上次训练心率异常人数: 100</string>
-                       </property>
-                      </widget>
+                         </property>
+                         <property name="text">
+                          <string>       上次训练心率异常人数:</string>
+                         </property>
+                        </widget>
+                       </item>
+                       <item>
+                        <widget class="QLabel" name="trains_heart_rate_last_poeple">
+                         <property name="styleSheet">
+                          <string notr="true">color: rgb(255, 255, 255);
+font: 12pt &quot;方正黑体简体&quot;;</string>
+                         </property>
+                         <property name="text">
+                          <string>100</string>
+                         </property>
+                        </widget>
+                       </item>
+                      </layout>
                      </item>
                      <item>
                       <spacer name="trains_heart_rate_verticalSpacer2">
