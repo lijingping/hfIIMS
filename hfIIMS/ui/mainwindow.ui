@@ -896,6 +896,12 @@ font: 50pt &quot;方正品尚细黑简体&quot;;</string>
              <height>0</height>
             </size>
            </property>
+           <property name="maximumSize">
+            <size>
+             <width>462</width>
+             <height>16777215</height>
+            </size>
+           </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
            </property>
@@ -1236,12 +1242,22 @@ border:0px;</string>
           </widget>
          </item>
          <item>
-          <widget class="QFrame" name="rays_frame">
+          <widget class="QFrame" name="ultravioletRay_frame">
            <property name="minimumSize">
             <size>
-             <width>462</width>
+             <width>440</width>
              <height>0</height>
             </size>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>440</width>
+             <height>16777215</height>
+            </size>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">border-width:12px;
+border-image: url(:/img/frame.png) 12px 12px 12px 12px stretch stretch;</string>
            </property>
            <property name="frameShape">
             <enum>QFrame::StyledPanel</enum>
@@ -1249,6 +1265,28 @@ border:0px;</string>
            <property name="frameShadow">
             <enum>QFrame::Raised</enum>
            </property>
+           <widget class="hfUltravioletRay" name="ultravioletRay">
+            <property name="geometry">
+             <rect>
+              <x>0</x>
+              <y>0</y>
+              <width>440</width>
+              <height>356</height>
+             </rect>
+            </property>
+            <property name="minimumSize">
+             <size>
+              <width>0</width>
+              <height>0</height>
+             </size>
+            </property>
+            <property name="frameShape">
+             <enum>QFrame::StyledPanel</enum>
+            </property>
+            <property name="frameShadow">
+             <enum>QFrame::Raised</enum>
+            </property>
+           </widget>
           </widget>
          </item>
          <item>
@@ -1561,6 +1599,12 @@ font: 12pt &quot;方正黑体简体&quot;;</string>
    <class>hfHeartRate</class>
    <extends>QFrame</extends>
    <header>hfheartrate.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>hfUltravioletRay</class>
+   <extends>QFrame</extends>
+   <header>hfUltravioletRay.h</header>
    <container>1</container>
   </customwidget>
  </customwidgets>
